@@ -1,0 +1,10 @@
+13:28:18 **** ビルド of configuration Debug for project 20250217_rec_char_1 ****
+make -j16 all 
+arm-none-eabi-size  20250217_rec_char_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16808	    104	   2120	  19032	   4a58	20250217_rec_char_1.elf
+Finished building: default.size.stdout
+ 
+
+13:28:18 Build Finished. 0 errors, 0 warnings. (経過 404ms)
+
