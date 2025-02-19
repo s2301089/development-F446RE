@@ -60,8 +60,8 @@ all: main-build
 main-build: 20250217_rec_char_2.elf secondary-outputs
 
 # Tool invocations
-20250217_rec_char_2.elf 20250217_rec_char_2.map: $(OBJS) $(USER_OBJS) D:\OneDrive\ -\ 独立行政法人\ 国立高等専門学校機構\mine\2024年度\programming\STM32CubeIDE\NUCLEO_F446RE\20250217_rec_char_2\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "20250217_rec_char_2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\mine\2024年度\programming\STM32CubeIDE\NUCLEO_F446RE\20250217_rec_char_2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250217_rec_char_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+20250217_rec_char_2.elf 20250217_rec_char_2.map: $(OBJS) $(USER_OBJS) D:\OneDrive\ -\ 独立行政法人\ 国立高等専門学校機構\github\development-F446RE\20250217_rec_char_2\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "20250217_rec_char_2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250217_rec_char_2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250217_rec_char_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

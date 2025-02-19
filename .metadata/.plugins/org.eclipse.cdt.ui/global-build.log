@@ -85,3 +85,333 @@ arm-none-eabi-size  20250217_rec_char_1.elf
   16808	    104	   2120	  19032	   4a58	20250217_rec_char_1.elf
 Finished building: default.size.stdout
  
+13:32:39 **** ビルド of configuration Debug for project 20250217_rec_char_2 ****
+make -j16 all 
+arm-none-eabi-gcc -o "20250217_rec_char_2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250217_rec_char_2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250217_rec_char_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250217_rec_char_2.elf
+ 
+arm-none-eabi-size  20250217_rec_char_2.elf 
+arm-none-eabi-objdump -h -S 20250217_rec_char_2.elf  > "20250217_rec_char_2.list"
+   text	   data	    bss	    dec	    hex	filename
+  16908	    104	   2120	  19132	   4abc	20250217_rec_char_2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250217_rec_char_2.list
+ 
+13:44:34 **** インクリメンタル・ビルド of configuration Debug for project 20250217_rec_char_2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:123:19: warning: 'getdata' is used uninitialized [-Wuninitialized]
+  123 |                   printf("%02x %02x %02x %d %d\r\n",revdata[0],revdata[1],getdata,revi,revdata[1] - revdata[0]);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:104:17: note: 'getdata' was declared here
+  104 |   unsigned char getdata;
+      |                 ^~~~~~~
+arm-none-eabi-gcc -o "20250217_rec_char_2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250217_rec_char_2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250217_rec_char_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250217_rec_char_2.elf
+ 
+arm-none-eabi-size  20250217_rec_char_2.elf 
+arm-none-eabi-objdump -h -S 20250217_rec_char_2.elf  > "20250217_rec_char_2.list"
+   text	   data	    bss	    dec	    hex	filename
+  16908	    104	   2120	  19132	   4abc	20250217_rec_char_2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250217_rec_char_2.list
+ 
+13:46:04 **** インクリメンタル・ビルド of configuration Debug for project 20250217_rec_char_2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:17: warning: unused variable 'getdata' [-Wunused-variable]
+  104 |   unsigned char getdata;
+      |                 ^~~~~~~
+arm-none-eabi-gcc -o "20250217_rec_char_2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250217_rec_char_2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250217_rec_char_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250217_rec_char_2.elf
+ 
+arm-none-eabi-size  20250217_rec_char_2.elf 
+arm-none-eabi-objdump -h -S 20250217_rec_char_2.elf  > "20250217_rec_char_2.list"
+   text	   data	    bss	    dec	    hex	filename
+  16896	    104	   2120	  19120	   4ab0	20250217_rec_char_2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250217_rec_char_2.list
+ 
+13:55:51 **** インクリメンタル・ビルド of configuration Debug for project 20250217_rec_char_2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:17: warning: unused variable 'getdata' [-Wunused-variable]
+  104 |   unsigned char getdata;
+      |                 ^~~~~~~
+arm-none-eabi-gcc -o "20250217_rec_char_2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250217_rec_char_2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250217_rec_char_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250217_rec_char_2.elf
+ 
+arm-none-eabi-size  20250217_rec_char_2.elf 
+arm-none-eabi-objdump -h -S 20250217_rec_char_2.elf  > "20250217_rec_char_2.list"
+   text	   data	    bss	    dec	    hex	filename
+  16904	    104	   2120	  19128	   4ab8	20250217_rec_char_2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250217_rec_char_2.list
+ 
+14:03:50 **** インクリメンタル・ビルド of configuration Debug for project 20250217_rec_char_2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:17: warning: unused variable 'getdata' [-Wunused-variable]
+  104 |   unsigned char getdata;
+      |                 ^~~~~~~
+arm-none-eabi-gcc -o "20250217_rec_char_2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250217_rec_char_2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250217_rec_char_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250217_rec_char_2.elf
+ 
+arm-none-eabi-size  20250217_rec_char_2.elf 
+arm-none-eabi-objdump -h -S 20250217_rec_char_2.elf  > "20250217_rec_char_2.list"
+   text	   data	    bss	    dec	    hex	filename
+  16956	    104	   2120	  19180	   4aec	20250217_rec_char_2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250217_rec_char_2.list
+ 
+14:04:27 **** インクリメンタル・ビルド of configuration Debug for project 20250217_rec_char_2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:17: warning: unused variable 'getdata' [-Wunused-variable]
+  104 |   unsigned char getdata;
+      |                 ^~~~~~~
+arm-none-eabi-gcc -o "20250217_rec_char_2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250217_rec_char_2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250217_rec_char_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250217_rec_char_2.elf
+ 
+arm-none-eabi-size  20250217_rec_char_2.elf 
+arm-none-eabi-objdump -h -S 20250217_rec_char_2.elf  > "20250217_rec_char_2.list"
+   text	   data	    bss	    dec	    hex	filename
+  16948	    104	   2120	  19172	   4ae4	20250217_rec_char_2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250217_rec_char_2.list
+ 
+14:05:34 **** インクリメンタル・ビルド of configuration Debug for project 20250217_rec_char_2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:17: warning: unused variable 'getdata' [-Wunused-variable]
+  104 |   unsigned char getdata;
+      |                 ^~~~~~~
+arm-none-eabi-gcc -o "20250217_rec_char_2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250217_rec_char_2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250217_rec_char_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250217_rec_char_2.elf
+ 
+arm-none-eabi-size  20250217_rec_char_2.elf 
+arm-none-eabi-objdump -h -S 20250217_rec_char_2.elf  > "20250217_rec_char_2.list"
+   text	   data	    bss	    dec	    hex	filename
+  16948	    104	   2120	  19172	   4ae4	20250217_rec_char_2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250217_rec_char_2.list
+ 
+14:07:00 **** インクリメンタル・ビルド of configuration Debug for project 20250217_rec_char_2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:17: warning: unused variable 'getdata' [-Wunused-variable]
+  104 |   unsigned char getdata;
+      |                 ^~~~~~~
+arm-none-eabi-gcc -o "20250217_rec_char_2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250217_rec_char_2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250217_rec_char_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250217_rec_char_2.elf
+ 
+arm-none-eabi-size  20250217_rec_char_2.elf 
+arm-none-eabi-objdump -h -S 20250217_rec_char_2.elf  > "20250217_rec_char_2.list"
+   text	   data	    bss	    dec	    hex	filename
+  16760	    104	   2120	  18984	   4a28	20250217_rec_char_2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250217_rec_char_2.list
+ 
+14:08:46 **** インクリメンタル・ビルド of configuration Debug for project 20250217_rec_char_2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:17: warning: unused variable 'getdata' [-Wunused-variable]
+  104 |   unsigned char getdata;
+      |                 ^~~~~~~
+arm-none-eabi-gcc -o "20250217_rec_char_2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250217_rec_char_2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250217_rec_char_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250217_rec_char_2.elf
+ 
+arm-none-eabi-size  20250217_rec_char_2.elf 
+arm-none-eabi-objdump -h -S 20250217_rec_char_2.elf  > "20250217_rec_char_2.list"
+   text	   data	    bss	    dec	    hex	filename
+  16760	    104	   2120	  18984	   4a28	20250217_rec_char_2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250217_rec_char_2.list
+ 
+14:18:01 **** インクリメンタル・ビルド of configuration Debug for project 20250217_rec_char_2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:17: warning: unused variable 'getdata' [-Wunused-variable]
+  104 |   unsigned char getdata;
+      |                 ^~~~~~~
+arm-none-eabi-gcc -o "20250217_rec_char_2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250217_rec_char_2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250217_rec_char_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250217_rec_char_2.elf
+ 
+arm-none-eabi-size  20250217_rec_char_2.elf 
+arm-none-eabi-objdump -h -S 20250217_rec_char_2.elf  > "20250217_rec_char_2.list"
+   text	   data	    bss	    dec	    hex	filename
+  16708	    104	   2120	  18932	   49f4	20250217_rec_char_2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250217_rec_char_2.list
+ 
+14:21:56 **** インクリメンタル・ビルド of configuration Debug for project 20250217_rec_char_2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:17: warning: unused variable 'getdata' [-Wunused-variable]
+  104 |   unsigned char getdata;
+      |                 ^~~~~~~
+arm-none-eabi-gcc -o "20250217_rec_char_2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250217_rec_char_2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250217_rec_char_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250217_rec_char_2.elf
+ 
+arm-none-eabi-size  20250217_rec_char_2.elf 
+arm-none-eabi-objdump -h -S 20250217_rec_char_2.elf  > "20250217_rec_char_2.list"
+   text	   data	    bss	    dec	    hex	filename
+  16728	    104	   2120	  18952	   4a08	20250217_rec_char_2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250217_rec_char_2.list
+ 
+14:22:20 **** インクリメンタル・ビルド of configuration Debug for project 20250217_rec_char_2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:17: warning: unused variable 'getdata' [-Wunused-variable]
+  104 |   unsigned char getdata;
+      |                 ^~~~~~~
+arm-none-eabi-gcc -o "20250217_rec_char_2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250217_rec_char_2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250217_rec_char_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250217_rec_char_2.elf
+ 
+arm-none-eabi-size  20250217_rec_char_2.elf 
+arm-none-eabi-objdump -h -S 20250217_rec_char_2.elf  > "20250217_rec_char_2.list"
+   text	   data	    bss	    dec	    hex	filename
+  16780	    104	   2120	  19004	   4a3c	20250217_rec_char_2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250217_rec_char_2.list
+ 
+14:25:46 **** インクリメンタル・ビルド of configuration Debug for project 20250217_rec_char_2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:17: warning: unused variable 'getdata' [-Wunused-variable]
+  104 |   unsigned char getdata;
+      |                 ^~~~~~~
+arm-none-eabi-gcc -o "20250217_rec_char_2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250217_rec_char_2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250217_rec_char_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250217_rec_char_2.elf
+ 
+arm-none-eabi-size  20250217_rec_char_2.elf 
+arm-none-eabi-objdump -h -S 20250217_rec_char_2.elf  > "20250217_rec_char_2.list"
+   text	   data	    bss	    dec	    hex	filename
+  16760	    104	   2120	  18984	   4a28	20250217_rec_char_2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250217_rec_char_2.list
+ 
+14:33:37 **** ビルド of configuration Debug for project 20250219_rec_char_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250219_rec_char_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250219_rec_char_3\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250219_rec_char_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250219_rec_char_3.elf
+ 
+arm-none-eabi-size  20250219_rec_char_3.elf 
+arm-none-eabi-objdump -h -S 20250219_rec_char_3.elf  > "20250219_rec_char_3.list"
+   text	   data	    bss	    dec	    hex	filename
+  16908	    104	   2120	  19132	   4abc	20250219_rec_char_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250219_rec_char_3.list
+ 
+14:34:06 **** インクリメンタル・ビルド of configuration Debug for project 20250219_rec_char_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250219_rec_char_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250219_rec_char_3\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250219_rec_char_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250219_rec_char_3.elf
+ 
+arm-none-eabi-size  20250219_rec_char_3.elf 
+arm-none-eabi-objdump -h -S 20250219_rec_char_3.elf  > "20250219_rec_char_3.list"
+   text	   data	    bss	    dec	    hex	filename
+  16984	    104	   2120	  19208	   4b08	20250219_rec_char_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250219_rec_char_3.list
+ 
+14:34:51 **** インクリメンタル・ビルド of configuration Debug for project 20250219_rec_char_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250219_rec_char_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250219_rec_char_3\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250219_rec_char_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250219_rec_char_3.elf
+ 
+arm-none-eabi-size  20250219_rec_char_3.elf 
+arm-none-eabi-objdump -h -S 20250219_rec_char_3.elf  > "20250219_rec_char_3.list"
+   text	   data	    bss	    dec	    hex	filename
+  16984	    104	   2120	  19208	   4b08	20250219_rec_char_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250219_rec_char_3.list
+ 
+14:42:11 **** インクリメンタル・ビルド of configuration Debug for project 20250219_rec_char_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250219_rec_char_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250219_rec_char_3\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250219_rec_char_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250219_rec_char_3.elf
+ 
+arm-none-eabi-size  20250219_rec_char_3.elf 
+arm-none-eabi-objdump -h -S 20250219_rec_char_3.elf  > "20250219_rec_char_3.list"
+   text	   data	    bss	    dec	    hex	filename
+  16992	    104	   2120	  19216	   4b10	20250219_rec_char_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250219_rec_char_3.list
+ 
+14:45:21 **** インクリメンタル・ビルド of configuration Debug for project 20250219_rec_char_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250219_rec_char_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250219_rec_char_3\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250219_rec_char_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250219_rec_char_3.elf
+ 
+arm-none-eabi-size  20250219_rec_char_3.elf 
+arm-none-eabi-objdump -h -S 20250219_rec_char_3.elf  > "20250219_rec_char_3.list"
+   text	   data	    bss	    dec	    hex	filename
+  16992	    104	   2120	  19216	   4b10	20250219_rec_char_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250219_rec_char_3.list
+ 
+14:49:32 **** インクリメンタル・ビルド of configuration Debug for project 20250219_rec_char_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250219_rec_char_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250219_rec_char_3\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250219_rec_char_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250219_rec_char_3.elf
+ 
+arm-none-eabi-size  20250219_rec_char_3.elf 
+arm-none-eabi-objdump -h -S 20250219_rec_char_3.elf  > "20250219_rec_char_3.list"
+   text	   data	    bss	    dec	    hex	filename
+  16992	    104	   2120	  19216	   4b10	20250219_rec_char_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250219_rec_char_3.list
+ 
+14:50:47 **** インクリメンタル・ビルド of configuration Debug for project 20250219_rec_char_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250219_rec_char_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250219_rec_char_3\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250219_rec_char_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250219_rec_char_3.elf
+ 
+arm-none-eabi-size  20250219_rec_char_3.elf 
+arm-none-eabi-objdump -h -S 20250219_rec_char_3.elf  > "20250219_rec_char_3.list"
+   text	   data	    bss	    dec	    hex	filename
+  16992	    104	   2120	  19216	   4b10	20250219_rec_char_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250219_rec_char_3.list
+ 
