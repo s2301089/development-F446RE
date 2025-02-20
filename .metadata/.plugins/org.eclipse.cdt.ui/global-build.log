@@ -415,3 +415,1438 @@ Finished building: default.size.stdout
  
 Finished building: 20250219_rec_char_3.list
  
+16:19:20 **** ビルド of configuration Debug for project 20250219_rec_sumch ****
+make -j16 all 
+arm-none-eabi-gcc -o "20250219_rec_sumch.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250219_rec_sumch\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250219_rec_sumch.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250219_rec_sumch.elf
+ 
+arm-none-eabi-size  20250219_rec_sumch.elf 
+arm-none-eabi-objdump -h -S 20250219_rec_sumch.elf  > "20250219_rec_sumch.list"
+   text	   data	    bss	    dec	    hex	filename
+  16992	    104	   2120	  19216	   4b10	20250219_rec_sumch.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250219_rec_sumch.list
+ 
+16:23:55 **** インクリメンタル・ビルド of configuration Debug for project 20250219_rec_sumch ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250219_rec_sumch.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250219_rec_sumch\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250219_rec_sumch.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250219_rec_sumch.elf
+ 
+arm-none-eabi-size  20250219_rec_sumch.elf 
+arm-none-eabi-objdump -h -S 20250219_rec_sumch.elf  > "20250219_rec_sumch.list"
+   text	   data	    bss	    dec	    hex	filename
+  17048	    104	   2120	  19272	   4b48	20250219_rec_sumch.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250219_rec_sumch.list
+ 
+16:25:24 **** インクリメンタル・ビルド of configuration Debug for project 20250219_rec_sumch ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250219_rec_sumch.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250219_rec_sumch\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250219_rec_sumch.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250219_rec_sumch.elf
+ 
+arm-none-eabi-size  20250219_rec_sumch.elf 
+arm-none-eabi-objdump -h -S 20250219_rec_sumch.elf  > "20250219_rec_sumch.list"
+   text	   data	    bss	    dec	    hex	filename
+  17048	    104	   2120	  19272	   4b48	20250219_rec_sumch.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250219_rec_sumch.list
+ 
+16:39:18 **** インクリメンタル・ビルド of configuration Debug for project 20250219_rec_sumch ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250219_rec_sumch.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250219_rec_sumch\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250219_rec_sumch.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250219_rec_sumch.elf
+ 
+arm-none-eabi-size  20250219_rec_sumch.elf 
+arm-none-eabi-objdump -h -S 20250219_rec_sumch.elf  > "20250219_rec_sumch.list"
+   text	   data	    bss	    dec	    hex	filename
+  17072	    104	   2120	  19296	   4b60	20250219_rec_sumch.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250219_rec_sumch.list
+ 
+08:59:02 **** ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17072	    104	   2120	  19296	   4b60	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+09:09:15 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17072	    104	   2120	  19296	   4b60	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+09:09:51 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17072	    104	   2120	  19296	   4b60	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+09:17:13 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:133:58: warning: too many arguments for format [-Wformat-extra-args]
+  133 |                                                   printf("%%02x ",revdata[i]);
+      |                                                          ^~~~~~~~
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17068	    104	   2120	  19292	   4b5c	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+09:17:32 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17068	    104	   2120	  19292	   4b5c	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+09:20:33 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17072	    104	   2120	  19296	   4b60	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+09:23:50 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:27: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  130 |                           memset(revdata,0x00,sizeof(revdata));
+      |                           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:130:27: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  130 |                           memset(revdata,0x00,sizeof(revdata));
+      |                           ^~~~~~
+../Core/Src/main.c:130:27: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17084	    104	   2120	  19308	   4b6c	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+09:24:44 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:144:19: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  144 |                   memset(revdata,0x00,sizeof(revdata));
+      |                   ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:144:19: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  144 |                   memset(revdata,0x00,sizeof(revdata));
+      |                   ^~~~~~
+../Core/Src/main.c:144:19: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17084	    104	   2120	  19308	   4b6c	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+09:25:26 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:152:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  152 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:152:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  152 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:152:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17084	    104	   2120	  19308	   4b6c	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+09:27:05 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:136:62: error: 'i' undeclared (first use in this function)
+  136 |                                           printf("%2d:%02x ",i,revdata[i]);
+      |                                                              ^
+../Core/Src/main.c:136:62: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:155:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  155 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:155:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  155 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:155:11: note: include '<string.h>' or provide a declaration of 'memset'
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+09:28:15 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:161:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  161 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:161:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  161 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:161:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17164	    104	   2120	  19388	   4bbc	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+09:29:00 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:161:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  161 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:161:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  161 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:161:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17156	    104	   2120	  19380	   4bb4	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+09:32:06 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:161:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  161 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:161:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  161 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:161:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17152	    104	   2120	  19376	   4bb0	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+09:32:36 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:161:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  161 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:161:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  161 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:161:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17156	    104	   2120	  19380	   4bb4	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+09:48:21 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:167:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  167 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:167:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  167 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:167:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17160	    104	   2120	  19384	   4bb8	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+09:50:02 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:167:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  167 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:167:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  167 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:167:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17160	    104	   2120	  19384	   4bb8	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+09:51:30 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:167:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  167 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:167:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  167 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:167:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17172	    104	   2120	  19396	   4bc4	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+09:52:24 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:167:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  167 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:167:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  167 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:167:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17172	    104	   2120	  19396	   4bc4	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+09:53:19 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:167:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  167 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:167:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  167 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:167:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17176	    104	   2120	  19400	   4bc8	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+11:33:01 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:128:38: error: 'i' undeclared (first use in this function)
+  128 |                                   if(i >= 2 || i <= 9){
+      |                                      ^
+../Core/Src/main.c:128:38: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:167:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  167 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:167:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  167 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:167:11: note: include '<string.h>' or provide a declaration of 'memset'
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+11:33:37 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:167:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  167 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:167:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  167 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:167:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17120	    104	   2120	  19344	   4b90	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+11:34:45 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:167:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  167 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:167:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  167 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:167:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17124	    104	   2120	  19348	   4b94	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+11:36:50 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:170:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  170 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:170:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  170 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:170:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17152	    104	   2120	  19376	   4bb0	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+11:37:44 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:148:50: warning: too many arguments for format [-Wformat-extra-args]
+  148 |                                           printf("sum is not true &02x\r\n",revsum);
+      |                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:170:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  170 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:170:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  170 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:170:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17164	    104	   2120	  19388	   4bbc	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+11:38:20 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:170:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  170 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:170:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  170 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:170:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17164	    104	   2120	  19388	   4bbc	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+11:41:54 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:140:51: warning: implicit declaration of function 'prinf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  140 |                                                   prinf("%d %02x\r\n",i,revdata[i]);
+      |                                                   ^~~~~
+      |                                                   printf
+../Core/Src/main.c:174:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  174 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:174:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  174 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:174:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+D:/OneDrive - 独立行政法人 国立高等専門学校機構/github/development-F446RE/20250220_rec_sumch2/Debug/../Core/Src/main.c:140: undefined reference to `prinf'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: 20250220_rec_sumch2.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+11:42:46 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:174:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  174 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:174:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  174 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:174:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17204	    104	   2120	  19428	   4be4	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+11:43:40 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:174:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  174 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:174:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  174 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:174:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17204	    104	   2120	  19428	   4be4	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+11:44:17 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:174:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  174 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:174:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  174 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:174:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17204	    104	   2120	  19428	   4be4	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+11:44:28 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:174:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  174 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:174:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  174 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:174:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17204	    104	   2120	  19428	   4be4	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+11:45:30 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:176:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  176 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:176:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  176 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:176:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17228	    104	   2120	  19452	   4bfc	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+11:51:12 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:176:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  176 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:176:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  176 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:176:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17228	    104	   2120	  19452	   4bfc	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+11:53:28 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:176:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  176 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:176:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  176 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:176:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17112	    104	   2120	  19336	   4b88	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+11:54:18 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:176:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  176 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:176:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  176 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:176:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17124	    104	   2120	  19348	   4b94	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+12:00:39 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:174:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  174 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:174:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  174 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:174:11: note: include '<string.h>' or provide a declaration of 'memset'
+../Core/Src/main.c:225:13: error: invalid storage class for function 'MX_TIM2_Init'
+  225 | static void MX_TIM2_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:275:13: error: invalid storage class for function 'MX_USART1_UART_Init'
+  275 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:308:13: error: invalid storage class for function 'MX_USART2_UART_Init'
+  308 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:341:13: error: invalid storage class for function 'MX_GPIO_Init'
+  341 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:385:1: error: expected declaration or statement at end of input
+  385 | }
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:55:13: warning: 'MX_GPIO_Init' used but never defined
+   55 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:56:13: warning: 'MX_USART2_UART_Init' used but never defined
+   56 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:57:13: warning: 'MX_USART1_UART_Init' used but never defined
+   57 | static void MX_USART1_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:58:13: warning: 'MX_TIM2_Init' used but never defined
+   58 | static void MX_TIM2_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:376:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  376 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:365:5: warning: '_write' defined but not used [-Wunused-function]
+  365 | int _write(int file,char *ptr,int len){
+      |     ^~~~~~
+../Core/Src/main.c:341:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  341 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:308:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  308 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:275:13: warning: 'MX_USART1_UART_Init' defined but not used [-Wunused-function]
+  275 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:225:13: warning: 'MX_TIM2_Init' defined but not used [-Wunused-function]
+  225 | static void MX_TIM2_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:183:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  183 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+12:00:57 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:174:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  174 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:174:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  174 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:174:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17176	    104	   2120	  19400	   4bc8	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+12:02:01 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:174:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  174 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:174:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  174 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:174:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17124	    104	   2120	  19348	   4b94	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+12:02:51 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:174:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  174 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:174:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  174 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:174:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17124	    104	   2120	  19348	   4b94	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+12:04:04 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:174:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  174 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:174:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  174 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:174:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17076	    104	   2120	  19300	   4b64	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+12:05:29 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:177:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:177:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17100	    104	   2120	  19324	   4b7c	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+12:06:22 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:177:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:177:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17096	    104	   2120	  19320	   4b78	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+12:09:02 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:177:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:177:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17140	    104	   2120	  19364	   4ba4	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+12:21:25 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:177:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:177:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17140	    104	   2120	  19364	   4ba4	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+12:29:51 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:177:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:177:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17868	    104	   2120	  20092	   4e7c	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+12:32:49 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:177:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:177:11: note: include '<string.h>' or provide a declaration of 'memset'
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Core/Src/main.c:182:57: error: 'UART_CLEAR_NEF' undeclared (first use in this function); did you mean 'UART_FLAG_NE'?
+  182 |                                                         UART_CLEAR_NEF |
+      |                                                         ^~~~~~~~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:494:85: note: in definition of macro '__HAL_UART_CLEAR_FLAG'
+  494 | #define __HAL_UART_CLEAR_FLAG(__HANDLE__, __FLAG__) ((__HANDLE__)->Instance->SR = ~(__FLAG__))
+      |                                                                                     ^~~~~~~~
+../Core/Src/main.c:182:57: note: each undeclared identifier is reported only once for each function it appears in
+  182 |                                                         UART_CLEAR_NEF |
+      |                                                         ^~~~~~~~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:494:85: note: in definition of macro '__HAL_UART_CLEAR_FLAG'
+  494 | #define __HAL_UART_CLEAR_FLAG(__HANDLE__, __FLAG__) ((__HANDLE__)->Instance->SR = ~(__FLAG__))
+      |                                                                                     ^~~~~~~~
+../Core/Src/main.c:183:57: error: 'UART_CLEAR_OREF' undeclared (first use in this function); did you mean 'UART_FLAG_ORE'?
+  183 |                                                         UART_CLEAR_OREF |
+      |                                                         ^~~~~~~~~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:494:85: note: in definition of macro '__HAL_UART_CLEAR_FLAG'
+  494 | #define __HAL_UART_CLEAR_FLAG(__HANDLE__, __FLAG__) ((__HANDLE__)->Instance->SR = ~(__FLAG__))
+      |                                                                                     ^~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+12:33:49 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:177:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:177:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17892	    104	   2120	  20116	   4e94	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+13:11:00 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:177:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:177:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17892	    104	   2120	  20116	   4e94	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+13:13:12 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:177:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:177:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17868	    104	   2120	  20092	   4e7c	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+13:14:30 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:177:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:177:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17876	    104	   2120	  20100	   4e84	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+13:15:22 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:177:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:177:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17892	    104	   2120	  20116	   4e94	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+13:15:56 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:177:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:177:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17168	    104	   2120	  19392	   4bc0	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+13:16:29 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:177:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:177:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17868	    104	   2120	  20092	   4e7c	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+13:16:47 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:177:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  177 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:177:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17876	    104	   2120	  20100	   4e84	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
+13:28:15 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:178:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  178 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | 
+../Core/Src/main.c:178:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  178 |           memset(revdata,0x00,sizeof(revdata));
+      |           ^~~~~~
+../Core/Src/main.c:178:11: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250220_rec_sumch2.elf
+ 
+arm-none-eabi-size  20250220_rec_sumch2.elf 
+arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+   text	   data	    bss	    dec	    hex	filename
+  17876	    104	   2120	  20100	   4e84	20250220_rec_sumch2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.list
+ 
