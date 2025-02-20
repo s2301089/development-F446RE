@@ -580,3 +580,9 @@ java.io.FileNotFoundException: D:\OneDrive - 独立行政法人 国立高等専�
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-02-20 13:49:38.797
+!MESSAGE Indexed '20250220_rec_it1' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-02-20 13:49:41.715
+!MESSAGE Indexed '20250220_rec_it1' (19 sources, 81 headers) in 1.65 sec: 4,551 declarations; 21,823 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0076%)

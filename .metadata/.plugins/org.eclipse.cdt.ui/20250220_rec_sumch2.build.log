@@ -1,29 +1,32 @@
-13:28:15 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+14:51:48 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
 make -j16 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:178:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
-  178 |           memset(revdata,0x00,sizeof(revdata));
+../Core/Src/main.c:180:11: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  180 |           memset(revdata,0x00,sizeof(revdata));
       |           ^~~~~~
 ../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'memset'
    24 | #include <stdio.h>
   +++ |+#include <string.h>
    25 | 
-../Core/Src/main.c:178:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
-  178 |           memset(revdata,0x00,sizeof(revdata));
+../Core/Src/main.c:180:11: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  180 |           memset(revdata,0x00,sizeof(revdata));
       |           ^~~~~~
-../Core/Src/main.c:178:11: note: include '<string.h>' or provide a declaration of 'memset'
+../Core/Src/main.c:180:11: note: include '<string.h>' or provide a declaration of 'memset'
 arm-none-eabi-gcc -o "20250220_rec_sumch2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250220_rec_sumch2\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250220_rec_sumch2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: 20250220_rec_sumch2.elf
  
 arm-none-eabi-size  20250220_rec_sumch2.elf 
 arm-none-eabi-objdump -h -S 20250220_rec_sumch2.elf  > "20250220_rec_sumch2.list"
+arm-none-eabi-objcopy  -O binary 20250220_rec_sumch2.elf  "20250220_rec_sumch2.bin"
    text	   data	    bss	    dec	    hex	filename
-  17876	    104	   2120	  20100	   4e84	20250220_rec_sumch2.elf
+  18056	    104	   2120	  20280	   4f38	20250220_rec_sumch2.elf
 Finished building: default.size.stdout
+ 
+Finished building: 20250220_rec_sumch2.bin
  
 Finished building: 20250220_rec_sumch2.list
  
 
-13:28:17 Build Finished. 0 errors, 2 warnings. (経過 1s.838ms)
+14:51:49 Build Finished. 0 errors, 2 warnings. (経過 1s.183ms)
 

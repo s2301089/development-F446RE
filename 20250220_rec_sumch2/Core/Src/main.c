@@ -64,7 +64,7 @@ static void MX_TIM2_Init(void);
 /* USER CODE BEGIN 0 */
 #define REV_SIZE 11
 #define WAIT 10
-#define TIMEOUT_MAX 15
+#define TIMEOUT_MAX 10
 /* USER CODE END 0 */
 
 /**
@@ -101,7 +101,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-  unsigned char revdata[REV_SIZE] = {};
+  unsigned char revdata[REV_SIZE] = {},usedata[REV_SIZE] = {};
   unsigned char getdata,revsum;
   int timeout = 0;
   HAL_StatusTypeDef status;
@@ -121,16 +121,15 @@ int main(void)
 	  if(status == HAL_OK){
 		  if(getdata == 0xAF){
 			  revdata[0] = getdata;
-			  status = HAL_UART_Receive(&huart1, revdata+1, 10, WAIT * 10);
-//			  for(int i = 1;i < REV_SIZE;i++){
-//				  status = HAL_UART_Receive(&huart1, &getdata, 10, WAIT);
-//				  if(status == HAL_OK){
-//					  revdata[i] = getdata;
-//				  }else {
-//					  i--;
-//				  }
-////
-//			  }
+//			  status = HAL_UART_Receive(&huart1, revdata+1, 10, WAIT * 10);
+			  for(int i = 1;i < REV_SIZE;i++){
+				  status = HAL_UART_Receive(&huart1, &getdata, 1, WAIT);
+				  if(status == HAL_OK){
+					  revdata[i] = getdata;
+				  }else {
+					  i--;
+				  }
+			  }
 			  if(status == HAL_OK){
 				  if(revdata[10] == 0xED){
 					  revsum = 0x00;
@@ -139,9 +138,10 @@ int main(void)
 //						  printf("%2d-%02x ",i,revdata[i]);
 					  }
 					  if(revdata[9] == revsum){
-//						  for(int i = 0;i < REV_SIZE;i++){
-//							  printf("%2d:%02x ",i,revdata[i]);
-//						  }
+						  for(int i = 0;i < REV_SIZE;i++){
+							  printf("%2d:%02x ",i,revdata[i]);
+							  usedata[i] = revdata[i];
+						  }
 					  }else {
 //						  for(int i = 0;i < REV_SIZE;i++){
 //							  printf("%2d:%02x ",i,revdata[i]);
@@ -163,6 +163,8 @@ int main(void)
 
 
 			  printf("\r\n");
+		  }else {
+			  printf("not af\r\n");
 		  }
 	  }else /*if(status == HAL_TIMEOUT)*/{
 		  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_0);
@@ -180,6 +182,7 @@ int main(void)
 //	  if ( __HAL_UART_GET_FLAG(&huart1, UART_FLAG_ORE) ){
 	      __HAL_UART_CLEAR_FLAG(&huart1,UART_FLAG_RXNE |UART_FLAG_ORE);
 //	  }
+	      __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_2,usedata[1]);
   }
   /* USER CODE END 3 */
 }
