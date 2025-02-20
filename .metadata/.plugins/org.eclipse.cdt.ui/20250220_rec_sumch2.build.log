@@ -1,4 +1,4 @@
-14:51:48 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
+16:12:07 **** インクリメンタル・ビルド of configuration Debug for project 20250220_rec_sumch2 ****
 make -j16 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
@@ -24,9 +24,9 @@ arm-none-eabi-objcopy  -O binary 20250220_rec_sumch2.elf  "20250220_rec_sumch2.b
 Finished building: default.size.stdout
  
 Finished building: 20250220_rec_sumch2.bin
- 
 Finished building: 20250220_rec_sumch2.list
  
+ 
 
-14:51:49 Build Finished. 0 errors, 2 warnings. (経過 1s.183ms)
+16:12:08 Build Finished. 0 errors, 2 warnings. (経過 1s.84ms)
 

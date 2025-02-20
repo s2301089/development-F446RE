@@ -713,8 +713,8 @@ int main(void)
  800077c:	f06f 0228 	mvn.w	r2, #40	@ 0x28
  8000780:	601a      	str	r2, [r3, #0]
 //	  }
-	      __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_2,usedata[1]);
- 8000782:	797a      	ldrb	r2, [r7, #5]
+	      __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_2,usedata[2]);
+ 8000782:	79ba      	ldrb	r2, [r7, #6]
  8000784:	4b02      	ldr	r3, [pc, #8]	@ (8000790 <main+0x1f0>)
  8000786:	681b      	ldr	r3, [r3, #0]
  8000788:	639a      	str	r2, [r3, #56]	@ 0x38

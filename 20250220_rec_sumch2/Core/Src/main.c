@@ -182,7 +182,7 @@ int main(void)
 //	  if ( __HAL_UART_GET_FLAG(&huart1, UART_FLAG_ORE) ){
 	      __HAL_UART_CLEAR_FLAG(&huart1,UART_FLAG_RXNE |UART_FLAG_ORE);
 //	  }
-	      __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_2,usedata[1]);
+	      __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_2,usedata[2]);
   }
   /* USER CODE END 3 */
 }
