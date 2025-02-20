@@ -9,8 +9,8 @@
 	<section name="WorkbenchPreferenceDialog">
 		<item key="DIALOG_X_ORIGIN" value="9"/>
 		<item key="DIALOG_Y_ORIGIN" value="9"/>
-		<item key="DIALOG_WIDTH" value="1231"/>
-		<item key="DIALOG_HEIGHT" value="790"/>
+		<item key="DIALOG_WIDTH" value="1448"/>
+		<item key="DIALOG_HEIGHT" value="1038"/>
 		<item key="DIALOG_FONT_NAME" value="1|Yu Gothic UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Yu Gothic UI"/>
 	</section>
 	<section name="org.eclipse.ui.preferences.keysPreferencePage">
@@ -21,5 +21,7 @@
 			<item value="D:\OneDrive - 独立行政法人 国立高等専門学校機構\mine\2024年度\programming\STM32CubeIDE\NUCLEO_F446RE\20250219_setting.epf"/>
 			<item value="D:\OneDrive - 独立行政法人 国立高等専門学校機構\mine\2024年度\programming\STM32CubeIDE\NUCLEO_F446RE\20250219_setting_key.csv"/>
 		</list>
+	</section>
+	<section name="NewWizardAction">
 	</section>
 </section>
