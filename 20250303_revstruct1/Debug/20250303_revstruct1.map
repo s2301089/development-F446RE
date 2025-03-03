@@ -158,7 +158,7 @@ Discarded input sections
  .text          0x00000000        0x0 ./Core/Src/USART_Arduino.o
  .data          0x00000000        0x0 ./Core/Src/USART_Arduino.o
  .bss           0x00000000        0x0 ./Core/Src/USART_Arduino.o
- .text.getData  0x00000000       0x6a ./Core/Src/USART_Arduino.o
+ .text.getData  0x00000000       0x70 ./Core/Src/USART_Arduino.o
  .rodata        0x00000000       0x40 ./Core/Src/USART_Arduino.o
  .text.RevAF    0x00000000       0x78 ./Core/Src/USART_Arduino.o
  .text.AddArray
@@ -170,8 +170,8 @@ Discarded input sections
                 0x00000000       0x98 ./Core/Src/USART_Arduino.o
  .bss.timeout.0
                 0x00000000        0x4 ./Core/Src/USART_Arduino.o
- .debug_info    0x00000000      0x8f7 ./Core/Src/USART_Arduino.o
- .debug_abbrev  0x00000000      0x1ee ./Core/Src/USART_Arduino.o
+ .debug_info    0x00000000      0x90a ./Core/Src/USART_Arduino.o
+ .debug_abbrev  0x00000000      0x1f0 ./Core/Src/USART_Arduino.o
  .debug_aranges
                 0x00000000       0x48 ./Core/Src/USART_Arduino.o
  .debug_rnglists
@@ -237,8 +237,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x1c ./Core/Src/USART_Arduino.o
  .debug_macro   0x00000000       0x16 ./Core/Src/USART_Arduino.o
  .debug_macro   0x00000000      0x146 ./Core/Src/USART_Arduino.o
- .debug_line    0x00000000      0xb07 ./Core/Src/USART_Arduino.o
- .debug_str     0x00000000    0xc634f ./Core/Src/USART_Arduino.o
+ .debug_line    0x00000000      0xb08 ./Core/Src/USART_Arduino.o
+ .debug_str     0x00000000    0xc635e ./Core/Src/USART_Arduino.o
  .comment       0x00000000       0x44 ./Core/Src/USART_Arduino.o
  .debug_frame   0x00000000       0xec ./Core/Src/USART_Arduino.o
  .ARM.attributes

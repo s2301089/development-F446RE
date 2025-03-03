@@ -3433,3 +3433,18 @@ Caused by: java.nio.channels.ClosedChannelException
 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
 	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212)
 	... 9 more
+!SESSION 2025-03-04 08:30:48.080 -----------------------------------------------
+eclipse.buildId=Version 1.18.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-03-04 08:31:19.350
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-03-04 08:31:19.356
+!MESSAGE Log4j2 initialized with config file D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-03-04 08:31:31.788
+!MESSAGE Started RMI Server, listening on port 41337

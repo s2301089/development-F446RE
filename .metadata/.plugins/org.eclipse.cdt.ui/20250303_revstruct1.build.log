@@ -1,4 +1,4 @@
-16:57:55 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+08:34:21 **** ビルド of configuration Debug for project 20250303_revstruct1 ****
 make -j16 all 
 arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
 arm-none-eabi-gcc -o "20250303_revstruct1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_revstruct1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_revstruct1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -13,5 +13,5 @@ Finished building: default.size.stdout
 Finished building: 20250303_revstruct1.list
  
 
-16:57:56 Build Finished. 0 errors, 0 warnings. (経過 1s.264ms)
+08:34:23 Build Finished. 0 errors, 0 warnings. (経過 1s.551ms)
 
