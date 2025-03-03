@@ -15,7 +15,6 @@ int getData(UART_HandleTypeDef* huart,getdata* revdata){
 		AddArray(huart,Rdata);
 		if(ChSUM(Rdata) == 0xed){
 			AddStruct(revdata,Rdata);
-			HAL_UART_Abort(huart);
 			memset(Rdata,0x00,sizeof(Rdata));
 			return 0;
 		}
