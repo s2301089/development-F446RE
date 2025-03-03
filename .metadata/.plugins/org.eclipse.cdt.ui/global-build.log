@@ -2923,3 +2923,1326 @@ Finished building: 20250221_analogread.list
 Finished building: 20250221_analogread.bin
  
  
+11:30:58 **** ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f446retx.d" -MT"Core/Startup/startup_stm32f446retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f446retx.o" "../Core/Startup/startup_stm32f446retx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+   7952	     12	   1644	   9608	   2588	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+11:31:07 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  11728	    104	   1976	  13808	   35f0	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+12:48:36 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  11216	    104	   1976	  13296	   33f0	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+12:50:04 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  11188	    104	   1976	  13268	   33d4	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+12:56:48 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  11876	    104	   1976	  13956	   3684	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+13:01:22 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:156,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Core/Src/main.c: In function 'main':
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:1121:29: error: invalid initializer
+ 1121 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                             ^
+../Core/Src/main.c:93:24: note: in expansion of macro 'GPIOA'
+   93 |   GPIO_TypeDef Group = GPIOA;
+      |                        ^~~~~
+../Core/Src/main.c:105:29: error: incompatible type for argument 1 of 'HAL_GPIO_WritePin'
+  105 |           HAL_GPIO_WritePin(Group, GPIO_PIN_0, 1);
+      |                             ^~~~~
+      |                             |
+      |                             GPIO_TypeDef
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:279:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:235:38: note: expected 'GPIO_TypeDef *' but argument is of type 'GPIO_TypeDef'
+  235 | void HAL_GPIO_WritePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState);
+      |                        ~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:108:29: error: incompatible type for argument 1 of 'HAL_GPIO_WritePin'
+  108 |           HAL_GPIO_WritePin(Group, GPIO_PIN_0, 0);
+      |                             ^~~~~
+      |                             |
+      |                             GPIO_TypeDef
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:235:38: note: expected 'GPIO_TypeDef *' but argument is of type 'GPIO_TypeDef'
+  235 | void HAL_GPIO_WritePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState);
+      |                        ~~~~~~~~~~~~~~^~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:01:32 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  11880	    104	   1976	  13960	   3688	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+13:03:21 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:94:3: error: unknown type name 'bool'
+   94 |   bool status = 1;
+      |   ^~~~
+../Core/Src/main.c:25:1: note: 'bool' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+   24 | #include <stdio.h>
+  +++ |+#include <stdbool.h>
+   25 | /* USER CODE END Includes */
+../Core/Src/main.c:108:18: warning: self-comparison always evaluates to false [-Wtautological-compare]
+  108 |           status != status;
+      |                  ^~
+../Core/Src/main.c:108:11: warning: statement with no effect [-Wunused-value]
+  108 |           status != status;
+      |           ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:04:34 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:108:18: warning: self-comparison always evaluates to false [-Wtautological-compare]
+  108 |           status != status;
+      |                  ^~
+../Core/Src/main.c:108:11: warning: statement with no effect [-Wunused-value]
+  108 |           status != status;
+      |           ^~~~~~
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  13356	    104	   1976	  15436	   3c4c	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+13:04:59 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  13368	    104	   1976	  15448	   3c58	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+13:05:59 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  13372	    104	   1976	  15452	   3c5c	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+13:06:26 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:94:18: error: 'GPIO_Pin_0' undeclared (first use in this function); did you mean 'GPIO_PIN_0'?
+   94 |   uint16_t pin = GPIO_Pin_0;
+      |                  ^~~~~~~~~~
+      |                  GPIO_PIN_0
+../Core/Src/main.c:94:18: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:06:35 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:94:18: error: 'GPIO_Pin_0' undeclared (first use in this function); did you mean 'GPIO_PIN_0'?
+   94 |   uint16_t pin = GPIO_Pin_0;
+      |                  ^~~~~~~~~~
+      |                  GPIO_PIN_0
+../Core/Src/main.c:94:18: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:07:13 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  13372	    104	   1976	  15452	   3c5c	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+13:09:15 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  13372	    104	   1976	  15452	   3c5c	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+13:09:37 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  13372	    104	   1976	  15452	   3c5c	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+13:10:31 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  13472	    104	   1976	  15552	   3cc0	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+13:13:24 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  13532	    104	   1976	  15612	   3cfc	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+13:14:35 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:112:23: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'GPIO_TypeDef *' [-Wformat=]
+  112 |           printf("%d %s\r\n",status,Group);
+      |                      ~^             ~~~~~
+      |                       |             |
+      |                       char *        GPIO_TypeDef *
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  13548	    104	   1976	  15628	   3d0c	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+13:17:10 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:23: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'GPIO_TypeDef *' [-Wformat=]
+  113 |           printf("%d %s\r\n",status,Group);
+      |                      ~^             ~~~~~
+      |                       |             |
+      |                       char *        GPIO_TypeDef *
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  13560	    104	   1976	  15640	   3d18	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+13:18:43 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:112:23: warning: format '%c' expects argument of type 'int', but argument 3 has type 'GPIO_TypeDef *' [-Wformat=]
+  112 |           printf("%d %c\r\n",status,Group);
+      |                      ~^             ~~~~~
+      |                       |             |
+      |                       int           GPIO_TypeDef *
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  13548	    104	   1976	  15628	   3d0c	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+13:19:01 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  13548	    104	   1976	  15628	   3d0c	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+13:23:10 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  11424	    104	   1976	  13504	   34c0	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+13:23:25 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:95:7: warning: unused variable 'status' [-Wunused-variable]
+   95 |   int status = 1;
+      |       ^~~~~~
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  11408	    104	   1976	  13488	   34b0	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+13:26:28 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  11404	    104	   1976	  13484	   34ac	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+13:27:05 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  13576	    104	   1976	  15656	   3d28	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+13:30:20 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:117:11: warning: implicit declaration of function 'Toggle' [-Wimplicit-function-declaration]
+  117 |           Toggle(Group,pin,500);
+      |           ^~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:249:6: warning: conflicting types for 'Toggle'; have 'void(GPIO_TypeDef *, uint16_t,  unsigned int)' {aka 'void(GPIO_TypeDef *, short unsigned int,  unsigned int)'}
+  249 | void Toggle(GPIO_TypeDef* Group,uint16_t Pin,unsigned int delay){
+      |      ^~~~~~
+../Core/Src/main.c:117:11: note: previous implicit declaration of 'Toggle' with type 'void(GPIO_TypeDef *, uint16_t,  unsigned int)' {aka 'void(GPIO_TypeDef *, short unsigned int,  unsigned int)'}
+  117 |           Toggle(Group,pin,500);
+      |           ^~~~~~
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  13612	    104	   1976	  15692	   3d4c	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+13:37:15 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:117:11: warning: implicit declaration of function 'Toggle' [-Wimplicit-function-declaration]
+  117 |           Toggle(Group,pin,500);
+      |           ^~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:249:6: warning: conflicting types for 'Toggle'; have 'void(GPIO_TypeDef *, uint16_t,  short unsigned int)' {aka 'void(GPIO_TypeDef *, short unsigned int,  short unsigned int)'}
+  249 | void Toggle(GPIO_TypeDef* Group,uint16_t Pin,short unsigned int delay){
+      |      ^~~~~~
+../Core/Src/main.c:117:11: note: previous implicit declaration of 'Toggle' with type 'void(GPIO_TypeDef *, uint16_t,  short unsigned int)' {aka 'void(GPIO_TypeDef *, short unsigned int,  short unsigned int)'}
+  117 |           Toggle(Group,pin,500);
+      |           ^~~~~~
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  13616	    104	   1976	  15696	   3d50	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+13:37:56 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:117:11: warning: implicit declaration of function 'Toggle' [-Wimplicit-function-declaration]
+  117 |           Toggle(Group,pin,500);
+      |           ^~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:249:6: warning: conflicting types for 'Toggle'; have 'void(GPIO_TypeDef *, uint16_t,  unsigned int)' {aka 'void(GPIO_TypeDef *, short unsigned int,  unsigned int)'}
+  249 | void Toggle(GPIO_TypeDef* Group,uint16_t Pin,unsigned int delay){
+      |      ^~~~~~
+../Core/Src/main.c:117:11: note: previous implicit declaration of 'Toggle' with type 'void(GPIO_TypeDef *, uint16_t,  unsigned int)' {aka 'void(GPIO_TypeDef *, short unsigned int,  unsigned int)'}
+  117 |           Toggle(Group,pin,500);
+      |           ^~~~~~
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  13612	    104	   1976	  15692	   3d4c	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+13:48:22 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:110:19: error: 'Group' undeclared (first use in this function)
+  110 |                   Group = PA;
+      |                   ^~~~~
+../Core/Src/main.c:110:19: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:121:11: warning: implicit declaration of function 'Toggle' [-Wimplicit-function-declaration]
+  121 |           Toggle(Group,pin,500);
+      |           ^~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:253:6: warning: conflicting types for 'Toggle'; have 'void(GPIO_TypeDef *, uint16_t,  unsigned int)' {aka 'void(GPIO_TypeDef *, short unsigned int,  unsigned int)'}
+  253 | void Toggle(GPIO_TypeDef* Group,uint16_t Pin,unsigned int delay){
+      |      ^~~~~~
+../Core/Src/main.c:121:11: note: previous implicit declaration of 'Toggle' with type 'void(GPIO_TypeDef *, uint16_t,  unsigned int)' {aka 'void(GPIO_TypeDef *, short unsigned int,  unsigned int)'}
+  121 |           Toggle(Group,pin,500);
+      |           ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:48:59 **** インクリメンタル・ビルド of configuration Debug for project 20250303_pin_name_value ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:122:11: warning: implicit declaration of function 'Toggle' [-Wimplicit-function-declaration]
+  122 |           Toggle(Group,pin,500);
+      |           ^~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:254:6: warning: conflicting types for 'Toggle'; have 'void(GPIO_TypeDef *, uint16_t,  unsigned int)' {aka 'void(GPIO_TypeDef *, short unsigned int,  unsigned int)'}
+  254 | void Toggle(GPIO_TypeDef* Group,uint16_t Pin,unsigned int delay){
+      |      ^~~~~~
+../Core/Src/main.c:122:11: note: previous implicit declaration of 'Toggle' with type 'void(GPIO_TypeDef *, uint16_t,  unsigned int)' {aka 'void(GPIO_TypeDef *, short unsigned int,  unsigned int)'}
+  122 |           Toggle(Group,pin,500);
+      |           ^~~~~~
+arm-none-eabi-gcc -o "20250303_pin_name_value.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_pin_name_value\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_pin_name_value.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_pin_name_value.elf
+ 
+arm-none-eabi-size  20250303_pin_name_value.elf 
+arm-none-eabi-objdump -h -S 20250303_pin_name_value.elf  > "20250303_pin_name_value.list"
+   text	   data	    bss	    dec	    hex	filename
+  13612	    104	   1976	  15692	   3d4c	20250303_pin_name_value.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_pin_name_value.list
+ 
+15:11:51 **** ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f446retx.d" -MT"Core/Startup/startup_stm32f446retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f446retx.o" "../Core/Startup/startup_stm32f446retx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+arm-none-eabi-gcc -o "20250303_revstruct1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_revstruct1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_revstruct1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_revstruct1.elf
+ 
+arm-none-eabi-size  20250303_revstruct1.elf 
+arm-none-eabi-objdump -h -S 20250303_revstruct1.elf  > "20250303_revstruct1.list"
+   text	   data	    bss	    dec	    hex	filename
+   8152	     12	   1644	   9808	   2650	20250303_revstruct1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_revstruct1.list
+ 
+15:12:01 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250303_revstruct1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_revstruct1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_revstruct1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_revstruct1.elf
+ 
+arm-none-eabi-size  20250303_revstruct1.elf 
+arm-none-eabi-objdump -h -S 20250303_revstruct1.elf  > "20250303_revstruct1.list"
+   text	   data	    bss	    dec	    hex	filename
+  11928	    104	   1976	  14008	   36b8	20250303_revstruct1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_revstruct1.list
+ 
+16:42:33 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+In file included from ../Core/Src/USART_Arduino.c:8:
+../Core/Inc/USART_Arduino.h:12:9: error: unknown type name 'uint8_t'
+   12 |         uint8_t LX = 0x80;
+      |         ^~~~~~~
+../Core/Inc/USART_Arduino.h:12:20: error: expected ':', ',', ';', '}' or '__attribute__' before '=' token
+   12 |         uint8_t LX = 0x80;
+      |                    ^
+../Core/Src/USART_Arduino.c:12:13: error: unknown type name 'UART_HandleTypeDef'
+   12 | int getData(UART_HandleTypeDef* huart,getdata* revdata){
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/USART_Arduino.c:24:1: error: unknown type name 'uint8_t'
+   24 | uint8_t RevAF(UART_HandleTypeDef* huart){
+      | ^~~~~~~
+../Core/Src/USART_Arduino.c:11:1: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+   10 | #include <stdio.h>
+  +++ |+#include <stdint.h>
+   11 | 
+../Core/Src/USART_Arduino.c:24:15: error: unknown type name 'UART_HandleTypeDef'
+   24 | uint8_t RevAF(UART_HandleTypeDef* huart){
+      |               ^~~~~~~~~~~~~~~~~~
+../Core/Src/USART_Arduino.c:47:15: error: unknown type name 'UART_HandleTypeDef'
+   47 | void AddArray(UART_HandleTypeDef* huart,uint8_t* Adata){
+      |               ^~~~~~~~~~~~~~~~~~
+../Core/Src/USART_Arduino.c:47:41: error: unknown type name 'uint8_t'
+   47 | void AddArray(UART_HandleTypeDef* huart,uint8_t* Adata){
+      |                                         ^~~~~~~
+../Core/Src/USART_Arduino.c:47:41: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Core/Src/USART_Arduino.c:64:1: error: unknown type name 'uint8_t'
+   64 | uint8_t ChSUM(uint8_t* Adata){
+      | ^~~~~~~
+../Core/Src/USART_Arduino.c:64:1: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Core/Src/USART_Arduino.c:64:15: error: unknown type name 'uint8_t'
+   64 | uint8_t ChSUM(uint8_t* Adata){
+      |               ^~~~~~~
+../Core/Src/USART_Arduino.c:64:15: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Core/Src/USART_Arduino.c:82:31: error: unknown type name 'uint8_t'
+   82 | void AddStruct(getdata* Udata,uint8_t* Adata){
+      |                               ^~~~~~~
+../Core/Src/USART_Arduino.c:82:31: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Core/Src/USART_Arduino.c: In function 'StructInit':
+../Core/Src/USART_Arduino.c:113:14: error: 'getdata' has no member named 'LX'
+  113 |         Udata->LX = 0x80;
+      |              ^~
+../Core/Src/USART_Arduino.c:114:14: error: 'getdata' has no member named 'LY'
+  114 |         Udata->LY = 0x80;
+      |              ^~
+../Core/Src/USART_Arduino.c:115:14: error: 'getdata' has no member named 'L2'
+  115 |         Udata->L2 = 0x00;
+      |              ^~
+../Core/Src/USART_Arduino.c:116:14: error: 'getdata' has no member named 'RX'
+  116 |         Udata->RX = 0x80;
+      |              ^~
+../Core/Src/USART_Arduino.c:117:14: error: 'getdata' has no member named 'RY'
+  117 |         Udata->RY = 0x80;
+      |              ^~
+../Core/Src/USART_Arduino.c:118:14: error: 'getdata' has no member named 'R2'
+  118 |         Udata->R2 = 0x00;
+      |              ^~
+../Core/Src/USART_Arduino.c:120:14: error: 'getdata' has no member named 'TRIANGLE'
+  120 |         Udata->TRIANGLE = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:121:14: error: 'getdata' has no member named 'CIRCLE'
+  121 |         Udata->CIRCLE = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:122:14: error: 'getdata' has no member named 'CROSS'
+  122 |         Udata->CROSS = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:123:14: error: 'getdata' has no member named 'SQUARE'
+  123 |         Udata->SQUARE = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:124:14: error: 'getdata' has no member named 'UP'
+  124 |         Udata->UP = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:125:14: error: 'getdata' has no member named 'RIGHT'
+  125 |         Udata->RIGHT = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:126:14: error: 'getdata' has no member named 'DOWN'
+  126 |         Udata->DOWN = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:127:14: error: 'getdata' has no member named 'LEFT'
+  127 |         Udata->LEFT = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:128:14: error: 'getdata' has no member named 'L1'
+  128 |         Udata->L1 = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:129:14: error: 'getdata' has no member named 'L3'
+  129 |         Udata->L3 = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:130:14: error: 'getdata' has no member named 'R1'
+  130 |         Udata->R1 = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:131:14: error: 'getdata' has no member named 'R3'
+  131 |         Udata->R3 = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:132:14: error: 'getdata' has no member named 'SHARE'
+  132 |         Udata->SHARE = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:133:14: error: 'getdata' has no member named 'OPTION'
+  133 |         Udata->OPTION = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:134:14: error: 'getdata' has no member named 'PS'
+  134 |         Udata->PS = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:135:14: error: 'getdata' has no member named 'TOUCHPAD'
+  135 |         Udata->TOUCHPAD = 0;
+      |              ^~
+make: *** [Core/Src/subdir.mk:37: Core/Src/USART_Arduino.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Core/Src/main.c:26:
+../Core/Inc/USART_Arduino.h:12:20: error: expected ':', ',', ';', '}' or '__attribute__' before '=' token
+   12 |         uint8_t LX = 0x80;
+      |                    ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:97:11: warning: unused variable 'data' [-Wunused-variable]
+   97 |   getdata data;
+      |           ^~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:46:45 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/USART_Arduino.c:8:
+../Core/Inc/USART_Arduino.h:36:9: error: unknown type name 'uint8_t'
+   36 |         uint8_t LX;
+      |         ^~~~~~~
+../Core/Inc/USART_Arduino.h:37:9: error: unknown type name 'uint8_t'
+   37 |         uint8_t LY;
+      |         ^~~~~~~
+../Core/Inc/USART_Arduino.h:38:9: error: unknown type name 'uint8_t'
+   38 |         uint8_t L2;
+      |         ^~~~~~~
+../Core/Inc/USART_Arduino.h:39:9: error: unknown type name 'uint8_t'
+   39 |         uint8_t RX;
+      |         ^~~~~~~
+../Core/Inc/USART_Arduino.h:40:9: error: unknown type name 'uint8_t'
+   40 |         uint8_t RY;
+      |         ^~~~~~~
+../Core/Inc/USART_Arduino.h:41:9: error: unknown type name 'uint8_t'
+   41 |         uint8_t R2;
+      |         ^~~~~~~
+../Core/Inc/USART_Arduino.h:43:9: error: unknown type name 'bool'
+   43 |         bool TRIANGLE;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:44:9: error: unknown type name 'bool'
+   44 |         bool CIRCLE;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:45:9: error: unknown type name 'bool'
+   45 |         bool CROSS;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:46:9: error: unknown type name 'bool'
+   46 |         bool SQUARE;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:47:9: error: unknown type name 'bool'
+   47 |         bool UP;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:48:9: error: unknown type name 'bool'
+   48 |         bool RIGHT;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:49:9: error: unknown type name 'bool'
+   49 |         bool DOWN;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:50:9: error: unknown type name 'bool'
+   50 |         bool LEFT;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:51:9: error: unknown type name 'bool'
+   51 |         bool L1;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:52:9: error: unknown type name 'bool'
+   52 |         bool L3;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:53:9: error: unknown type name 'bool'
+   53 |         bool R1;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:54:9: error: unknown type name 'bool'
+   54 |         bool R3;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:55:9: error: unknown type name 'bool'
+   55 |         bool SHARE;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:56:9: error: unknown type name 'bool'
+   56 |         bool OPTION;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:57:9: error: unknown type name 'bool'
+   57 |         bool PS;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:58:9: error: unknown type name 'bool'
+   58 |         bool TOUCHPAD;
+      |         ^~~~
+../Core/Src/USART_Arduino.c:12:13: error: unknown type name 'UART_HandleTypeDef'
+   12 | int getData(UART_HandleTypeDef* huart,getdata* revdata){
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/USART_Arduino.c:24:1: error: unknown type name 'uint8_t'
+   24 | uint8_t RevAF(UART_HandleTypeDef* huart){
+      | ^~~~~~~
+../Core/Src/USART_Arduino.c:11:1: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+   10 | #include <stdio.h>
+  +++ |+#include <stdint.h>
+   11 | 
+../Core/Src/USART_Arduino.c:24:15: error: unknown type name 'UART_HandleTypeDef'
+   24 | uint8_t RevAF(UART_HandleTypeDef* huart){
+      |               ^~~~~~~~~~~~~~~~~~
+../Core/Src/USART_Arduino.c:47:15: error: unknown type name 'UART_HandleTypeDef'
+   47 | void AddArray(UART_HandleTypeDef* huart,uint8_t* Adata){
+      |               ^~~~~~~~~~~~~~~~~~
+../Core/Src/USART_Arduino.c:47:41: error: unknown type name 'uint8_t'
+   47 | void AddArray(UART_HandleTypeDef* huart,uint8_t* Adata){
+      |                                         ^~~~~~~
+../Core/Src/USART_Arduino.c:47:41: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Core/Src/USART_Arduino.c:64:1: error: unknown type name 'uint8_t'
+   64 | uint8_t ChSUM(uint8_t* Adata){
+      | ^~~~~~~
+../Core/Src/USART_Arduino.c:64:1: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Core/Src/USART_Arduino.c:64:15: error: unknown type name 'uint8_t'
+   64 | uint8_t ChSUM(uint8_t* Adata){
+      |               ^~~~~~~
+../Core/Src/USART_Arduino.c:64:15: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Core/Src/USART_Arduino.c:82:31: error: unknown type name 'uint8_t'
+   82 | void AddStruct(getdata* Udata,uint8_t* Adata){
+      |                               ^~~~~~~
+../Core/Src/USART_Arduino.c:82:31: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+make: *** [Core/Src/subdir.mk:37: Core/Src/USART_Arduino.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Core/Src/main.c:26:
+../Core/Inc/USART_Arduino.h:43:9: error: unknown type name 'bool'
+   43 |         bool TRIANGLE;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:44:9: error: unknown type name 'bool'
+   44 |         bool CIRCLE;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:45:9: error: unknown type name 'bool'
+   45 |         bool CROSS;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:46:9: error: unknown type name 'bool'
+   46 |         bool SQUARE;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:47:9: error: unknown type name 'bool'
+   47 |         bool UP;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:48:9: error: unknown type name 'bool'
+   48 |         bool RIGHT;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:49:9: error: unknown type name 'bool'
+   49 |         bool DOWN;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:50:9: error: unknown type name 'bool'
+   50 |         bool LEFT;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:51:9: error: unknown type name 'bool'
+   51 |         bool L1;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:52:9: error: unknown type name 'bool'
+   52 |         bool L3;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:53:9: error: unknown type name 'bool'
+   53 |         bool R1;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:54:9: error: unknown type name 'bool'
+   54 |         bool R3;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:55:9: error: unknown type name 'bool'
+   55 |         bool SHARE;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:56:9: error: unknown type name 'bool'
+   56 |         bool OPTION;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:57:9: error: unknown type name 'bool'
+   57 |         bool PS;
+      |         ^~~~
+../Core/Inc/USART_Arduino.h:58:9: error: unknown type name 'bool'
+   58 |         bool TOUCHPAD;
+      |         ^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:97:11: warning: unused variable 'data' [-Wunused-variable]
+   97 |   getdata data;
+      |           ^~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:47:43 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/USART_Arduino.c:8:
+../Core/Inc/USART_Arduino.h:38:9: error: unknown type name 'uint8_t'
+   38 |         uint8_t LX;
+      |         ^~~~~~~
+../Core/Inc/USART_Arduino.h:39:9: error: unknown type name 'uint8_t'
+   39 |         uint8_t LY;
+      |         ^~~~~~~
+../Core/Inc/USART_Arduino.h:40:9: error: unknown type name 'uint8_t'
+   40 |         uint8_t L2;
+      |         ^~~~~~~
+../Core/Inc/USART_Arduino.h:41:9: error: unknown type name 'uint8_t'
+   41 |         uint8_t RX;
+      |         ^~~~~~~
+../Core/Inc/USART_Arduino.h:42:9: error: unknown type name 'uint8_t'
+   42 |         uint8_t RY;
+      |         ^~~~~~~
+../Core/Inc/USART_Arduino.h:43:9: error: unknown type name 'uint8_t'
+   43 |         uint8_t R2;
+      |         ^~~~~~~
+../Core/Src/USART_Arduino.c:11:13: error: unknown type name 'UART_HandleTypeDef'
+   11 | int getData(UART_HandleTypeDef* huart,getdata* revdata){
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/USART_Arduino.c:23:1: error: unknown type name 'uint8_t'
+   23 | uint8_t RevAF(UART_HandleTypeDef* huart){
+      | ^~~~~~~
+../Core/Src/USART_Arduino.c:10:1: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+    9 | #include <stdio.h>
+  +++ |+#include <stdint.h>
+   10 | 
+../Core/Src/USART_Arduino.c:23:15: error: unknown type name 'UART_HandleTypeDef'
+   23 | uint8_t RevAF(UART_HandleTypeDef* huart){
+      |               ^~~~~~~~~~~~~~~~~~
+../Core/Src/USART_Arduino.c:46:15: error: unknown type name 'UART_HandleTypeDef'
+   46 | void AddArray(UART_HandleTypeDef* huart,uint8_t* Adata){
+      |               ^~~~~~~~~~~~~~~~~~
+../Core/Src/USART_Arduino.c:46:41: error: unknown type name 'uint8_t'
+   46 | void AddArray(UART_HandleTypeDef* huart,uint8_t* Adata){
+      |                                         ^~~~~~~
+../Core/Src/USART_Arduino.c:46:41: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Core/Src/USART_Arduino.c:63:1: error: unknown type name 'uint8_t'
+   63 | uint8_t ChSUM(uint8_t* Adata){
+      | ^~~~~~~
+../Core/Src/USART_Arduino.c:63:1: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Core/Src/USART_Arduino.c:63:15: error: unknown type name 'uint8_t'
+   63 | uint8_t ChSUM(uint8_t* Adata){
+      |               ^~~~~~~
+../Core/Src/USART_Arduino.c:63:15: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Core/Src/USART_Arduino.c:81:31: error: unknown type name 'uint8_t'
+   81 | void AddStruct(getdata* Udata,uint8_t* Adata){
+      |                               ^~~~~~~
+../Core/Src/USART_Arduino.c:81:31: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+make: *** [Core/Src/subdir.mk:37: Core/Src/USART_Arduino.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:97:11: warning: unused variable 'data' [-Wunused-variable]
+   97 |   getdata data;
+      |           ^~~~
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:48:31 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/USART_Arduino.c:11:13: error: unknown type name 'UART_HandleTypeDef'
+   11 | int getData(UART_HandleTypeDef* huart,getdata* revdata){
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/USART_Arduino.c:23:15: error: unknown type name 'UART_HandleTypeDef'
+   23 | uint8_t RevAF(UART_HandleTypeDef* huart){
+      |               ^~~~~~~~~~~~~~~~~~
+../Core/Src/USART_Arduino.c:46:15: error: unknown type name 'UART_HandleTypeDef'
+   46 | void AddArray(UART_HandleTypeDef* huart,uint8_t* Adata){
+      |               ^~~~~~~~~~~~~~~~~~
+../Core/Src/USART_Arduino.c: In function 'AddStruct':
+../Core/Src/USART_Arduino.c:82:9: warning: implicit declaration of function 'StructInit' [-Wimplicit-function-declaration]
+   82 |         StructInit(Udata);
+      |         ^~~~~~~~~~
+../Core/Src/USART_Arduino.c: At top level:
+../Core/Src/USART_Arduino.c:111:6: warning: conflicting types for 'StructInit'; have 'void(getdata *)'
+  111 | void StructInit(getdata* Udata){
+      |      ^~~~~~~~~~
+../Core/Src/USART_Arduino.c:82:9: note: previous implicit declaration of 'StructInit' with type 'void(getdata *)'
+   82 |         StructInit(Udata);
+      |         ^~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/USART_Arduino.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:97:11: warning: unused variable 'data' [-Wunused-variable]
+   97 |   getdata data;
+      |           ^~~~
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:50:51 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/USART_Arduino.c: In function 'getData':
+../Core/Src/USART_Arduino.c:13:12: warning: implicit declaration of function 'RevAF' [-Wimplicit-function-declaration]
+   13 |         if(RevAF(huart) == 0xaf){
+      |            ^~~~~
+../Core/Src/USART_Arduino.c:14:17: warning: implicit declaration of function 'AddArray' [-Wimplicit-function-declaration]
+   14 |                 AddArray(huart,Rdata);
+      |                 ^~~~~~~~
+../Core/Src/USART_Arduino.c:15:20: warning: implicit declaration of function 'ChSUM' [-Wimplicit-function-declaration]
+   15 |                 if(ChSUM(Rdata) == 0xed){
+      |                    ^~~~~
+../Core/Src/USART_Arduino.c:16:25: warning: implicit declaration of function 'AddStruct' [-Wimplicit-function-declaration]
+   16 |                         AddStruct(revdata,Rdata);
+      |                         ^~~~~~~~~
+../Core/Src/USART_Arduino.c: At top level:
+../Core/Src/USART_Arduino.c:23:9: error: conflicting types for 'RevAF'; have 'uint8_t(UART_HandleTypeDef *)' {aka 'unsigned char(struct __UART_HandleTypeDef *)'}
+   23 | uint8_t RevAF(UART_HandleTypeDef* huart){
+      |         ^~~~~
+../Core/Src/USART_Arduino.c:13:12: note: previous implicit declaration of 'RevAF' with type 'int()'
+   13 |         if(RevAF(huart) == 0xaf){
+      |            ^~~~~
+../Core/Src/USART_Arduino.c:46:6: warning: conflicting types for 'AddArray'; have 'void(UART_HandleTypeDef *, uint8_t *)' {aka 'void(struct __UART_HandleTypeDef *, unsigned char *)'}
+   46 | void AddArray(UART_HandleTypeDef* huart,uint8_t* Adata){
+      |      ^~~~~~~~
+../Core/Src/USART_Arduino.c:14:17: note: previous implicit declaration of 'AddArray' with type 'void(UART_HandleTypeDef *, uint8_t *)' {aka 'void(struct __UART_HandleTypeDef *, unsigned char *)'}
+   14 |                 AddArray(huart,Rdata);
+      |                 ^~~~~~~~
+../Core/Src/USART_Arduino.c:63:9: error: conflicting types for 'ChSUM'; have 'uint8_t(uint8_t *)' {aka 'unsigned char(unsigned char *)'}
+   63 | uint8_t ChSUM(uint8_t* Adata){
+      |         ^~~~~
+../Core/Src/USART_Arduino.c:15:20: note: previous implicit declaration of 'ChSUM' with type 'int()'
+   15 |                 if(ChSUM(Rdata) == 0xed){
+      |                    ^~~~~
+../Core/Src/USART_Arduino.c:81:6: warning: conflicting types for 'AddStruct'; have 'void(getdata *, uint8_t *)' {aka 'void(getdata *, unsigned char *)'}
+   81 | void AddStruct(getdata* Udata,uint8_t* Adata){
+      |      ^~~~~~~~~
+../Core/Src/USART_Arduino.c:16:25: note: previous implicit declaration of 'AddStruct' with type 'void(getdata *, uint8_t *)' {aka 'void(getdata *, unsigned char *)'}
+   16 |                         AddStruct(revdata,Rdata);
+      |                         ^~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:97:11: warning: unused variable 'data' [-Wunused-variable]
+   97 |   getdata data;
+      |           ^~~~
+../Core/Src/USART_Arduino.c: In function 'AddStruct':
+../Core/Src/USART_Arduino.c:82:9: warning: implicit declaration of function 'StructInit' [-Wimplicit-function-declaration]
+   82 |         StructInit(Udata);
+      |         ^~~~~~~~~~
+../Core/Src/USART_Arduino.c: At top level:
+../Core/Src/USART_Arduino.c:111:6: warning: conflicting types for 'StructInit'; have 'void(getdata *)'
+  111 | void StructInit(getdata* Udata){
+      |      ^~~~~~~~~~
+../Core/Src/USART_Arduino.c:82:9: note: previous implicit declaration of 'StructInit' with type 'void(getdata *)'
+   82 |         StructInit(Udata);
+      |         ^~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/USART_Arduino.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:53:48 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:97:11: warning: unused variable 'data' [-Wunused-variable]
+   97 |   getdata data;
+      |           ^~~~
+arm-none-eabi-gcc -o "20250303_revstruct1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_revstruct1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_revstruct1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_revstruct1.elf
+ 
+arm-none-eabi-size  20250303_revstruct1.elf 
+arm-none-eabi-objdump -h -S 20250303_revstruct1.elf  > "20250303_revstruct1.list"
+   text	   data	    bss	    dec	    hex	filename
+  11932	    104	   1976	  14012	   36bc	20250303_revstruct1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_revstruct1.list
+ 
+16:54:33 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/USART_Arduino.c:8:
+../Core/Inc/USART_Arduino.h:65:13: error: unknown type name 'UART_HandleTypeDef'
+   65 | int getData(UART_HandleTypeDef* huart,getdata* revdata);
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Inc/USART_Arduino.h:66:15: error: unknown type name 'UART_HandleTypeDef'
+   66 | uint8_t RevAF(UART_HandleTypeDef* huart);
+      |               ^~~~~~~~~~~~~~~~~~
+../Core/Inc/USART_Arduino.h:67:15: error: unknown type name 'UART_HandleTypeDef'
+   67 | void AddArray(UART_HandleTypeDef* huart,uint8_t* Adata);
+      |               ^~~~~~~~~~~~~~~~~~
+../Core/Src/USART_Arduino.c:11:13: error: unknown type name 'UART_HandleTypeDef'
+   11 | int getData(UART_HandleTypeDef* huart,getdata* revdata){
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/USART_Arduino.c:23:15: error: unknown type name 'UART_HandleTypeDef'
+   23 | uint8_t RevAF(UART_HandleTypeDef* huart){
+      |               ^~~~~~~~~~~~~~~~~~
+../Core/Src/USART_Arduino.c:46:15: error: unknown type name 'UART_HandleTypeDef'
+   46 | void AddArray(UART_HandleTypeDef* huart,uint8_t* Adata){
+      |               ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/USART_Arduino.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:97:11: warning: unused variable 'data' [-Wunused-variable]
+   97 |   getdata data;
+      |           ^~~~
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:54:40 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:97:11: warning: unused variable 'data' [-Wunused-variable]
+   97 |   getdata data;
+      |           ^~~~
+arm-none-eabi-gcc -o "20250303_revstruct1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_revstruct1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_revstruct1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_revstruct1.elf
+ 
+arm-none-eabi-size  20250303_revstruct1.elf 
+arm-none-eabi-objdump -h -S 20250303_revstruct1.elf  > "20250303_revstruct1.list"
+   text	   data	    bss	    dec	    hex	filename
+  11932	    104	   1976	  14012	   36bc	20250303_revstruct1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_revstruct1.list
+ 
+16:55:05 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/USART_Arduino.c:8:
+../Core/Inc/USART_Arduino.h:16:20: error: expected ':', ',', ';', '}' or '__attribute__' before '=' token
+   16 |         uint8_t LX = 0x80;
+      |                    ^
+../Core/Src/USART_Arduino.c: In function 'AddStruct':
+../Core/Src/USART_Arduino.c:83:14: error: 'getdata' has no member named 'LX'
+   83 |         Udata->LX = Adata[1];
+      |              ^~
+../Core/Src/USART_Arduino.c:84:14: error: 'getdata' has no member named 'LY'
+   84 |         Udata->LY = Adata[2];
+      |              ^~
+../Core/Src/USART_Arduino.c:85:14: error: 'getdata' has no member named 'L2'
+   85 |         Udata->L2 = Adata[5];
+      |              ^~
+../Core/Src/USART_Arduino.c:86:14: error: 'getdata' has no member named 'RX'
+   86 |         Udata->RX = Adata[3];
+      |              ^~
+../Core/Src/USART_Arduino.c:87:14: error: 'getdata' has no member named 'RY'
+   87 |         Udata->RY = Adata[4];
+      |              ^~
+../Core/Src/USART_Arduino.c:88:14: error: 'getdata' has no member named 'R2'
+   88 |         Udata->R2 = Adata[6];
+      |              ^~
+../Core/Src/USART_Arduino.c:90:38: error: 'getdata' has no member named 'TRIANGLE'
+   90 |         if(Adata[6] & 0x01)     Udata->TRIANGLE = 1;
+      |                                      ^~
+../Core/Src/USART_Arduino.c:91:38: error: 'getdata' has no member named 'CIRCLE'
+   91 |         if(Adata[6] & 0x02)     Udata->CIRCLE   = 1;
+      |                                      ^~
+../Core/Src/USART_Arduino.c:92:38: error: 'getdata' has no member named 'CROSS'
+   92 |         if(Adata[6] & 0x04)     Udata->CROSS    = 1;
+      |                                      ^~
+../Core/Src/USART_Arduino.c:93:38: error: 'getdata' has no member named 'SQUARE'
+   93 |         if(Adata[6] & 0x08)     Udata->SQUARE   = 1;
+      |                                      ^~
+../Core/Src/USART_Arduino.c:94:38: error: 'getdata' has no member named 'UP'
+   94 |         if(Adata[6] & 0x10)     Udata->UP               = 1;
+      |                                      ^~
+../Core/Src/USART_Arduino.c:95:38: error: 'getdata' has no member named 'RIGHT'
+   95 |         if(Adata[6] & 0x20)     Udata->RIGHT    = 1;
+      |                                      ^~
+../Core/Src/USART_Arduino.c:96:38: error: 'getdata' has no member named 'DOWN'
+   96 |         if(Adata[6] & 0x40)     Udata->DOWN     = 1;
+      |                                      ^~
+../Core/Src/USART_Arduino.c:97:38: error: 'getdata' has no member named 'LEFT'
+   97 |         if(Adata[6] & 0x80)     Udata->LEFT             = 1;
+      |                                      ^~
+../Core/Src/USART_Arduino.c:99:38: error: 'getdata' has no member named 'L1'
+   99 |         if(Adata[7] & 0x01)     Udata->L1               = 1;
+      |                                      ^~
+../Core/Src/USART_Arduino.c:100:38: error: 'getdata' has no member named 'L3'
+  100 |         if(Adata[7] & 0x02)     Udata->L3               = 1;
+      |                                      ^~
+../Core/Src/USART_Arduino.c:101:38: error: 'getdata' has no member named 'R1'
+  101 |         if(Adata[7] & 0x04)     Udata->R1               = 1;
+      |                                      ^~
+../Core/Src/USART_Arduino.c:102:38: error: 'getdata' has no member named 'R3'
+  102 |         if(Adata[7] & 0x08)     Udata->R3               = 1;
+      |                                      ^~
+../Core/Src/USART_Arduino.c:103:38: error: 'getdata' has no member named 'SHARE'
+  103 |         if(Adata[7] & 0x10)     Udata->SHARE    = 1;
+      |                                      ^~
+../Core/Src/USART_Arduino.c:104:38: error: 'getdata' has no member named 'OPTION'
+  104 |         if(Adata[7] & 0x20)     Udata->OPTION   = 1;
+      |                                      ^~
+../Core/Src/USART_Arduino.c:105:38: error: 'getdata' has no member named 'PS'
+  105 |         if(Adata[7] & 0x40)     Udata->PS               = 1;
+      |                                      ^~
+../Core/Src/USART_Arduino.c:106:38: error: 'getdata' has no member named 'TOUCHPAD'
+  106 |         if(Adata[7] & 0x80)     Udata->TOUCHPAD = 1;
+      |                                      ^~
+../Core/Src/USART_Arduino.c: In function 'StructInit':
+../Core/Src/USART_Arduino.c:112:14: error: 'getdata' has no member named 'LX'
+  112 |         Udata->LX = 0x80;
+      |              ^~
+../Core/Src/USART_Arduino.c:113:14: error: 'getdata' has no member named 'LY'
+  113 |         Udata->LY = 0x80;
+      |              ^~
+../Core/Src/USART_Arduino.c:114:14: error: 'getdata' has no member named 'L2'
+  114 |         Udata->L2 = 0x00;
+      |              ^~
+../Core/Src/USART_Arduino.c:115:14: error: 'getdata' has no member named 'RX'
+  115 |         Udata->RX = 0x80;
+      |              ^~
+../Core/Src/USART_Arduino.c:116:14: error: 'getdata' has no member named 'RY'
+  116 |         Udata->RY = 0x80;
+      |              ^~
+../Core/Src/USART_Arduino.c:117:14: error: 'getdata' has no member named 'R2'
+  117 |         Udata->R2 = 0x00;
+      |              ^~
+../Core/Src/USART_Arduino.c:119:14: error: 'getdata' has no member named 'TRIANGLE'
+  119 |         Udata->TRIANGLE = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:120:14: error: 'getdata' has no member named 'CIRCLE'
+  120 |         Udata->CIRCLE = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:121:14: error: 'getdata' has no member named 'CROSS'
+  121 |         Udata->CROSS = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:122:14: error: 'getdata' has no member named 'SQUARE'
+  122 |         Udata->SQUARE = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:123:14: error: 'getdata' has no member named 'UP'
+  123 |         Udata->UP = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:124:14: error: 'getdata' has no member named 'RIGHT'
+  124 |         Udata->RIGHT = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:125:14: error: 'getdata' has no member named 'DOWN'
+  125 |         Udata->DOWN = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:126:14: error: 'getdata' has no member named 'LEFT'
+  126 |         Udata->LEFT = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:127:14: error: 'getdata' has no member named 'L1'
+  127 |         Udata->L1 = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:128:14: error: 'getdata' has no member named 'L3'
+  128 |         Udata->L3 = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:129:14: error: 'getdata' has no member named 'R1'
+  129 |         Udata->R1 = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:130:14: error: 'getdata' has no member named 'R3'
+  130 |         Udata->R3 = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:131:14: error: 'getdata' has no member named 'SHARE'
+  131 |         Udata->SHARE = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:132:14: error: 'getdata' has no member named 'OPTION'
+  132 |         Udata->OPTION = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:133:14: error: 'getdata' has no member named 'PS'
+  133 |         Udata->PS = 0;
+      |              ^~
+../Core/Src/USART_Arduino.c:134:14: error: 'getdata' has no member named 'TOUCHPAD'
+  134 |         Udata->TOUCHPAD = 0;
+      |              ^~
+make: *** [Core/Src/subdir.mk:37: Core/Src/USART_Arduino.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Core/Src/main.c:26:
+../Core/Inc/USART_Arduino.h:16:20: error: expected ':', ',', ';', '}' or '__attribute__' before '=' token
+   16 |         uint8_t LX = 0x80;
+      |                    ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:97:11: warning: unused variable 'data' [-Wunused-variable]
+   97 |   getdata data;
+      |           ^~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:55:26 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:97:11: warning: unused variable 'data' [-Wunused-variable]
+   97 |   getdata data;
+      |           ^~~~
+arm-none-eabi-gcc -o "20250303_revstruct1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_revstruct1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_revstruct1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_revstruct1.elf
+ 
+arm-none-eabi-size  20250303_revstruct1.elf 
+arm-none-eabi-objdump -h -S 20250303_revstruct1.elf  > "20250303_revstruct1.list"
+   text	   data	    bss	    dec	    hex	filename
+  11932	    104	   1976	  14012	   36bc	20250303_revstruct1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_revstruct1.list
+ 
+16:56:47 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+../Core/Src/USART_Arduino.c: In function 'getData':
+../Core/Src/USART_Arduino.c:17:25: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+   17 |                         memset(Rdata,0x00,sizeof(Rdata));
+      |                         ^~~~~~
+../Core/Src/USART_Arduino.c:10:1: note: include '<string.h>' or provide a declaration of 'memset'
+    9 | #include <stdio.h>
+  +++ |+#include <string.h>
+   10 | 
+../Core/Src/USART_Arduino.c:17:25: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+   17 |                         memset(Rdata,0x00,sizeof(Rdata));
+      |                         ^~~~~~
+../Core/Src/USART_Arduino.c:17:25: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "20250303_revstruct1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_revstruct1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_revstruct1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_revstruct1.elf
+ 
+arm-none-eabi-size  20250303_revstruct1.elf 
+arm-none-eabi-objdump -h -S 20250303_revstruct1.elf  > "20250303_revstruct1.list"
+   text	   data	    bss	    dec	    hex	filename
+  11932	    104	   1976	  14012	   36bc	20250303_revstruct1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_revstruct1.list
+ 
+16:57:55 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+arm-none-eabi-gcc -o "20250303_revstruct1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_revstruct1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_revstruct1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_revstruct1.elf
+ 
+arm-none-eabi-size  20250303_revstruct1.elf 
+arm-none-eabi-objdump -h -S 20250303_revstruct1.elf  > "20250303_revstruct1.list"
+   text	   data	    bss	    dec	    hex	filename
+  11932	    104	   1976	  14012	   36bc	20250303_revstruct1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_revstruct1.list
+ 

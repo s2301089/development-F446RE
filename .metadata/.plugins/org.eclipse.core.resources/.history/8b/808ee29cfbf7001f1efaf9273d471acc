@@ -1,0 +1,39 @@
+/*
+ * USART_Arduino.h
+ *
+ *  Created on: Mar 3, 2025
+ *      Author: Mitsu
+ */
+
+#ifndef INC_USART_ARDUINO_H_
+#define INC_USART_ARDUINO_H_
+
+typedef struct{
+	uint8_t LX;
+	uint8_t LY;
+	uint8_t L2;
+	uint8_t RX;
+	uint8_t RY;
+	uint8_t R2;
+
+	bool TRIANGLE;
+	bool CIRCLE;
+	bool CROSS;
+	bool SQUARE;
+	bool UP;
+	bool RIGHT;
+	bool DOWN;
+	bool LEFT;
+	bool L1;
+	bool L3;
+	bool R1;
+	bool R3;
+	bool SHARE;
+	bool OPTION;
+	bool PS;
+	bool TOUCHPAD;
+} getdata;
+
+
+
+#endif /* INC_USART_ARDUINO_H_ */

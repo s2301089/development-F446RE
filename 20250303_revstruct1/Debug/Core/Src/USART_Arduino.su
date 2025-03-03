@@ -1,0 +1,6 @@
+../Core/Src/USART_Arduino.c:12:5:getData	32	static
+../Core/Src/USART_Arduino.c:25:9:RevAF	24	static
+../Core/Src/USART_Arduino.c:48:6:AddArray	24	static
+../Core/Src/USART_Arduino.c:65:9:ChSUM	24	static
+../Core/Src/USART_Arduino.c:83:6:AddStruct	16	static
+../Core/Src/USART_Arduino.c:113:6:StructInit	16	static

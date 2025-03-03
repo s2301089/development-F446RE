@@ -1,0 +1,77 @@
+/*
+ * USART_Arduino.h
+ *
+ *  Created on: Mar 3, 2025
+ *      Author: Mitsu
+ */
+
+#ifndef INC_USART_ARDUINO_H_
+#define INC_USART_ARDUINO_H_
+
+//#include "main.h"
+#include <stdbool.h>
+#include <stdint.h>
+
+typedef struct{
+//	uint8_t LX = 0x80;
+//	uint8_t LY = 0x80;
+//	uint8_t L2 = 0x00;
+//	uint8_t RX = 0x80;
+//	uint8_t RY = 0x80;
+//	uint8_t R2 = 0x00;
+//
+//	bool TRIANGLE = 0;
+//	bool CIRCLE = 0;
+//	bool CROSS = 0;
+//	bool SQUARE = 0;
+//	bool UP = 0;
+//	bool RIGHT = 0;
+//	bool DOWN = 0;
+//	bool LEFT = 0;
+//	bool L1 = 0;
+//	bool L3 = 0;
+//	bool R1 = 0;
+//	bool R3 = 0;
+//	bool SHARE = 0;
+//	bool OPTION = 0;
+//	bool PS = 0;
+//	bool TOUCHPAD = 0;
+
+	uint8_t LX;
+	uint8_t LY;
+	uint8_t L2;
+	uint8_t RX;
+	uint8_t RY;
+	uint8_t R2;
+
+	bool TRIANGLE;
+	bool CIRCLE;
+	bool CROSS;
+	bool SQUARE;
+	bool UP;
+	bool RIGHT;
+	bool DOWN;
+	bool LEFT;
+	bool L1;
+	bool L3;
+	bool R1;
+	bool R3;
+	bool SHARE;
+	bool OPTION;
+	bool PS;
+	bool TOUCHPAD;
+} getdata;
+
+int getData(UART_HandleTypeDef* huart,getdata* revdata);
+uint8_t RevAF(UART_HandleTypeDef* huart);
+void AddArray(UART_HandleTypeDef* huart,uint8_t* Adata);
+uint8_t ChSUM(uint8_t* Adata);
+void AddStruct(getdata* Udata,uint8_t* Adata);
+void StructInit(getdata* Udata);
+
+
+#define REV_SIZE 11
+#define WAIT 10
+#define TIMEOUT_MAX 10
+
+#endif /* INC_USART_ARDUINO_H_ */

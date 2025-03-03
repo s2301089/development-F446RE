@@ -23,5 +23,19 @@
 		</list>
 	</section>
 	<section name="NewWizardAction">
+		<section name="NewWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="619"/>
+			<item key="DIALOG_Y_ORIGIN" value="254"/>
+			<item key="DIALOG_WIDTH" value="700"/>
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_FONT_NAME" value="1|Yu Gothic UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|5|0|Yu Gothic UI"/>
+		</section>
+	</section>
+	<section name="WorkbenchPreferenceDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="862"/>
+		<item key="DIALOG_Y_ORIGIN" value="262"/>
+		<item key="DIALOG_WIDTH" value="958"/>
+		<item key="DIALOG_HEIGHT" value="1003"/>
+		<item key="DIALOG_FONT_NAME" value="1|Yu Gothic UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|5|0|Yu Gothic UI"/>
 	</section>
 </section>

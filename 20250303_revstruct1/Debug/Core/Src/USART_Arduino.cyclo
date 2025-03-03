@@ -1,0 +1,6 @@
+../Core/Src/USART_Arduino.c:12:5:getData	3
+../Core/Src/USART_Arduino.c:25:9:RevAF	4
+../Core/Src/USART_Arduino.c:48:6:AddArray	3
+../Core/Src/USART_Arduino.c:65:9:ChSUM	4
+../Core/Src/USART_Arduino.c:83:6:AddStruct	17
+../Core/Src/USART_Arduino.c:113:6:StructInit	1
