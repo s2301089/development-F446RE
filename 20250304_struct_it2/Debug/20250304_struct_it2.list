@@ -27,9 +27,9 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000030  00000000  00000000  00006068  2**0
                   CONTENTS, READONLY
- 12 .debug_info   0000a45f  00000000  00000000  00006098  2**0
+ 12 .debug_info   0000a45e  00000000  00000000  00006098  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 00001d5c  00000000  00000000  000104f7  2**0
+ 13 .debug_abbrev 00001d5c  00000000  00000000  000104f6  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  14 .debug_aranges 00000860  00000000  00000000  00012258  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
@@ -37,15 +37,15 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_macro  00022090  00000000  00000000  00013112  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0000b5b4  00000000  00000000  000351a2  2**0
+ 17 .debug_line   0000b5b1  00000000  00000000  000351a2  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    000ca87c  00000000  00000000  00040756  2**0
+ 18 .debug_str    000ca87c  00000000  00000000  00040753  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  0010afd2  2**0
+ 19 .comment      00000043  00000000  00000000  0010afcf  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00002948  00000000  00000000  0010b018  2**2
+ 20 .debug_frame  00002948  00000000  00000000  0010b014  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 0000009c  00000000  00000000  0010d960  2**0
+ 21 .debug_line_str 0000009c  00000000  00000000  0010d95c  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -440,17 +440,11 @@ void getData(UART_HandleTypeDef* huart){
  80005de:	b082      	sub	sp, #8
  80005e0:	af00      	add	r7, sp, #0
  80005e2:	6078      	str	r0, [r7, #4]
-//	printf("getData\r\n");
 	HAL_UART_Receive_IT(huart, &Gdata, 1);
  80005e4:	2201      	movs	r2, #1
  80005e6:	4904      	ldr	r1, [pc, #16]	@ (80005f8 <getData+0x1c>)
  80005e8:	6878      	ldr	r0, [r7, #4]
  80005ea:	f001 fed4 	bl	8002396 <HAL_UART_Receive_IT>
-//		DF = 0;
-//		return 0;
-//	}
-////	printf("snct\r\n");
-//	return -1;
 }
  80005ee:	bf00      	nop
  80005f0:	3708      	adds	r7, #8
@@ -1144,11 +1138,6 @@ int main(void)
 	  getData(&huart1);
  8000a78:	4808      	ldr	r0, [pc, #32]	@ (8000a9c <main+0x4c>)
  8000a7a:	f7ff fdaf 	bl	80005dc <getData>
-//	  if(getData(&huart1) == 0){
-//		  AllShowP(data);
-//	  }else{
-//		  printf("\r\n");
-//	  }
 	  AllShowP(data);
  8000a7e:	4a08      	ldr	r2, [pc, #32]	@ (8000aa0 <main+0x50>)
  8000a80:	466b      	mov	r3, sp

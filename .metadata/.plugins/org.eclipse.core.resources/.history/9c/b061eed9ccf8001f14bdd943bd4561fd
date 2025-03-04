@@ -105,6 +105,11 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  getData(&huart1);
+//	  if(getData(&huart1) == 0){
+//		  AllShowP(data);
+//	  }else{
+//		  printf("\r\n");
+//	  }
 	  AllShowP(data);
   }
   /* USER CODE END 3 */

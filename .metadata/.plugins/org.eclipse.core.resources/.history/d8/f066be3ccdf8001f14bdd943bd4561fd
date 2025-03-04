@@ -44,7 +44,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef* huart){
 }
 
 int ChSUM(void){
-	if(Adata[10] = 0xed){
+	if(Adata[10] == 0xed){
 		uint8_t revsum = 0;
 		for(int i = 1;i < REV_SIZE - 2;i++){
 			revsum += Adata[i];
