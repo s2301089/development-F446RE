@@ -3441,22 +3441,22 @@ LOAD C:/ST/STM32CubeIDE_1.16.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_macro   0x00021e40      0x1ba ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
  .debug_macro   0x00021ffa      0x1bb ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
 
-.debug_line     0x00000000     0xb658
- .debug_line    0x00000000      0xd2d ./Core/Src/USART_Arduino.o
- .debug_line    0x00000d2d      0x9e9 ./Core/Src/main.o
- .debug_line    0x00001716      0x794 ./Core/Src/stm32f4xx_hal_msp.o
- .debug_line    0x00001eaa      0x7c4 ./Core/Src/stm32f4xx_it.o
- .debug_line    0x0000266e      0x8ac ./Core/Src/syscalls.o
- .debug_line    0x00002f1a      0x588 ./Core/Src/sysmem.o
- .debug_line    0x000034a2      0x79a ./Core/Src/system_stm32f4xx.o
- .debug_line    0x00003c3c       0x7a ./Core/Startup/startup_stm32f446retx.o
- .debug_line    0x00003cb6      0xa07 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
- .debug_line    0x000046bd      0xcd7 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
- .debug_line    0x00005394      0xf73 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o
- .debug_line    0x00006307      0xb4b ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
- .debug_line    0x00006e52      0xe20 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
- .debug_line    0x00007c72     0x14d0 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
- .debug_line    0x00009142     0x2516 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
+.debug_line     0x00000000     0xb657
+ .debug_line    0x00000000      0xd2c ./Core/Src/USART_Arduino.o
+ .debug_line    0x00000d2c      0x9e9 ./Core/Src/main.o
+ .debug_line    0x00001715      0x794 ./Core/Src/stm32f4xx_hal_msp.o
+ .debug_line    0x00001ea9      0x7c4 ./Core/Src/stm32f4xx_it.o
+ .debug_line    0x0000266d      0x8ac ./Core/Src/syscalls.o
+ .debug_line    0x00002f19      0x588 ./Core/Src/sysmem.o
+ .debug_line    0x000034a1      0x79a ./Core/Src/system_stm32f4xx.o
+ .debug_line    0x00003c3b       0x7a ./Core/Startup/startup_stm32f446retx.o
+ .debug_line    0x00003cb5      0xa07 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
+ .debug_line    0x000046bc      0xcd7 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
+ .debug_line    0x00005393      0xf73 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o
+ .debug_line    0x00006306      0xb4b ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
+ .debug_line    0x00006e51      0xe20 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
+ .debug_line    0x00007c71     0x14d0 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
+ .debug_line    0x00009141     0x2516 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
 
 .debug_str      0x00000000    0xca9d3
  .debug_str     0x00000000    0xca9d3 ./Core/Src/USART_Arduino.o
