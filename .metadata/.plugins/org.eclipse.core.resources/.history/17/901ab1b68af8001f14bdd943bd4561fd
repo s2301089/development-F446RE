@@ -1,0 +1,141 @@
+/*
+ * USART_Arduino.c
+ *
+ *  Created on: Mar 3, 2025
+ *      Author: Mitsu
+ */
+
+#include "USART_Arduino.h"
+#include <string.h>
+#include <stdio.h>
+
+int getData(UART_HandleTypeDef* huart,getdata* revdata){
+	uint8_t Rdata[REV_SIZE] = {};
+	if(RevAF(huart) == 0xaf){
+		printf("if 0xaf");
+		AddArray(huart,Rdata);
+		if(ChSUM(Rdata) == 0xed){
+			AddStruct(revdata,Rdata);
+			HAL_UART_Abort(huart);
+			memset(Rdata,0x00,sizeof(Rdata));
+			return 0;
+		}
+	}
+	return -1;
+}
+
+uint8_t RevAF(UART_HandleTypeDef* huart){
+	static int timeout;
+	uint8_t Gdata;
+	HAL_StatusTypeDef status;
+	status = HAL_UART_Receive(huart, &Gdata, 1, WAIT);
+	if(status == HAL_OK){
+		if(Gdata == 0xaf){
+			return Gdata;
+		}else{
+			printf("not 0xaf %02x\r\n",Gdata);
+			return 0x00;
+		}
+	}else {
+		timeout++;
+		printf("else %2d\r\n",timeout);
+		if(timeout >= TIMEOUT_MAX){
+			printf("timeout\r\n");
+			timeout = 0;
+		}
+		return 0xff;
+	}
+}
+
+void AddArray(UART_HandleTypeDef* huart,uint8_t* Adata){
+	uint8_t Gdata;
+	HAL_StatusTypeDef status;
+	Adata[0] = 0xaf;
+
+	for(int i = 1;i < REV_SIZE;i++){
+		status = HAL_UART_Receive(huart, &Gdata, 1, WAIT);
+		if(status == HAL_OK){
+			Adata[i] = Gdata;
+		}else {
+			i--;
+		}
+	}
+
+	return;
+}
+
+uint8_t ChSUM(uint8_t* Adata){
+	if(Adata[10] == 0xed){
+		uint8_t revsum = 0;
+		for(int i = 1;i < (REV_SIZE - 2);i++){
+			revsum += (int)Adata[i];
+		}
+		if(revsum == Adata[9]){
+			return 0xed;
+		}else {
+			printf("sum is not true\r\n");
+			return 0x00;
+		}
+	}else {
+		printf("not end");
+		return 0xff;
+	}
+}
+
+void AddStruct(getdata* Udata,uint8_t* Adata){
+	StructInit(Udata);
+	Udata->LX = Adata[1];
+	Udata->LY = Adata[2];
+	Udata->L2 = Adata[5];
+	Udata->RX = Adata[3];
+	Udata->RY = Adata[4];
+	Udata->R2 = Adata[6];
+
+	if(Adata[6] & 0x01)	Udata->TRIANGLE = 1;
+	if(Adata[6] & 0x02)	Udata->CIRCLE 	= 1;
+	if(Adata[6] & 0x04)	Udata->CROSS 	= 1;
+	if(Adata[6] & 0x08)	Udata->SQUARE 	= 1;
+	if(Adata[6] & 0x10)	Udata->UP 		= 1;
+	if(Adata[6] & 0x20)	Udata->RIGHT 	= 1;
+	if(Adata[6] & 0x40)	Udata->DOWN 	= 1;
+	if(Adata[6] & 0x80)	Udata->LEFT		= 1;
+
+	if(Adata[7] & 0x01)	Udata->L1 		= 1;
+	if(Adata[7] & 0x02)	Udata->L3		= 1;
+	if(Adata[7] & 0x04)	Udata->R1		= 1;
+	if(Adata[7] & 0x08)	Udata->R3		= 1;
+	if(Adata[7] & 0x10)	Udata->SHARE 	= 1;
+	if(Adata[7] & 0x20)	Udata->OPTION 	= 1;
+	if(Adata[7] & 0x40)	Udata->PS 		= 1;
+	if(Adata[7] & 0x80)	Udata->TOUCHPAD = 1;
+
+	return;
+}
+
+void StructInit(getdata* Udata){
+	Udata->LX = 0x80;
+	Udata->LY = 0x80;
+	Udata->L2 = 0x00;
+	Udata->RX = 0x80;
+	Udata->RY = 0x80;
+	Udata->R2 = 0x00;
+
+	Udata->TRIANGLE = 0;
+	Udata->CIRCLE = 0;
+	Udata->CROSS = 0;
+	Udata->SQUARE = 0;
+	Udata->UP = 0;
+	Udata->RIGHT = 0;
+	Udata->DOWN = 0;
+	Udata->LEFT = 0;
+	Udata->L1 = 0;
+	Udata->L3 = 0;
+	Udata->R1 = 0;
+	Udata->R3 = 0;
+	Udata->SHARE = 0;
+	Udata->OPTION = 0;
+	Udata->PS = 0;
+	Udata->TOUCHPAD = 0;
+
+	return;
+}
