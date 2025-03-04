@@ -23,3 +23,4 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:20250217_rec_char_1/activeLaunc
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:20250217_rec_char_1/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:20250217_rec_char_2\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:20250304_struct_it1\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:20250304_struct_it1\ Debug/activeLaunchTarget=null\:---
