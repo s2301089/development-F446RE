@@ -104,11 +104,13 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  getData(&huart1,&data);
-//	  if(getData(&huart1,&data) == 0){
-//		  AllShowP(data);
-//	  }
-	  AllShowP(data);
+//	  getData(&huart1,&data);
+	  if(getData(&huart1,&data) == 0){
+		  AllShowP(data);
+	  }else{
+		  printf("\r\n");
+	  }
+//	  AllShowP(data);
   }
   /* USER CODE END 3 */
 }

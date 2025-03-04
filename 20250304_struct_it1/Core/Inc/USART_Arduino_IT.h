@@ -41,7 +41,7 @@ typedef struct{
 #define REV_SIZE 11
 #define TIMEOUT_MAX 10
 
-void getData(UART_HandleTypeDef* huart,getdata* revdata);
+int getData(UART_HandleTypeDef* huart,getdata* revdata);
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef* huart);
 int ChSUM(void);
 void AddStruct(getdata* Udata);

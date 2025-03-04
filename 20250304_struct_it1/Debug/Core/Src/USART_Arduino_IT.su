@@ -1,4 +1,4 @@
-../Core/Src/USART_Arduino_IT.c:16:6:getData	16	static
+../Core/Src/USART_Arduino_IT.c:16:5:getData	16	static
 ../Core/Src/USART_Arduino_IT.c:28:6:HAL_UART_RxCpltCallback	16	static
 ../Core/Src/USART_Arduino_IT.c:56:5:ChSUM	16	static
 ../Core/Src/USART_Arduino_IT.c:72:6:AddStruct	16	static

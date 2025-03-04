@@ -13,16 +13,16 @@ static uint8_t Gdata = 0;
 static bool DF = 0;
 bool AFF = 0;
 
-void getData(UART_HandleTypeDef* huart,getdata* revdata){
+int getData(UART_HandleTypeDef* huart,getdata* revdata){
 //	printf("getData\r\n");
 	HAL_UART_Receive_IT(huart, &Gdata, 1);
 	if(DF == 1){
 		AddStruct(revdata);
 		DF = 0;
-//		return 0;
+		return 0;
 	}
-	printf("snct\r\n");
-//	return -1;
+//	printf("snct\r\n");
+	return -1;
 }
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef* huart){
