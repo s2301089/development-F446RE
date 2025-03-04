@@ -5,28 +5,6 @@
  *      Author: Mitsu
  */
 
-/*
- * 説明
- * 使用するUSARTを.iocで選択してコードを生成。
- * main関数などでgetdata型の構造体変数を宣言。
- * getData関数にUARTのポインタと構造体変数のポインタを渡す。
- * getDataの戻り値が0であれば正常に構造体に格納されている。
- *
- * ※使用する関数によってprintfを使用できるようにする必要があるものもある。
- *
- * 使用例
- *
- * <USART1を使用しdataという名前の構造体変数を使用する場合>
- * getdata data;
- * if(getData(%huart1,&data) == 0){
- * 	AllShowP(data);
- * }
- *
- * ※AllShowP関数とAllShow関数を使用するためにはprintfを使用できるようにする必要がある。
- *
- * s2301089:2025/03/04
-*/
-
 #ifndef INC_USART_ARDUINO_H_
 #define INC_USART_ARDUINO_H_
 
