@@ -4753,3 +4753,251 @@ Finished building: default.size.stdout
  
 Finished building: 20250303_revstruct1.list
  
+09:59:30 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/USART_Arduino.c: In function 'AddArray':
+../Core/Src/USART_Arduino.c:65:9: warning: implicit declaration of function 'OutPut' [-Wimplicit-function-declaration]
+   65 |         OutPut(Adata);
+      |         ^~~~~~
+../Core/Src/USART_Arduino.c: At top level:
+../Core/Src/USART_Arduino.c:146:6: warning: conflicting types for 'OutPut'; have 'void(uint8_t *)' {aka 'void(unsigned char *)'}
+  146 | void OutPut(uint8_t* Adata){
+      |      ^~~~~~
+../Core/Src/USART_Arduino.c:65:9: note: previous implicit declaration of 'OutPut' with type 'void(uint8_t *)' {aka 'void(unsigned char *)'}
+   65 |         OutPut(Adata);
+      |         ^~~~~~
+arm-none-eabi-gcc -o "20250303_revstruct1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_revstruct1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_revstruct1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_revstruct1.elf
+ 
+arm-none-eabi-size  20250303_revstruct1.elf 
+arm-none-eabi-objdump -h -S 20250303_revstruct1.elf  > "20250303_revstruct1.list"
+   text	   data	    bss	    dec	    hex	filename
+  16636	    104	   2056	  18796	   496c	20250303_revstruct1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_revstruct1.list
+ 
+10:02:54 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+../Core/Src/USART_Arduino.c: In function 'AddArray':
+../Core/Src/USART_Arduino.c:65:9: warning: implicit declaration of function 'OutPut' [-Wimplicit-function-declaration]
+   65 |         OutPut(Adata);
+      |         ^~~~~~
+../Core/Src/USART_Arduino.c: At top level:
+../Core/Src/USART_Arduino.c:146:6: warning: conflicting types for 'OutPut'; have 'void(uint8_t *)' {aka 'void(unsigned char *)'}
+  146 | void OutPut(uint8_t* Adata){
+      |      ^~~~~~
+../Core/Src/USART_Arduino.c:65:9: note: previous implicit declaration of 'OutPut' with type 'void(uint8_t *)' {aka 'void(unsigned char *)'}
+   65 |         OutPut(Adata);
+      |         ^~~~~~
+arm-none-eabi-gcc -o "20250303_revstruct1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_revstruct1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_revstruct1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_revstruct1.elf
+ 
+arm-none-eabi-size  20250303_revstruct1.elf 
+arm-none-eabi-objdump -h -S 20250303_revstruct1.elf  > "20250303_revstruct1.list"
+   text	   data	    bss	    dec	    hex	filename
+  16640	    104	   2056	  18800	   4970	20250303_revstruct1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_revstruct1.list
+ 
+10:03:27 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+../Core/Src/USART_Arduino.c: In function 'AddArray':
+../Core/Src/USART_Arduino.c:65:9: warning: implicit declaration of function 'OutPut' [-Wimplicit-function-declaration]
+   65 |         OutPut(Adata);
+      |         ^~~~~~
+../Core/Src/USART_Arduino.c: At top level:
+../Core/Src/USART_Arduino.c:146:6: warning: conflicting types for 'OutPut'; have 'void(uint8_t *)' {aka 'void(unsigned char *)'}
+  146 | void OutPut(uint8_t* Adata){
+      |      ^~~~~~
+../Core/Src/USART_Arduino.c:65:9: note: previous implicit declaration of 'OutPut' with type 'void(uint8_t *)' {aka 'void(unsigned char *)'}
+   65 |         OutPut(Adata);
+      |         ^~~~~~
+arm-none-eabi-gcc -o "20250303_revstruct1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_revstruct1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_revstruct1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_revstruct1.elf
+ 
+arm-none-eabi-size  20250303_revstruct1.elf 
+arm-none-eabi-objdump -h -S 20250303_revstruct1.elf  > "20250303_revstruct1.list"
+   text	   data	    bss	    dec	    hex	filename
+  16612	    104	   2056	  18772	   4954	20250303_revstruct1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_revstruct1.list
+ 
+10:04:40 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/USART_Arduino.c: In function 'AddArray':
+../Core/Src/USART_Arduino.c:65:9: warning: implicit declaration of function 'OutPut' [-Wimplicit-function-declaration]
+   65 |         OutPut(Adata);
+      |         ^~~~~~
+../Core/Src/USART_Arduino.c: At top level:
+../Core/Src/USART_Arduino.c:146:6: warning: conflicting types for 'OutPut'; have 'void(uint8_t *)' {aka 'void(unsigned char *)'}
+  146 | void OutPut(uint8_t* Adata){
+      |      ^~~~~~
+../Core/Src/USART_Arduino.c:65:9: note: previous implicit declaration of 'OutPut' with type 'void(uint8_t *)' {aka 'void(unsigned char *)'}
+   65 |         OutPut(Adata);
+      |         ^~~~~~
+arm-none-eabi-gcc -o "20250303_revstruct1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_revstruct1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_revstruct1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_revstruct1.elf
+ 
+arm-none-eabi-size  20250303_revstruct1.elf 
+arm-none-eabi-objdump -h -S 20250303_revstruct1.elf  > "20250303_revstruct1.list"
+   text	   data	    bss	    dec	    hex	filename
+  16612	    104	   2056	  18772	   4954	20250303_revstruct1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_revstruct1.list
+ 
+10:06:47 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+../Core/Src/USART_Arduino.c: In function 'AddArray':
+../Core/Src/USART_Arduino.c:65:9: warning: implicit declaration of function 'OutPut' [-Wimplicit-function-declaration]
+   65 |         OutPut(Adata);
+      |         ^~~~~~
+../Core/Src/USART_Arduino.c: At top level:
+../Core/Src/USART_Arduino.c:146:6: warning: conflicting types for 'OutPut'; have 'void(uint8_t *)' {aka 'void(unsigned char *)'}
+  146 | void OutPut(uint8_t* Adata){
+      |      ^~~~~~
+../Core/Src/USART_Arduino.c:65:9: note: previous implicit declaration of 'OutPut' with type 'void(uint8_t *)' {aka 'void(unsigned char *)'}
+   65 |         OutPut(Adata);
+      |         ^~~~~~
+arm-none-eabi-gcc -o "20250303_revstruct1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_revstruct1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_revstruct1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_revstruct1.elf
+ 
+arm-none-eabi-size  20250303_revstruct1.elf 
+arm-none-eabi-objdump -h -S 20250303_revstruct1.elf  > "20250303_revstruct1.list"
+   text	   data	    bss	    dec	    hex	filename
+  16560	    104	   2056	  18720	   4920	20250303_revstruct1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_revstruct1.list
+ 
+10:07:52 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+arm-none-eabi-gcc -o "20250303_revstruct1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_revstruct1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_revstruct1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_revstruct1.elf
+ 
+arm-none-eabi-size  20250303_revstruct1.elf 
+arm-none-eabi-objdump -h -S 20250303_revstruct1.elf  > "20250303_revstruct1.list"
+   text	   data	    bss	    dec	    hex	filename
+  16492	    104	   2056	  18652	   48dc	20250303_revstruct1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_revstruct1.list
+ 
+10:08:25 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+arm-none-eabi-gcc -o "20250303_revstruct1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_revstruct1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_revstruct1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_revstruct1.elf
+ 
+arm-none-eabi-size  20250303_revstruct1.elf 
+arm-none-eabi-objdump -h -S 20250303_revstruct1.elf  > "20250303_revstruct1.list"
+   text	   data	    bss	    dec	    hex	filename
+  16444	    104	   2056	  18604	   48ac	20250303_revstruct1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_revstruct1.list
+ 
+10:09:20 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+arm-none-eabi-gcc -o "20250303_revstruct1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_revstruct1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_revstruct1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_revstruct1.elf
+ 
+arm-none-eabi-size  20250303_revstruct1.elf 
+arm-none-eabi-objdump -h -S 20250303_revstruct1.elf  > "20250303_revstruct1.list"
+   text	   data	    bss	    dec	    hex	filename
+  16420	    104	   2056	  18580	   4894	20250303_revstruct1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_revstruct1.list
+ 
+10:12:07 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250303_revstruct1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_revstruct1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_revstruct1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_revstruct1.elf
+ 
+arm-none-eabi-size  20250303_revstruct1.elf 
+arm-none-eabi-objdump -h -S 20250303_revstruct1.elf  > "20250303_revstruct1.list"
+   text	   data	    bss	    dec	    hex	filename
+  16420	    104	   2056	  18580	   4894	20250303_revstruct1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_revstruct1.list
+ 
+10:20:24 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+arm-none-eabi-gcc -o "20250303_revstruct1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_revstruct1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_revstruct1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_revstruct1.elf
+ 
+arm-none-eabi-size  20250303_revstruct1.elf 
+arm-none-eabi-objdump -h -S 20250303_revstruct1.elf  > "20250303_revstruct1.list"
+   text	   data	    bss	    dec	    hex	filename
+  16400	    104	   2056	  18560	   4880	20250303_revstruct1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_revstruct1.list
+ 
+10:20:53 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+arm-none-eabi-gcc -o "20250303_revstruct1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_revstruct1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_revstruct1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_revstruct1.elf
+ 
+arm-none-eabi-size  20250303_revstruct1.elf 
+arm-none-eabi-objdump -h -S 20250303_revstruct1.elf  > "20250303_revstruct1.list"
+   text	   data	    bss	    dec	    hex	filename
+  16420	    104	   2056	  18580	   4894	20250303_revstruct1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_revstruct1.list
+ 
+10:22:16 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+../Core/Src/USART_Arduino.c: In function 'getData':
+../Core/Src/USART_Arduino.c:26:1: warning: control reaches end of non-void function [-Wreturn-type]
+   26 | }
+      | ^
+arm-none-eabi-gcc -o "20250303_revstruct1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_revstruct1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_revstruct1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_revstruct1.elf
+ 
+arm-none-eabi-size  20250303_revstruct1.elf 
+arm-none-eabi-objdump -h -S 20250303_revstruct1.elf  > "20250303_revstruct1.list"
+   text	   data	    bss	    dec	    hex	filename
+  16404	    104	   2056	  18564	   4884	20250303_revstruct1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_revstruct1.list
+ 
+10:24:19 **** インクリメンタル・ビルド of configuration Debug for project 20250303_revstruct1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+../Core/Src/USART_Arduino.c: In function 'getData':
+../Core/Src/USART_Arduino.c:27:1: warning: control reaches end of non-void function [-Wreturn-type]
+   27 | }
+      | ^
+arm-none-eabi-gcc -o "20250303_revstruct1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250303_revstruct1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250303_revstruct1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250303_revstruct1.elf
+ 
+arm-none-eabi-size  20250303_revstruct1.elf 
+arm-none-eabi-objdump -h -S 20250303_revstruct1.elf  > "20250303_revstruct1.list"
+   text	   data	    bss	    dec	    hex	filename
+  16416	    104	   2056	  18576	   4890	20250303_revstruct1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250303_revstruct1.list
+ 

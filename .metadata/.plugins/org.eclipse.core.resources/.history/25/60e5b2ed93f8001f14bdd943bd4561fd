@@ -44,6 +44,7 @@ void AddArray(UART_HandleTypeDef* huart,uint8_t* Adata);
 uint8_t ChSUM(uint8_t* Adata);
 void AddStruct(getdata* Udata,uint8_t* Adata);
 void StructInit(getdata* Udata);
+//void OutPut(uint8_t* Adata);
 void AllShow(getdata Udata);
 void AllShowP(getdata Udata);
 

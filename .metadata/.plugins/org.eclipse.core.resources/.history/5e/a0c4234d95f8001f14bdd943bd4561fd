@@ -20,10 +20,10 @@ int getData(UART_HandleTypeDef* huart,getdata* revdata){
 			memset(Rdata,0x00,sizeof(Rdata));
 			return 0;
 		}
-	}else{
-		printf("no\r\n");
-		return -1;
 	}
+	HAL_UART_Abort(huart);
+	memset(Rdata,0x00,sizeof(Rdata));
+	return -1;
 }
 
 uint8_t RevAF(UART_HandleTypeDef* huart){
@@ -42,7 +42,7 @@ uint8_t RevAF(UART_HandleTypeDef* huart){
 		timeout++;
 //		printf("else %2d\r\n",timeout);
 		if(timeout >= TIMEOUT_MAX){
-//			printf("timeout ");
+			printf("timeout ");
 			timeout = 0;
 		}
 		return 0xff;

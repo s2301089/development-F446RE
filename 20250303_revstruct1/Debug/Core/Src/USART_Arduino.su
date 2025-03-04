@@ -4,5 +4,6 @@
 ../Core/Src/USART_Arduino.c:70:9:ChSUM	24	static
 ../Core/Src/USART_Arduino.c:88:6:AddStruct	16	static
 ../Core/Src/USART_Arduino.c:118:6:StructInit	16	static
+../Core/Src/USART_Arduino.c:146:6:OutPut	24	static
 ../Core/Src/USART_Arduino.c:152:6:AllShow	152	static
 ../Core/Src/USART_Arduino.c:201:6:AllShowP	32	static

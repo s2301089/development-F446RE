@@ -21,7 +21,6 @@ int getData(UART_HandleTypeDef* huart,getdata* revdata){
 			return 0;
 		}
 	}else{
-		printf("no\r\n");
 		return -1;
 	}
 }

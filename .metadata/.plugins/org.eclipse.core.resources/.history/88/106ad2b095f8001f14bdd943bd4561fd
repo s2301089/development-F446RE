@@ -50,6 +50,6 @@ void AllShowP(getdata Udata);
 
 #define REV_SIZE 11
 #define WAIT 10
-#define TIMEOUT_MAX 10
+#define TIMEOUT_MAX 15
 
 #endif /* INC_USART_ARDUINO_H_ */
