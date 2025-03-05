@@ -146,7 +146,7 @@ void AddStruct(getdata* Udata,uint8_t* Adata){
 	if(Adata[8] & 0x04)	Udata->R1		= 1;
 	if(Adata[8] & 0x08)	Udata->R3		= 1;
 	if(Adata[8] & 0x10)	Udata->SHARE 	= 1;
-	if(Adata[8] & 0x20)	Udata->OPTION 	= 1;
+	if(Adata[8] & 0x20)	Udata->OPTIONS 	= 1;
 	if(Adata[8] & 0x40)	Udata->PS 		= 1;
 	if(Adata[8] & 0x80)	Udata->TOUCHPAD = 1;
 
@@ -174,7 +174,7 @@ void StructInit(getdata* Udata){
 	Udata->R1 = 0;
 	Udata->R3 = 0;
 	Udata->SHARE = 0;
-	Udata->OPTION = 0;
+	Udata->OPTIONS = 0;
 	Udata->PS = 0;
 	Udata->TOUCHPAD = 0;
 
@@ -201,7 +201,7 @@ void AllShow(getdata Udata){
 			"R1:%d "
 			"R3:%d "
 			"SHARE:%d "
-			"OPTION:%d "
+			"OPTIONS:%d "
 			"PS:%d "
 			"TOUCHPAD:%d"
 			"\r\n"
@@ -224,10 +224,11 @@ void AllShow(getdata Udata){
 			,Udata.R1
 			,Udata.R3
 			,Udata.SHARE
-			,Udata.OPTION
+			,Udata.OPTIONS
 			,Udata.PS
 			,Udata.TOUCHPAD
 			);
+
 	return;
 }
 
@@ -261,7 +262,7 @@ void AllShowP(getdata Udata){
 	if(Udata.R1 		== 1) printf("R1 ");
 	if(Udata.R3 		== 1) printf("R3 ");
 	if(Udata.SHARE 		== 1) printf("SHARE ");
-	if(Udata.OPTION 	== 1) printf("OPTION ");
+	if(Udata.OPTIONS 	== 1) printf("OPTIONS ");
 	if(Udata.PS 		== 1) printf("PS ");
 	if(Udata.TOUCHPAD 	== 1) printf("TOUOCHPAD ");
 

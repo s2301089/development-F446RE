@@ -4821,3 +4821,88 @@ java.io.FileNotFoundException: D:\OneDrive - 独立行政法人 国立高等専�
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2025-03-05 11:21:57.329 -----------------------------------------------
+eclipse.buildId=Version 1.18.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-03-05 11:22:14.711
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-03-05 11:22:14.713
+!MESSAGE Log4j2 initialized with config file D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-03-05 11:22:24.809
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.ui.console 4 2 2025-03-05 11:23:22.819
+!MESSAGE プラグイン "org.eclipse.ui.console" からのコードの起動で問題が発生しました。
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4922)
+	at org.eclipse.swt.SWT.error(SWT.java:4837)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:500)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:420)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:472)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.setDescription(ContributedPartRenderer.java:159)
+	at org.eclipse.ui.part.WorkbenchPart.internalSetContentDescription(WorkbenchPart.java:427)
+	at org.eclipse.ui.part.WorkbenchPart.setContentDescription(WorkbenchPart.java:411)
+	at org.eclipse.ui.part.ViewPart.setContentDescription(ViewPart.java:141)
+	at org.eclipse.ui.internal.console.ConsoleView.updateTitle(ConsoleView.java:255)
+	at org.eclipse.ui.internal.console.ConsoleView.propertyChange(ConsoleView.java:135)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.ui.console.AbstractConsole.setName(AbstractConsole.java:181)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsole.init(ProcessConsole.java:559)
+	at org.eclipse.ui.console.AbstractConsole.initialize(AbstractConsole.java:242)
+	at org.eclipse.ui.console.AbstractConsole$Lifecycle.consolesAdded(AbstractConsole.java:64)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.run(ConsoleManager.java:153)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.notify(ConsoleManager.java:174)
+	at org.eclipse.ui.internal.console.ConsoleManager.fireUpdate(ConsoleManager.java:250)
+	at org.eclipse.ui.internal.console.ConsoleManager.addConsoles(ConsoleManager.java:217)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsoleManager$ConsoleCreation.run(ProcessConsoleManager.java:78)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 120 2025-03-05 11:23:22.822
+!MESSAGE コンソール・プロパティー変更通知中に例外が発生しました。
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4922)
+	at org.eclipse.swt.SWT.error(SWT.java:4837)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:500)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:420)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:472)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.setDescription(ContributedPartRenderer.java:159)
+	at org.eclipse.ui.part.WorkbenchPart.internalSetContentDescription(WorkbenchPart.java:427)
+	at org.eclipse.ui.part.WorkbenchPart.setContentDescription(WorkbenchPart.java:411)
+	at org.eclipse.ui.part.ViewPart.setContentDescription(ViewPart.java:141)
+	at org.eclipse.ui.internal.console.ConsoleView.updateTitle(ConsoleView.java:255)
+	at org.eclipse.ui.internal.console.ConsoleView.propertyChange(ConsoleView.java:135)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.ui.console.AbstractConsole.setName(AbstractConsole.java:181)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsole.init(ProcessConsole.java:559)
+	at org.eclipse.ui.console.AbstractConsole.initialize(AbstractConsole.java:242)
+	at org.eclipse.ui.console.AbstractConsole$Lifecycle.consolesAdded(AbstractConsole.java:64)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.run(ConsoleManager.java:153)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.notify(ConsoleManager.java:174)
+	at org.eclipse.ui.internal.console.ConsoleManager.fireUpdate(ConsoleManager.java:250)
+	at org.eclipse.ui.internal.console.ConsoleManager.addConsoles(ConsoleManager.java:217)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsoleManager$ConsoleCreation.run(ProcessConsoleManager.java:78)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-03-05 11:35:23.563
+!MESSAGE Indexed '20250305_struct_it4' (22 sources, 122 headers) in 3.03 sec: 11,771 declarations; 46,302 references; 6 unresolved inclusions; 1,105 syntax errors; 1,287 unresolved names (2.2%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2025-03-05 11:35:57.362
+!MESSAGE Won't launch debug session since we failed to locate the binary.

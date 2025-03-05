@@ -43,7 +43,7 @@ typedef struct{
 	bool R1;
 	bool R3;
 	bool SHARE;
-	bool OPTION;
+	bool OPTIONS;
 	bool PS;
 	bool TOUCHPAD;
 } getdata;
