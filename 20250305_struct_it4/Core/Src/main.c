@@ -132,6 +132,7 @@ int main(void)
 			  outcount = 0;
 		  }
 	  }
+//	  AllShowP(data);
 
 //	  if(getData(&huart1,&DATA) == 0){
 //		  AllShowP(DATA);

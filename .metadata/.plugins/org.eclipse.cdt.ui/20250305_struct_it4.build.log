@@ -1,10 +1,17 @@
-13:43:48 **** インクリメンタル・ビルド of configuration Debug for project 20250305_struct_it4 ****
+14:03:07 **** インクリメンタル・ビルド of configuration Debug for project 20250305_struct_it4 ****
 make -j16 all 
+arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
+arm-none-eabi-gcc -o "20250305_struct_it4.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250305_struct_it4\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250305_struct_it4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250305_struct_it4.elf
+ 
 arm-none-eabi-size  20250305_struct_it4.elf 
+arm-none-eabi-objdump -h -S 20250305_struct_it4.elf  > "20250305_struct_it4.list"
    text	   data	    bss	    dec	    hex	filename
-  21032	    104	   2176	  23312	   5b10	20250305_struct_it4.elf
+  21052	    104	   2176	  23332	   5b24	20250305_struct_it4.elf
 Finished building: default.size.stdout
  
+Finished building: 20250305_struct_it4.list
+ 
 
-13:43:49 Build Finished. 0 errors, 0 warnings. (経過 378ms)
+14:03:08 Build Finished. 0 errors, 0 warnings. (経過 1s.201ms)
 

@@ -80,7 +80,7 @@ void AddArray(UART_HandleTypeDef* huart,uint8_t* Adata){
 int getDataIT(UART_HandleTypeDef* huart){
 //	StructInit(&data);
 //	FAF = 0;
-	printf("getdata ");
+	printf("getdata %d%d",FAF,AFF);
 	HAL_UART_Receive_IT(huart, &GIdata, 1);
 	return FAF;
 }

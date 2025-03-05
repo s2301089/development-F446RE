@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="リソース名 &apos;20250305_struct_it5/Debug/20250305_struct_it3.elf&apos; を &apos;20250305_struct_it5.elf&apos; に変更します" description="リソース &apos;20250305_struct_it3.elf&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Debug/20250305_struct_it3.elf" name="20250305_struct_it5.elf" stamp="1741151159539" updateReferences="true"/>
+</session>

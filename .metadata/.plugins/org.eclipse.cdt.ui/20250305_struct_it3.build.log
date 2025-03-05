@@ -1,25 +1,10 @@
-11:23:18 **** インクリメンタル・ビルド of configuration Debug for project 20250305_struct_it3 ****
+13:59:43 **** インクリメンタル・ビルド of configuration Debug for project 20250305_struct_it3 ****
 make -j16 all 
-arm-none-eabi-gcc "../Core/Src/USART_Arduino.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino.d" -MT"Core/Src/USART_Arduino.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/USART_Arduino.c: In function 'ChSUM':
-../Core/Src/USART_Arduino.c:119:25: warning: statement with no effect [-Wunused-value]
-  119 |                         0x00;
-      |                         ^~~~
-../Core/Src/USART_Arduino.c:124:1: warning: control reaches end of non-void function [-Wreturn-type]
-  124 | }
-      | ^
-arm-none-eabi-gcc -o "20250305_struct_it3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250305_struct_it3\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250305_struct_it3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 20250305_struct_it3.elf
- 
 arm-none-eabi-size  20250305_struct_it3.elf 
-arm-none-eabi-objdump -h -S 20250305_struct_it3.elf  > "20250305_struct_it3.list"
    text	   data	    bss	    dec	    hex	filename
   17756	    104	   2104	  19964	   4dfc	20250305_struct_it3.elf
 Finished building: default.size.stdout
  
-Finished building: 20250305_struct_it3.list
- 
 
-11:23:20 Build Finished. 0 errors, 2 warnings. (経過 1s.723ms)
+13:59:43 Build Finished. 0 errors, 0 warnings. (経過 328ms)
 
