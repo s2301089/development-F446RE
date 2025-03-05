@@ -10,8 +10,8 @@
 
 static uint8_t Adata[REV_SIZE] = {};
 static uint8_t Gdata = 0;
-static bool DF = 0;
-bool AFF = 0;
+static bool AFF = 0;
+getdata data;
 
 void getData(UART_HandleTypeDef* huart){
 	HAL_UART_Receive_IT(huart, &Gdata, 1);
