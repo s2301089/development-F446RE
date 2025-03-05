@@ -61,6 +61,7 @@ typedef struct{
 
 // IT Value
 extern getdata data;
+extern bool FAF;
 
 // All Value
 
@@ -70,7 +71,7 @@ uint8_t RevAF(UART_HandleTypeDef* huart);
 void AddArray(UART_HandleTypeDef* huart,uint8_t* Adata);
 
 // IT Prototype
-void getDataIT(UART_HandleTypeDef* huart);
+int getDataIT(UART_HandleTypeDef* huart);
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef* huart);
 
 // All Prototype

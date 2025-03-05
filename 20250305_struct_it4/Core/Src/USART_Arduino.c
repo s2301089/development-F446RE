@@ -20,6 +20,7 @@
 static uint8_t AIdata[REV_SIZE] = {};
 static uint8_t GIdata = 0x00;
 static bool AFF = 0;
+bool FAF = 0;
 getdata data;
 
 // All Value
@@ -76,29 +77,44 @@ void AddArray(UART_HandleTypeDef* huart,uint8_t* Adata){
 }
 
 // IT Function
-void getDataIT(UART_HandleTypeDef* huart){
+int getDataIT(UART_HandleTypeDef* huart){
+//	StructInit(&data);
+//	FAF = 0;
+	printf("getdata ");
 	HAL_UART_Receive_IT(huart, &GIdata, 1);
+	return FAF;
 }
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef* huart){
+//	data.RE = 1;
+	FAF = 1;
+//	if(time(NULL) - st_time > TIMEOUT_MAX){
+		printf("null time ");
+//	}
 	static int GIcount;
 	static int Itimeout;
 	if(GIdata == 0xaf){
 		AFF = true;
 		GIcount = 0;
 	}else{
+		printf(" not af ");
+		AFF = false;
 		Itimeout++;
 		if(Itimeout >= TIMEOUT_MAX){
 			Itimeout = 0;
 		}
 	}
+	printf("%02x ",GIdata);
 	if(AFF == true){
 		AIdata[GIcount] = GIdata;
 		GIcount++;
 		if(GIcount == REV_SIZE){
 			AFF = false;
 			if(ChSUM(AIdata) == 0xed){
+				printf("Add ");
 				AddStruct(&data,AIdata);
+			}else{
+				printf("sum is not true");
 			}
 			GIcount = 0;
 		}
@@ -116,7 +132,7 @@ uint8_t ChSUM(uint8_t* Adata){
 		if(revsum == Adata[9]){
 			return 0xed;
 		}else{
-			0x00;
+			return 0x00;
 		}
 	}else{
 		return 0xff;
