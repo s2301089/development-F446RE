@@ -19,7 +19,9 @@
 // IT Value
 static uint8_t AIdata[REV_SIZE] = {};
 static uint8_t GIdata = 0x00;
-static bool AFF = 0;
+bool AFF = 0;
+bool FAF = 0;
+uint8_t Rxcount = 0;
 getdata data;
 
 // All Value
@@ -77,10 +79,12 @@ void AddArray(UART_HandleTypeDef* huart,uint8_t* Adata){
 
 // IT Function
 void getDataIT(UART_HandleTypeDef* huart){
+	FAF = 0;
 	HAL_UART_Receive_IT(huart, &GIdata, 1);
 }
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef* huart){
+	FAF = 1;
 	static int GIcount;
 	static int Itimeout;
 	if(GIdata == 0xaf){
@@ -116,7 +120,7 @@ uint8_t ChSUM(uint8_t* Adata){
 		if(revsum == Adata[9]){
 			return 0xed;
 		}else{
-			0x00;
+			return 0x00;
 		}
 	}else{
 		return 0xff;
