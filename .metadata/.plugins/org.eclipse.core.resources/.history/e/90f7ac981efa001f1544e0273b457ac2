@@ -101,7 +101,7 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
   STprintf(&huart2);
-  unsigned int FAFcount = 0;
+  uint8_t FAFcount = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -123,10 +123,10 @@ int main(void)
 	  }else{
 //		  printf("\r\n");
 		  FAFcount++;
-		  if(FAFcount >= TIMEOUT_MAX * 10){
+		  if(FAFcount >= TIMEOUT_MAX * 50){
 
-			  __HAL_TIM_SET_COMPARE(&htim3,TIMCH_3,0);
-			  HAL_GPIO_WritePin(GPIOxA, GPIO_Pin_0, 0);
+			  __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_3,0);
+			  HAL_GPIO_WritePin(PA, P0, 1);
 			  FAFcount = 0;
 			  printf("main timeout ");
 			  HAL_Delay(500);

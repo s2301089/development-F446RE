@@ -77,10 +77,4 @@
 #define GPIOxG GPIOG
 #define GPIOxH GPIOH
 
-#define TIMCH_1			0x00000000U
-#define TIMCH_2			0x00000004U
-#define TIMCH_3			0x00000008U
-#define TIMCH_4			0x0000000CU
-#define TIMCH_ALL		0x0000003CU
-
 #endif /* INC_MANYDEF_H_ */

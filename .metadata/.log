@@ -5618,3 +5618,82 @@ localhost:61234: Connection timed out.
 java.lang.Exception: localhost:61234: Connection timed out.
 	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
 	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SESSION 2025-03-06 08:57:10.463 -----------------------------------------------
+eclipse.buildId=Version 1.18.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-03-06 08:57:17.468
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-03-06 08:57:17.481
+!MESSAGE Log4j2 initialized with config file D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-03-06 08:57:24.404
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.ui.console 4 2 2025-03-06 09:03:28.635
+!MESSAGE プラグイン "org.eclipse.ui.console" からのコードの起動で問題が発生しました。
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4922)
+	at org.eclipse.swt.SWT.error(SWT.java:4837)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:500)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:420)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:472)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.setDescription(ContributedPartRenderer.java:159)
+	at org.eclipse.ui.part.WorkbenchPart.internalSetContentDescription(WorkbenchPart.java:427)
+	at org.eclipse.ui.part.WorkbenchPart.setContentDescription(WorkbenchPart.java:411)
+	at org.eclipse.ui.part.ViewPart.setContentDescription(ViewPart.java:141)
+	at org.eclipse.ui.internal.console.ConsoleView.updateTitle(ConsoleView.java:255)
+	at org.eclipse.ui.internal.console.ConsoleView.propertyChange(ConsoleView.java:135)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.ui.console.AbstractConsole.setName(AbstractConsole.java:181)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsole.init(ProcessConsole.java:559)
+	at org.eclipse.ui.console.AbstractConsole.initialize(AbstractConsole.java:242)
+	at org.eclipse.ui.console.AbstractConsole$Lifecycle.consolesAdded(AbstractConsole.java:64)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.run(ConsoleManager.java:153)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.notify(ConsoleManager.java:174)
+	at org.eclipse.ui.internal.console.ConsoleManager.fireUpdate(ConsoleManager.java:250)
+	at org.eclipse.ui.internal.console.ConsoleManager.addConsoles(ConsoleManager.java:217)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsoleManager$ConsoleCreation.run(ProcessConsoleManager.java:78)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 120 2025-03-06 09:03:28.637
+!MESSAGE コンソール・プロパティー変更通知中に例外が発生しました。
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4922)
+	at org.eclipse.swt.SWT.error(SWT.java:4837)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:500)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:420)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:472)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.setDescription(ContributedPartRenderer.java:159)
+	at org.eclipse.ui.part.WorkbenchPart.internalSetContentDescription(WorkbenchPart.java:427)
+	at org.eclipse.ui.part.WorkbenchPart.setContentDescription(WorkbenchPart.java:411)
+	at org.eclipse.ui.part.ViewPart.setContentDescription(ViewPart.java:141)
+	at org.eclipse.ui.internal.console.ConsoleView.updateTitle(ConsoleView.java:255)
+	at org.eclipse.ui.internal.console.ConsoleView.propertyChange(ConsoleView.java:135)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.ui.console.AbstractConsole.setName(AbstractConsole.java:181)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsole.init(ProcessConsole.java:559)
+	at org.eclipse.ui.console.AbstractConsole.initialize(AbstractConsole.java:242)
+	at org.eclipse.ui.console.AbstractConsole$Lifecycle.consolesAdded(AbstractConsole.java:64)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.run(ConsoleManager.java:153)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.notify(ConsoleManager.java:174)
+	at org.eclipse.ui.internal.console.ConsoleManager.fireUpdate(ConsoleManager.java:250)
+	at org.eclipse.ui.internal.console.ConsoleManager.addConsoles(ConsoleManager.java:217)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsoleManager$ConsoleCreation.run(ProcessConsoleManager.java:78)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

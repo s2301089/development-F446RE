@@ -114,7 +114,7 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	  getDataIT(&huart1);
 //	  AllShow(data);
-	  printf("%d %d \r\n",FAF,FAFcount);
+//	  printf("%d %d \r\n",FAF,FAFcount);/
 	  if(FAF == 1){
 		  FAFcount = 0;
 		  AllShow(data);
@@ -123,7 +123,7 @@ int main(void)
 	  }else{
 //		  printf("\r\n");
 		  FAFcount++;
-		  if(FAFcount >= TIMEOUT_MAX * 10){
+		  if(FAFcount >= TIMEOUT_MAX * 50){
 
 			  __HAL_TIM_SET_COMPARE(&htim3,TIMCH_3,0);
 			  HAL_GPIO_WritePin(GPIOxA, GPIO_Pin_0, 0);

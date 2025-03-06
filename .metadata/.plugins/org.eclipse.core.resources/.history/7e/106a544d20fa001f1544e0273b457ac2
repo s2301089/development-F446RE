@@ -114,7 +114,7 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	  getDataIT(&huart1);
 //	  AllShow(data);
-	  printf("%d %d \r\n",FAF,FAFcount);
+//	  printf("%d %d \r\n",FAF,FAFcount);/
 	  if(FAF == 1){
 		  FAFcount = 0;
 		  AllShow(data);
