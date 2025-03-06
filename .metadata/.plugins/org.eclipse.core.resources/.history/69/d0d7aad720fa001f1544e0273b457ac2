@@ -19,8 +19,9 @@
 // IT Value
 static uint8_t AIdata[REV_SIZE] = {};
 static uint8_t GIdata = 0x00;
-static bool AFF = 0;
+bool AFF = 0;
 bool FAF = 0;
+uint8_t Rxcount = 0;
 getdata data;
 
 // All Value

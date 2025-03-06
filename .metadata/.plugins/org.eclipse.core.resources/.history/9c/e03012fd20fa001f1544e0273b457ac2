@@ -62,6 +62,7 @@ typedef struct{
 // IT Value
 extern getdata data;
 extern bool FAF;
+extern uint8_t Rxcount;
 
 // All Value
 
