@@ -1,0 +1,10 @@
+../Core/Src/USART_Arduino.c:29:5:getData	32	static
+../Core/Src/USART_Arduino.c:44:9:RevAF	24	static
+../Core/Src/USART_Arduino.c:64:6:AddArray	24	static
+../Core/Src/USART_Arduino.c:80:6:getDataIT	16	static
+../Core/Src/USART_Arduino.c:85:6:HAL_UART_RxCpltCallback	16	static
+../Core/Src/USART_Arduino.c:113:9:ChSUM	24	static
+../Core/Src/USART_Arduino.c:129:6:AddStruct	16	static
+../Core/Src/USART_Arduino.c:159:6:StructInit	16	static
+../Core/Src/USART_Arduino.c:187:6:AllShow	152	static
+../Core/Src/USART_Arduino.c:238:6:AllShowP	32	static

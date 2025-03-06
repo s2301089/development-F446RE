@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="リソース名 &apos;20250306_struct_it6_ps4/Core/Inc/USART_Arduino_PS3.h&apos; を &apos;USART_Arduino_PS4.h&apos; に変更します" description="リソース &apos;USART_Arduino_PS3.h&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/USART_Arduino_PS3.h" name="USART_Arduino_PS4.h" stamp="1741245785745" updateReferences="true"/>
+</session>

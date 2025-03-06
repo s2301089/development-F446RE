@@ -1,0 +1,10 @@
+16:29:14 **** インクリメンタル・ビルド of configuration Debug for project 20250306_struct_it6_ps3 ****
+make -j16 all 
+arm-none-eabi-size  20250306_struct_it6_ps3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20636	    104	   2176	  22916	   5984	20250306_struct_it6_ps3.elf
+Finished building: default.size.stdout
+ 
+
+16:29:14 Build Finished. 0 errors, 0 warnings. (経過 385ms)
+
