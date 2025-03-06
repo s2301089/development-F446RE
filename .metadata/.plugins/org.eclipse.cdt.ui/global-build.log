@@ -10492,3 +10492,192 @@ Finished building: default.size.stdout
  
 Finished building: 20250305_struct_it5.list
  
+10:55:11 **** インクリメンタル・ビルド of configuration Debug for project 20250305_struct_it5 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250305_struct_it5.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250305_struct_it5\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250305_struct_it5.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250305_struct_it5.elf
+ 
+arm-none-eabi-size  20250305_struct_it5.elf 
+arm-none-eabi-objdump -h -S 20250305_struct_it5.elf  > "20250305_struct_it5.list"
+   text	   data	    bss	    dec	    hex	filename
+  20704	    104	   2176	  22984	   59c8	20250305_struct_it5.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250305_struct_it5.list
+ 
+10:55:38 **** インクリメンタル・ビルド of configuration Debug for project 20250305_struct_it5 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250305_struct_it5.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250305_struct_it5\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250305_struct_it5.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250305_struct_it5.elf
+ 
+arm-none-eabi-size  20250305_struct_it5.elf 
+arm-none-eabi-objdump -h -S 20250305_struct_it5.elf  > "20250305_struct_it5.list"
+   text	   data	    bss	    dec	    hex	filename
+  20704	    104	   2176	  22984	   59c8	20250305_struct_it5.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250305_struct_it5.list
+ 
+11:34:30 **** インクリメンタル・ビルド of configuration Debug for project 20250305_struct_it5 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250305_struct_it5.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250305_struct_it5\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250305_struct_it5.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250305_struct_it5.elf
+ 
+arm-none-eabi-size  20250305_struct_it5.elf 
+arm-none-eabi-objdump -h -S 20250305_struct_it5.elf  > "20250305_struct_it5.list"
+   text	   data	    bss	    dec	    hex	filename
+  20700	    104	   2176	  22980	   59c4	20250305_struct_it5.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250305_struct_it5.list
+ 
+11:39:37 **** インクリメンタル・ビルド of configuration Debug for project 20250305_struct_it5 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250305_struct_it5.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250305_struct_it5\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250305_struct_it5.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250305_struct_it5.elf
+ 
+arm-none-eabi-size  20250305_struct_it5.elf 
+arm-none-eabi-objdump -h -S 20250305_struct_it5.elf  > "20250305_struct_it5.list"
+   text	   data	    bss	    dec	    hex	filename
+  20700	    104	   2176	  22980	   59c4	20250305_struct_it5.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250305_struct_it5.list
+ 
+11:41:13 **** インクリメンタル・ビルド of configuration Debug for project 20250305_struct_it5 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250305_struct_it5.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250305_struct_it5\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250305_struct_it5.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250305_struct_it5.elf
+ 
+arm-none-eabi-size  20250305_struct_it5.elf 
+arm-none-eabi-objdump -h -S 20250305_struct_it5.elf  > "20250305_struct_it5.list"
+   text	   data	    bss	    dec	    hex	filename
+  20704	    104	   2176	  22984	   59c8	20250305_struct_it5.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250305_struct_it5.list
+ 
+11:44:05 **** インクリメンタル・ビルド of configuration Debug for project 20250305_struct_it5 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250305_struct_it5.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250305_struct_it5\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250305_struct_it5.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250305_struct_it5.elf
+ 
+arm-none-eabi-size  20250305_struct_it5.elf 
+arm-none-eabi-objdump -h -S 20250305_struct_it5.elf  > "20250305_struct_it5.list"
+   text	   data	    bss	    dec	    hex	filename
+  20704	    104	   2176	  22984	   59c8	20250305_struct_it5.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250305_struct_it5.list
+ 
+11:46:23 **** インクリメンタル・ビルド of configuration Debug for project 20250305_struct_it5 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250305_struct_it5.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250305_struct_it5\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250305_struct_it5.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250305_struct_it5.elf
+ 
+arm-none-eabi-size  20250305_struct_it5.elf 
+arm-none-eabi-objdump -h -S 20250305_struct_it5.elf  > "20250305_struct_it5.list"
+   text	   data	    bss	    dec	    hex	filename
+  20704	    104	   2176	  22984	   59c8	20250305_struct_it5.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250305_struct_it5.list
+ 
+11:54:03 **** インクリメンタル・ビルド of configuration Debug for project 20250305_struct_it5 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250305_struct_it5.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250305_struct_it5\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250305_struct_it5.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250305_struct_it5.elf
+ 
+arm-none-eabi-size  20250305_struct_it5.elf 
+arm-none-eabi-objdump -h -S 20250305_struct_it5.elf  > "20250305_struct_it5.list"
+   text	   data	    bss	    dec	    hex	filename
+  20696	    104	   2176	  22976	   59c0	20250305_struct_it5.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250305_struct_it5.list
+ 
+11:57:16 **** インクリメンタル・ビルド of configuration Debug for project 20250305_struct_it5 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250305_struct_it5.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250305_struct_it5\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250305_struct_it5.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250305_struct_it5.elf
+ 
+arm-none-eabi-size  20250305_struct_it5.elf 
+arm-none-eabi-objdump -h -S 20250305_struct_it5.elf  > "20250305_struct_it5.list"
+   text	   data	    bss	    dec	    hex	filename
+  20696	    104	   2176	  22976	   59c0	20250305_struct_it5.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250305_struct_it5.list
+ 
+11:58:27 **** インクリメンタル・ビルド of configuration Debug for project 20250305_struct_it5 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250305_struct_it5.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250305_struct_it5\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250305_struct_it5.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250305_struct_it5.elf
+ 
+arm-none-eabi-size  20250305_struct_it5.elf 
+arm-none-eabi-objdump -h -S 20250305_struct_it5.elf  > "20250305_struct_it5.list"
+   text	   data	    bss	    dec	    hex	filename
+  20696	    104	   2176	  22976	   59c0	20250305_struct_it5.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250305_struct_it5.list
+ 
+11:59:35 **** インクリメンタル・ビルド of configuration Debug for project 20250305_struct_it5 ****
+make -j16 all 
+arm-none-eabi-size  20250305_struct_it5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20696	    104	   2176	  22976	   59c0	20250305_struct_it5.elf
+Finished building: default.size.stdout
+ 
+12:01:24 **** インクリメンタル・ビルド of configuration Debug for project 20250305_struct_it5 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250305_struct_it5.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250305_struct_it5\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250305_struct_it5.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250305_struct_it5.elf
+ 
+arm-none-eabi-size  20250305_struct_it5.elf 
+arm-none-eabi-objdump -h -S 20250305_struct_it5.elf  > "20250305_struct_it5.list"
+   text	   data	    bss	    dec	    hex	filename
+  20696	    104	   2176	  22976	   59c0	20250305_struct_it5.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250305_struct_it5.list
+ 
+12:02:00 **** インクリメンタル・ビルド of configuration Debug for project 20250305_struct_it5 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250305_struct_it5.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250305_struct_it5\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250305_struct_it5.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250305_struct_it5.elf
+ 
+arm-none-eabi-size  20250305_struct_it5.elf 
+arm-none-eabi-objdump -h -S 20250305_struct_it5.elf  > "20250305_struct_it5.list"
+   text	   data	    bss	    dec	    hex	filename
+  20696	    104	   2176	  22976	   59c0	20250305_struct_it5.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250305_struct_it5.list
+ 
+12:02:42 **** インクリメンタル・ビルド of configuration Debug for project 20250305_struct_it5 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250305_struct_it5.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250305_struct_it5\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250305_struct_it5.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250305_struct_it5.elf
+ 
+arm-none-eabi-size  20250305_struct_it5.elf 
+arm-none-eabi-objdump -h -S 20250305_struct_it5.elf  > "20250305_struct_it5.list"
+   text	   data	    bss	    dec	    hex	filename
+  20696	    104	   2176	  22976	   59c0	20250305_struct_it5.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250305_struct_it5.list
+ 

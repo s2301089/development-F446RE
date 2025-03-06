@@ -108,7 +108,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  HAL_TIM_PWM_Start(&htim3,TIM_CHANNEL_3);
+	  HAL_TIM_PWM_Start(&htim3,TIMCH_3);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -118,8 +118,8 @@ int main(void)
 	  if(FAF == 1){
 		  FAFcount = 0;
 		  AllShow(data);
-		  __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_3,data.LY);
-		  HAL_GPIO_WritePin(PA, P0, 0);
+		  __HAL_TIM_SET_COMPARE(&htim3,TIMCH_3,data.LY);
+		  HAL_GPIO_WritePin(GPIOxA, GPIO_Pin_0, 0);
 	  }else{
 //		  printf("\r\n");
 		  FAFcount++;
@@ -203,9 +203,9 @@ static void MX_TIM3_Init(void)
 
   /* USER CODE END TIM3_Init 1 */
   htim3.Instance = TIM3;
-  htim3.Init.Prescaler = 83;
+  htim3.Init.Prescaler = 4;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 999;
+  htim3.Init.Period = 255;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_PWM_Init(&htim3) != HAL_OK)
