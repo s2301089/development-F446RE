@@ -561,7 +561,7 @@ int main(void)
  8000680:	681b      	ldr	r3, [r3, #0]
  8000682:	68fa      	ldr	r2, [r7, #12]
  8000684:	635a      	str	r2, [r3, #52]	@ 0x34
-		  printf("1 %d\r\n",i);
+		  printf("1 %3d\r\n",i);
  8000686:	68f9      	ldr	r1, [r7, #12]
  8000688:	482e      	ldr	r0, [pc, #184]	@ (8000744 <main+0x110>)
  800068a:	f002 fd7d 	bl	8003188 <iprintf>
@@ -590,7 +590,7 @@ int main(void)
  80006b2:	681b      	ldr	r3, [r3, #0]
  80006b4:	68ba      	ldr	r2, [r7, #8]
  80006b6:	635a      	str	r2, [r3, #52]	@ 0x34
-		  printf("1 %d\r\n",i);
+		  printf("1 %3d\r\n",i);
  80006b8:	68b9      	ldr	r1, [r7, #8]
  80006ba:	4822      	ldr	r0, [pc, #136]	@ (8000744 <main+0x110>)
  80006bc:	f002 fd64 	bl	8003188 <iprintf>
@@ -619,7 +619,7 @@ int main(void)
  80006e4:	681b      	ldr	r3, [r3, #0]
  80006e6:	687a      	ldr	r2, [r7, #4]
  80006e8:	635a      	str	r2, [r3, #52]	@ 0x34
-		  printf("0 %d\r\n",i);
+		  printf("0 %3d\r\n",i);
  80006ea:	6879      	ldr	r1, [r7, #4]
  80006ec:	4816      	ldr	r0, [pc, #88]	@ (8000748 <main+0x114>)
  80006ee:	f002 fd4b 	bl	8003188 <iprintf>
@@ -648,7 +648,7 @@ int main(void)
  8000716:	681b      	ldr	r3, [r3, #0]
  8000718:	683a      	ldr	r2, [r7, #0]
  800071a:	635a      	str	r2, [r3, #52]	@ 0x34
-		  printf("0 %d\r\n",i);
+		  printf("0 %3d\r\n",i);
  800071c:	6839      	ldr	r1, [r7, #0]
  800071e:	480a      	ldr	r0, [pc, #40]	@ (8000748 <main+0x114>)
  8000720:	f002 fd32 	bl	8003188 <iprintf>

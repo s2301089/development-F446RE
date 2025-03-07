@@ -113,25 +113,25 @@ int main(void)
 	  for(int i = 0;i < 255;i++){
 		  HAL_GPIO_WritePin(GPIOB, GPIO_Pin_7, 0);
 		  __HAL_TIM_SET_COMPARE(&htim2,TIMCH_1,i);
-		  printf("1 %d\r\n",i);
+		  printf("1 %3d\r\n",i);
 		  HAL_Delay(10);
 	  }
 	  for(int i = 255;i > 0;i--){
 		  HAL_GPIO_WritePin(GPIOB, GPIO_Pin_7, 0);
 		  __HAL_TIM_SET_COMPARE(&htim2,TIMCH_1,i);
-		  printf("1 %d\r\n",i);
+		  printf("1 %3d\r\n",i);
 		  HAL_Delay(10);
 	  }
 	  for(int i = 255;i > 0;i--){
 		  HAL_GPIO_WritePin(GPIOB, GPIO_Pin_7, 1);
 		  __HAL_TIM_SET_COMPARE(&htim2,TIMCH_1,i);
-		  printf("0 %d\r\n",i);
+		  printf("0 %3d\r\n",i);
 		  HAL_Delay(10);
 	  }
 	  for(int i = 0;i < 255;i++){
 		  HAL_GPIO_WritePin(GPIOB, GPIO_Pin_7, 1);
 		  __HAL_TIM_SET_COMPARE(&htim2,TIMCH_1,i);
-		  printf("0 %d\r\n",i);
+		  printf("0 %3d\r\n",i);
 		  HAL_Delay(10);
 	  }
 
