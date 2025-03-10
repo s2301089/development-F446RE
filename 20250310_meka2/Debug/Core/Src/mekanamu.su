@@ -1,0 +1,3 @@
+../Core/Src/mekanamu.c:12:13:halfX	16	static
+../Core/Src/mekanamu.c:26:13:halfY	16	static
+../Core/Src/mekanamu.c:40:6:Move	96	static
