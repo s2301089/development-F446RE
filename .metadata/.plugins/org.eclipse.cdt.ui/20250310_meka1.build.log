@@ -1,0 +1,21 @@
+16:30:01 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:46:16: warning: variable 'deg' set but not used [-Wunused-but-set-variable]
+   46 |         double deg;
+      |                ^~~
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  37708	    468	   2100	  40276	   9d54	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
+
+16:30:02 Build Finished. 0 errors, 1 warnings. (経過 1s.93ms)
+

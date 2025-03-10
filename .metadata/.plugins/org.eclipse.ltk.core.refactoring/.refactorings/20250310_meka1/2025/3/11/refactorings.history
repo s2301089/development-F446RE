@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="リソース名 &apos;20250310_meka1/20250310_0iti1.ioc&apos; を &apos;20250310_meka1.ioc&apos; に変更します" description="リソース &apos;20250310_0iti1.ioc&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="20250310_0iti1.ioc" name="20250310_meka1.ioc" stamp="1741586423801" updateReferences="true"/>
+</session>

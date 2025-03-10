@@ -7724,3 +7724,641 @@ Finished building: default.size.stdout
  
 Finished building: 20250310_0iti1.list
  
+14:57:03 **** インクリメンタル・ビルド of configuration Debug for project 20250310_0iti1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/STconhalf.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/STconhalf.d" -MT"Core/Src/STconhalf.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/STconhalf.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250310_0iti1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_0iti1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_0iti1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_0iti1.elf
+ 
+arm-none-eabi-size  20250310_0iti1.elf 
+arm-none-eabi-objdump -h -S 20250310_0iti1.elf  > "20250310_0iti1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17096	    104	   2104	  19304	   4b68	20250310_0iti1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_0iti1.list
+ 
+15:01:26 **** クリーンのみのビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 clean 
+rm -rf ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.su
+rm -rf ./Core/Startup/startup_stm32f446retx.d ./Core/Startup/startup_stm32f446retx.o
+rm -rf ./Core/Src/STconhalf.cyclo ./Core/Src/STconhalf.d ./Core/Src/STconhalf.o ./Core/Src/STconhalf.su ./Core/Src/STprintf.cyclo ./Core/Src/STprintf.d ./Core/Src/STprintf.o ./Core/Src/STprintf.su ./Core/Src/USART_Arduino_PS4.cyclo ./Core/Src/USART_Arduino_PS4.d ./Core/Src/USART_Arduino_PS4.o ./Core/Src/USART_Arduino_PS4.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32f4xx_hal_msp.cyclo ./Core/Src/stm32f4xx_hal_msp.d ./Core/Src/stm32f4xx_hal_msp.o ./Core/Src/stm32f4xx_hal_msp.su ./Core/Src/stm32f4xx_it.cyclo ./Core/Src/stm32f4xx_it.d ./Core/Src/stm32f4xx_it.o ./Core/Src/stm32f4xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f4xx.cyclo ./Core/Src/system_stm32f4xx.d ./Core/Src/system_stm32f4xx.o ./Core/Src/system_stm32f4xx.su
+rm -rf 20250310_0iti1.elf 20250310_0iti1.list 20250310_0iti1.map default.size.stdout
+ 
+15:01:27 **** ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f446retx.d" -MT"Core/Startup/startup_stm32f446retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f446retx.o" "../Core/Startup/startup_stm32f446retx.s"
+arm-none-eabi-gcc "../Core/Src/STconhalf.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/STconhalf.d" -MT"Core/Src/STconhalf.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/STconhalf.o"
+arm-none-eabi-gcc "../Core/Src/STprintf.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/STprintf.d" -MT"Core/Src/STprintf.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/STprintf.o"
+arm-none-eabi-gcc "../Core/Src/USART_Arduino_PS4.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino_PS4.d" -MT"Core/Src/USART_Arduino_PS4.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino_PS4.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17096	    104	   2104	  19304	   4b68	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
+15:14:17 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/STprintf.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/STprintf.d" -MT"Core/Src/STprintf.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/STprintf.o"
+arm-none-eabi-gcc "../Core/Src/USART_Arduino_PS4.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/USART_Arduino_PS4.d" -MT"Core/Src/USART_Arduino_PS4.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/USART_Arduino_PS4.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17096	    104	   2104	  19304	   4b68	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
+15:14:45 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-size  20250310_meka1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17096	    104	   2104	  19304	   4b68	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+15:30:03 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:44:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   44 |         printf("(%+4d,%+4d)\r\n",PosX,PosY);
+      |         ^~~~~~
+../Core/Src/mekanamu.c:10:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+    9 | #include <math.h>
+  +++ |+#include <stdio.h>
+   10 | 
+../Core/Src/mekanamu.c:44:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   44 |         printf("(%+4d,%+4d)\r\n",PosX,PosY);
+      |         ^~~~~~
+../Core/Src/mekanamu.c:44:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/mekanamu.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+   45 | }
+      | ^
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17096	    104	   2104	  19304	   4b68	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
+15:36:03 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:43:18: error: both 'unsigned' and 'float' in declaration specifiers
+   43 |         unsigned float Z;
+      |                  ^~~~~
+../Core/Src/mekanamu.c:47:30: warning: format '%f' expects argument of type 'double', but argument 4 has type 'unsigned int' [-Wformat=]
+   47 |         printf("(%+4d,%+4d) %f\r\n",PosX,PosY,Z);
+      |                             ~^                ~
+      |                              |                |
+      |                              double           unsigned int
+      |                             %d
+../Core/Src/mekanamu.c:48:1: warning: control reaches end of non-void function [-Wreturn-type]
+   48 | }
+      | ^
+make: *** [Core/Src/subdir.mk:43: Core/Src/mekanamu.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:36:42 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:48:1: warning: control reaches end of non-void function [-Wreturn-type]
+   48 | }
+      | ^
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  31428	    468	   2100	  33996	   84cc	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
+15:41:32 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:50:1: warning: control reaches end of non-void function [-Wreturn-type]
+   50 | }
+      | ^
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  32388	    468	   2100	  34956	   888c	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
+15:43:40 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:49:36: warning: format '%f' expects argument of type 'double', but argument 6 has type 'int' [-Wformat=]
+   49 |         printf("(%+4d,%+4d) %f∠%f %f\r\n",PosX,PosY,Z,theta,PosY / PosX);
+      |                                   ~^                        ~~~~~~~~~~~
+      |                                    |                             |
+      |                                    double                        int
+      |                                   %d
+../Core/Src/mekanamu.c:50:1: warning: control reaches end of non-void function [-Wreturn-type]
+   50 | }
+      | ^
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  32396	    468	   2100	  34964	   8894	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
+15:44:13 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:49:36: warning: format '%f' expects argument of type 'double', but argument 6 has type 'int' [-Wformat=]
+   49 |         printf("(%+4d,%+4d) %f∠%f %f\r\n",PosX,PosY,Z,theta,(PosY / PosX));
+      |                                   ~^                        ~~~~~~~~~~~~~
+      |                                    |                              |
+      |                                    double                         int
+      |                                   %d
+../Core/Src/mekanamu.c:50:1: warning: control reaches end of non-void function [-Wreturn-type]
+   50 | }
+      | ^
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  32396	    468	   2100	  34964	   8894	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
+15:45:19 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:50:1: warning: control reaches end of non-void function [-Wreturn-type]
+   50 | }
+      | ^
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  32396	    468	   2100	  34964	   8894	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
+15:49:18 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:50:1: warning: control reaches end of non-void function [-Wreturn-type]
+   50 | }
+      | ^
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  32900	    468	   2100	  35468	   8a8c	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
+15:54:09 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:49:23: error: 'Pos' undeclared (first use in this function); did you mean 'PosY'?
+   49 |         theta = atan2(Pos,PosX);
+      |                       ^~~
+      |                       PosY
+../Core/Src/mekanamu.c:49:23: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/mekanamu.c:50:31: warning: implicit declaration of function 'PI' [-Wimplicit-function-declaration]
+   50 |         deg = (180 * theta) / PI();
+      |                               ^~
+../Core/Src/mekanamu.c:51:36: warning: format '%f' expects a matching 'double' argument [-Wformat=]
+   51 |         printf("(%+4d,%+4d) %f∠%f %f\r\n",PosX,PosY,Z,theta);
+      |                                   ~^
+      |                                    |
+      |                                    double
+../Core/Src/mekanamu.c:45:15: warning: variable 'deg' set but not used [-Wunused-but-set-variable]
+   45 |         float deg;
+      |               ^~~
+../Core/Src/mekanamu.c:52:1: warning: control reaches end of non-void function [-Wreturn-type]
+   52 | }
+      | ^
+make: *** [Core/Src/subdir.mk:43: Core/Src/mekanamu.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:54:39 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:49:23: error: 'Pos' undeclared (first use in this function); did you mean 'PosY'?
+   49 |         theta = atan2(Pos,PosX);
+      |                       ^~~
+      |                       PosY
+../Core/Src/mekanamu.c:49:23: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/mekanamu.c:51:36: warning: format '%f' expects a matching 'double' argument [-Wformat=]
+   51 |         printf("(%+4d,%+4d) %f∠%f %f\r\n",PosX,PosY,Z,theta);
+      |                                   ~^
+      |                                    |
+      |                                    double
+../Core/Src/mekanamu.c:45:15: warning: variable 'deg' set but not used [-Wunused-but-set-variable]
+   45 |         float deg;
+      |               ^~~
+../Core/Src/mekanamu.c:52:1: warning: control reaches end of non-void function [-Wreturn-type]
+   52 | }
+      | ^
+make: *** [Core/Src/subdir.mk:43: Core/Src/mekanamu.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:54:58 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:51:36: warning: format '%f' expects a matching 'double' argument [-Wformat=]
+   51 |         printf("(%+4d,%+4d) %f∠%f %f\r\n",PosX,PosY,Z,theta);
+      |                                   ~^
+      |                                    |
+      |                                    double
+../Core/Src/mekanamu.c:45:15: warning: variable 'deg' set but not used [-Wunused-but-set-variable]
+   45 |         float deg;
+      |               ^~~
+../Core/Src/mekanamu.c:52:1: warning: control reaches end of non-void function [-Wreturn-type]
+   52 | }
+      | ^
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  32900	    468	   2100	  35468	   8a8c	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
+15:56:51 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:52:1: warning: control reaches end of non-void function [-Wreturn-type]
+   52 | }
+      | ^
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  32700	    468	   2100	  35268	   89c4	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
+16:06:32 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:46:16: warning: variable 'deg' set but not used [-Wunused-but-set-variable]
+   46 |         double deg;
+      |                ^~~
+../Core/Src/mekanamu.c:44:16: warning: variable 'Z' set but not used [-Wunused-but-set-variable]
+   44 |         double Z;
+      |                ^
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  32676	    468	   2100	  35244	   89ac	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
+16:07:49 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:44:16: warning: variable 'Z' set but not used [-Wunused-but-set-variable]
+   44 |         double Z;
+      |                ^
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  32756	    468	   2100	  35324	   89fc	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
+16:09:57 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:44:16: warning: variable 'Z' set but not used [-Wunused-but-set-variable]
+   44 |         double Z;
+      |                ^
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  32748	    468	   2100	  35316	   89f4	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
+16:13:25 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:48:9: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PosX'
+   48 |         PosX = halfX(stX);
+      |         ^~~~
+../Core/Src/mekanamu.c:52:9: error: 'theta_plus' undeclared (first use in this function)
+   52 |         theta_plus = theta + (PLUS * M_PI) / 180;
+      |         ^~~~~~~~~~
+../Core/Src/mekanamu.c:52:9: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/mekanamu.c:44:16: warning: variable 'Z' set but not used [-Wunused-but-set-variable]
+   44 |         double Z;
+      |                ^
+make: *** [Core/Src/subdir.mk:43: Core/Src/mekanamu.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:13:39 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:44:16: warning: variable 'Z' set but not used [-Wunused-but-set-variable]
+   44 |         double Z;
+      |                ^
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  32788	    468	   2100	  35356	   8a1c	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
+16:15:11 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:46:16: warning: variable 'deg' set but not used [-Wunused-but-set-variable]
+   46 |         double deg;
+      |                ^~~
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  37284	    468	   2100	  39852	   9bac	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
+16:17:32 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:59:18: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+   59 |         printf("%f %f %f %f\r\n",Udata[0],Udata[1],Udata[2],Udata[3]);
+      |                 ~^               ~~~~~~~~
+      |                  |                    |
+      |                  double               int
+      |                 %d
+../Core/Src/mekanamu.c:59:21: warning: format '%f' expects argument of type 'double', but argument 3 has type 'int' [-Wformat=]
+   59 |         printf("%f %f %f %f\r\n",Udata[0],Udata[1],Udata[2],Udata[3]);
+      |                    ~^                     ~~~~~~~~
+      |                     |                          |
+      |                     double                     int
+      |                    %d
+../Core/Src/mekanamu.c:59:24: warning: format '%f' expects argument of type 'double', but argument 4 has type 'int' [-Wformat=]
+   59 |         printf("%f %f %f %f\r\n",Udata[0],Udata[1],Udata[2],Udata[3]);
+      |                       ~^                           ~~~~~~~~
+      |                        |                                |
+      |                        double                           int
+      |                       %d
+../Core/Src/mekanamu.c:59:27: warning: format '%f' expects argument of type 'double', but argument 5 has type 'int' [-Wformat=]
+   59 |         printf("%f %f %f %f\r\n",Udata[0],Udata[1],Udata[2],Udata[3]);
+      |                          ~^                                 ~~~~~~~~
+      |                           |                                      |
+      |                           double                                 int
+      |                          %d
+../Core/Src/mekanamu.c:46:16: warning: variable 'deg' set but not used [-Wunused-but-set-variable]
+   46 |         double deg;
+      |                ^~~
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  37428	    468	   2100	  39996	   9c3c	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
+16:19:07 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:61:18: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+   61 |         printf("%f %f %f %f\r\n",Udata[0],Udata[1],Udata[2],Udata[3]);
+      |                 ~^               ~~~~~~~~
+      |                  |                    |
+      |                  double               int
+      |                 %d
+../Core/Src/mekanamu.c:61:21: warning: format '%f' expects argument of type 'double', but argument 3 has type 'int' [-Wformat=]
+   61 |         printf("%f %f %f %f\r\n",Udata[0],Udata[1],Udata[2],Udata[3]);
+      |                    ~^                     ~~~~~~~~
+      |                     |                          |
+      |                     double                     int
+      |                    %d
+../Core/Src/mekanamu.c:61:24: warning: format '%f' expects argument of type 'double', but argument 4 has type 'int' [-Wformat=]
+   61 |         printf("%f %f %f %f\r\n",Udata[0],Udata[1],Udata[2],Udata[3]);
+      |                       ~^                           ~~~~~~~~
+      |                        |                                |
+      |                        double                           int
+      |                       %d
+../Core/Src/mekanamu.c:61:27: warning: format '%f' expects argument of type 'double', but argument 5 has type 'int' [-Wformat=]
+   61 |         printf("%f %f %f %f\r\n",Udata[0],Udata[1],Udata[2],Udata[3]);
+      |                          ~^                                 ~~~~~~~~
+      |                           |                                      |
+      |                           double                                 int
+      |                          %d
+../Core/Src/mekanamu.c:46:16: warning: variable 'deg' set but not used [-Wunused-but-set-variable]
+   46 |         double deg;
+      |                ^~~
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  37428	    468	   2100	  39996	   9c3c	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
+16:24:34 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:65:18: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+   65 |         printf("%f %f %f %f\r\n",Udata[0],Udata[1],Udata[2],Udata[3]);
+      |                 ~^               ~~~~~~~~
+      |                  |                    |
+      |                  double               int
+      |                 %d
+../Core/Src/mekanamu.c:65:21: warning: format '%f' expects argument of type 'double', but argument 3 has type 'int' [-Wformat=]
+   65 |         printf("%f %f %f %f\r\n",Udata[0],Udata[1],Udata[2],Udata[3]);
+      |                    ~^                     ~~~~~~~~
+      |                     |                          |
+      |                     double                     int
+      |                    %d
+../Core/Src/mekanamu.c:65:24: warning: format '%f' expects argument of type 'double', but argument 4 has type 'int' [-Wformat=]
+   65 |         printf("%f %f %f %f\r\n",Udata[0],Udata[1],Udata[2],Udata[3]);
+      |                       ~^                           ~~~~~~~~
+      |                        |                                |
+      |                        double                           int
+      |                       %d
+../Core/Src/mekanamu.c:65:27: warning: format '%f' expects argument of type 'double', but argument 5 has type 'int' [-Wformat=]
+   65 |         printf("%f %f %f %f\r\n",Udata[0],Udata[1],Udata[2],Udata[3]);
+      |                          ~^                                 ~~~~~~~~
+      |                           |                                      |
+      |                           double                                 int
+      |                          %d
+../Core/Src/mekanamu.c:46:16: warning: variable 'deg' set but not used [-Wunused-but-set-variable]
+   46 |         double deg;
+      |                ^~~
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  37556	    468	   2100	  40124	   9cbc	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
+16:26:06 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:46:16: warning: variable 'deg' set but not used [-Wunused-but-set-variable]
+   46 |         double deg;
+      |                ^~~
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  37556	    468	   2100	  40124	   9cbc	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
+16:29:29 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:46:16: warning: variable 'deg' set but not used [-Wunused-but-set-variable]
+   46 |         double deg;
+      |                ^~~
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  37684	    468	   2100	  40252	   9d3c	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
+16:30:01 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'Move':
+../Core/Src/mekanamu.c:46:16: warning: variable 'deg' set but not used [-Wunused-but-set-variable]
+   46 |         double deg;
+      |                ^~~
+arm-none-eabi-gcc -o "20250310_meka1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka1.elf
+ 
+arm-none-eabi-size  20250310_meka1.elf 
+arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
+   text	   data	    bss	    dec	    hex	filename
+  37708	    468	   2100	  40276	   9d54	20250310_meka1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka1.list
+ 
