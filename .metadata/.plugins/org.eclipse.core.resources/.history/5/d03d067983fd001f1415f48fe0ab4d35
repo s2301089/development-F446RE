@@ -68,9 +68,9 @@ void Move(uint8_t *Udata,uint8_t stX,uint8_t stY){ // Udata[0] 左上 Udata[1] �
 		Udata[5] = Z * sin(theta_plus);
 		Udata[1] = 0;
 	}
-	Udata[2] = Udata[1];
-	Udata[3] = Udata[0];
-	Udata[6] = Udata[5];
-	Udata[7] = Udata[4];
-	printf("左上 %d %2X 右上 %d %2X 左下 %d %2X 右下 %d %2X\r\n",Udata[0],Udata[4],Udata[1],Udata[5],Udata[2],Udata[6],Udata[3],Udata[7]);
+	Udata[2] = Udata[0];
+	Udata[3] = Udata[1];
+	Udata[6] = Udata[4];
+	Udata[7] = Udata[5];
+	printf("%2X %2X %2X %2X\r\n",Udata[4],Udata[5],Udata[6],Udata[7]);
 }

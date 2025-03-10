@@ -1,5 +1,6 @@
-16:30:01 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
+16:53:12 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka1 ****
 make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
 ../Core/Src/mekanamu.c: In function 'Move':
 ../Core/Src/mekanamu.c:46:16: warning: variable 'deg' set but not used [-Wunused-but-set-variable]
@@ -11,11 +12,11 @@ Finished building target: 20250310_meka1.elf
 arm-none-eabi-size  20250310_meka1.elf 
 arm-none-eabi-objdump -h -S 20250310_meka1.elf  > "20250310_meka1.list"
    text	   data	    bss	    dec	    hex	filename
-  37708	    468	   2100	  40276	   9d54	20250310_meka1.elf
+  37772	    468	   2100	  40340	   9d94	20250310_meka1.elf
 Finished building: default.size.stdout
  
 Finished building: 20250310_meka1.list
  
 
-16:30:02 Build Finished. 0 errors, 1 warnings. (経過 1s.93ms)
+16:53:13 Build Finished. 0 errors, 1 warnings. (経過 1s.243ms)
 

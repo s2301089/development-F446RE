@@ -112,7 +112,7 @@ int main(void)
 //	  if(FAF == 1){
 //		  AllShowP(data);
 //	  }
-//	  printf("%d ",FAF);
+	  printf("%d ",FAF);
 //	  printf("LX:%+4d LY:%+4d RX:%+4d RY:%+4d \r\n",halfX(data.LX),halfY(data.LY),halfX(data.RX),halfY(data.RY));
 //	  HAL_Delay(250);
 	  Move(Out,data.LX,data.LY);
