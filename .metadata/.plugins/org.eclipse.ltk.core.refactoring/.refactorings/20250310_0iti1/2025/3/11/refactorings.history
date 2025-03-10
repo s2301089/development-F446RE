@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="リソース名 &apos;20250310_0iti1/Core/Src/STconhalf.h&apos; を &apos;STconhalf.c&apos; に変更します" description="リソース &apos;STconhalf.h&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/STconhalf.h" name="STconhalf.c" stamp="1741584614166" updateReferences="true"/>
+</session>
