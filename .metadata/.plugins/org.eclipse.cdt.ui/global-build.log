@@ -8453,3 +8453,47 @@ Finished building: default.size.stdout
  
 Finished building: 20250310_meka1.list
  
+08:35:56 **** ビルド of configuration Debug for project 20250310_meka3 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'MoveST':
+../Core/Src/mekanamu.c:54:17: error: too many arguments to function 'atan'
+   54 |         theta = atan((double)PosY,(double)PosX);
+      |                 ^~~~
+In file included from ../Core/Inc/mekanamu.h:12,
+                 from ../Core/Src/mekanamu.c:8:
+C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344\tools\bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include/math.h:86:15: note: declared here
+   86 | extern double atan (double);
+      |               ^~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/mekanamu.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:118:11: warning: implicit declaration of function 'Move'; did you mean 'MoveST'? [-Wimplicit-function-declaration]
+  118 |           Move(Out,data.LX,data.LY);
+      |           ^~~~
+      |           MoveST
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+08:36:39 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka3 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+arm-none-eabi-gcc -o "20250310_meka3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka3\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+D:/OneDrive - 独立行政法人 国立高等専門学校機構/github/development-F446RE/20250310_meka3/Debug/../Core/Src/main.c:118:(.text.main+0x3e): undefined reference to `Move'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: 20250310_meka3.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+08:37:16 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka3 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250310_meka3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka3\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka3.elf
+ 
+arm-none-eabi-size  20250310_meka3.elf 
+arm-none-eabi-objdump -h -S 20250310_meka3.elf  > "20250310_meka3.list"
+   text	   data	    bss	    dec	    hex	filename
+  37436	    468	   2100	  40004	   9c44	20250310_meka3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka3.list
+ 

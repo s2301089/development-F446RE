@@ -1,0 +1,17 @@
+08:37:16 **** インクリメンタル・ビルド of configuration Debug for project 20250310_meka3 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250310_meka3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka3\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250310_meka3.elf
+ 
+arm-none-eabi-size  20250310_meka3.elf 
+arm-none-eabi-objdump -h -S 20250310_meka3.elf  > "20250310_meka3.list"
+   text	   data	    bss	    dec	    hex	filename
+  37436	    468	   2100	  40004	   9c44	20250310_meka3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250310_meka3.list
+ 
+
+08:37:18 Build Finished. 0 errors, 0 warnings. (経過 1s.300ms)
+
