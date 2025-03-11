@@ -7992,3 +7992,12 @@ java.io.FileNotFoundException: D:\OneDrive - 独立行政法人 国立高等専�
 
 !ENTRY org.eclipse.cdt.core 1 0 2025-03-11 08:38:34.521
 !MESSAGE Indexed '20250311_meka4' (23 sources, 126 headers) in 2.9 sec: 12,308 declarations; 46,539 references; 6 unresolved inclusions; 1,105 syntax errors; 1,287 unresolved names (2.1%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2025-03-11 08:42:11.663
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-03-11 09:54:13.663
+!MESSAGE Indexed '20250311_meka5' (23 sources, 126 headers) in 1.59 sec: 12,309 declarations; 46,530 references; 6 unresolved inclusions; 1,105 syntax errors; 1,287 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-03-11 11:22:32.259
+!MESSAGE Indexed '20250311_meka6' (25 sources, 132 headers) in 1.71 sec: 14,197 declarations; 69,609 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.29%)

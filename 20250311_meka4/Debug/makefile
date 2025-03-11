@@ -34,34 +34,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := 20250310_meka3
+BUILD_ARTIFACT_NAME := 20250311_meka4
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-20250310_meka3.elf \
+20250311_meka4.elf \
 
 MAP_FILES += \
-20250310_meka3.map \
+20250311_meka4.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-20250310_meka3.list \
+20250311_meka4.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: 20250310_meka3.elf secondary-outputs
+main-build: 20250311_meka4.elf secondary-outputs
 
 # Tool invocations
-20250310_meka3.elf 20250310_meka3.map: $(OBJS) $(USER_OBJS) D:\OneDrive\ -\ 独立行政法人\ 国立高等専門学校機構\github\development-F446RE\20250310_meka3\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "20250310_meka3.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250310_meka3\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250310_meka3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+20250311_meka4.elf 20250311_meka4.map: $(OBJS) $(USER_OBJS) D:\OneDrive\ -\ 独立行政法人\ 国立高等専門学校機構\github\development-F446RE\20250311_meka4\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "20250311_meka4.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250311_meka4\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250311_meka4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -70,14 +70,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-20250310_meka3.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "20250310_meka3.list"
+20250311_meka4.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "20250311_meka4.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) 20250310_meka3.elf 20250310_meka3.list 20250310_meka3.map default.size.stdout
+	-$(RM) 20250311_meka4.elf 20250311_meka4.list 20250311_meka4.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
