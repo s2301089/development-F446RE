@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="リソース名 &apos;20250311_meka6/Debug/20250311_meka5.elf&apos; を &apos;20250311_meka6.elf&apos; に変更します" description="リソース &apos;20250311_meka5.elf&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Debug/20250311_meka5.elf" name="20250311_meka6.elf" stamp="1741659800034" updateReferences="true"/>
+</session>
