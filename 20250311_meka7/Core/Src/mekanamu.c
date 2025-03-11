@@ -52,25 +52,13 @@ void MoveST(uint8_t *Udata,uint8_t stX,uint8_t stY,uint8_t stV){ // Udata[0] 左
 
 	PosX = halfX(stX);
 	PosY = halfY(stY);
-	if(PosX == 0 && PosY == 0){
-		COS = 0;
-		SIN = 0;
-	}else {
-		Z = sqrt(pow(PosX,2) + pow(PosY,2));
-		theta = atan((double)PosY / (double)PosX);
-		if(PosX < 0){
-			theta += M_PI;
-		}
-		if(theta < 0){
-			theta += 2 * M_PI;
-		}
-		theta_plus = theta - rad(PLUS);
-		COS = Z * cos(theta_plus);
-		SIN = Z * sin(theta_plus);
-	}
+	Z = sqrt(pow(PosX,2) + pow(PosY,2));
+	theta = atan2(PosY,PosX);
+//	theta_plus = theta - rad(PLUS);
+	theta_plus = theta;
+	COS = Z * cos(theta_plus);
+	SIN = Z * sin(theta_plus);
 
-	Adata[LUP] = COS;
-	Adata[RDP] = COS;
 //	if(COS < 0){
 //		Udata[LUP] = (uint8_t)(0x7f + COS);
 //		Udata[LUD] = 1;
@@ -79,8 +67,6 @@ void MoveST(uint8_t *Udata,uint8_t stX,uint8_t stY,uint8_t stV){ // Udata[0] 左
 //		Udata[LUD] = 0;
 //	}
 
-	Adata[RUP] = SIN;
-	Adata[LDP] = SIN;
 //	if(SIN < 0){
 //		Udata[RUP] = (uint8_t)(0x7f + SIN);
 //		Udata[RUD] = 1;
@@ -96,19 +82,23 @@ void MoveST(uint8_t *Udata,uint8_t stX,uint8_t stY,uint8_t stV){ // Udata[0] 左
 
 	double Vroll;
 	Vroll = (double)halfY(stV) * RAITO;
-	if(Vroll < 0){ //left
-		Adata[LUP] += Vroll;
-		Adata[LDP] += Vroll;
-		Adata[RUP] -= Vroll;
-		Adata[RDP] -= Vroll;
-		printf("left  ");
-	}else{ // right
-		Adata[LUP] += Vroll;
-		Adata[LDP] += Vroll;
-		Adata[RUP] -= Vroll;
-		Adata[RDP] -= Vroll;
-		printf("right ");
-	}
+//	if(Vroll < 0){ //left
+//		Adata[LUP] += Vroll;
+//		Adata[LDP] += Vroll;
+//		Adata[RUP] -= Vroll;
+//		Adata[RDP] -= Vroll;
+//		printf("left  ");
+//	}else{ // right
+//		Adata[LUP] += Vroll;
+//		Adata[LDP] += Vroll;
+//		Adata[RUP] -= Vroll;
+//		Adata[RDP] -= Vroll;
+//		printf("right ");
+//	}
+	Adata[LUP] = COS + SIN - Vroll;
+	Adata[RUP] = - COS - SIN - Vroll;
+	Adata[LDP] = - COS + SIN - Vroll;
+	Adata[RDP] = COS - SIN - Vroll;
 
 	for(int i = 0;i < 4;i++){
 		if(Adata[i+4] < 0){
@@ -127,6 +117,11 @@ void MoveST(uint8_t *Udata,uint8_t stX,uint8_t stY,uint8_t stV){ // Udata[0] 左
 			printf("posi ");
 		}
 	}
+
+//	Udata[LUD] = !Udata[LUD];
+//	Udata[LDD] = !Udata[LDD];
+//	Udata[LUP] = 0xff - Udata[LUP];
+//	Udata[LDP] = 0xff - Udata[LDP];
 
 //	printf("左上 %d %2X 右上 %d %2X 左下 %d %2X 右下 %d %2X %f\r\n",Udata[LUD],Udata[LUP],Udata[RUD],Udata[RUP],Udata[LDD],Udata[LDP],Udata[RDD],Udata[RDP],Vroll);
 //	printf("左上 %d %+4f 右上 %d %+4f 左下 %d %+4f 右下 %d %+4f %f\r\n",Udata[LUD],Adata[LUP],Udata[RUD],Adata[RUP],Udata[LDD],Adata[LDP],Udata[RDD],Adata[RDP],Vroll);

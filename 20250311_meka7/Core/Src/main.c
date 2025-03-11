@@ -127,16 +127,16 @@ int main(void)
 //	  printf("LX:%+4d LY:%+4d RX:%+4d RY:%+4d \r\n",halfX(data.LX),halfY(data.LY),halfX(data.RX),halfY(data.RY));
 //	  HAL_Delay(250);
 	  MoveST(Out,data.LX,data.LY,data.RY);
-	  HAL_GPIO_WritePin(GPIOB, GPIO_Pin_14, Out[0]);
-	  HAL_GPIO_WritePin(GPIOA, GPIO_Pin_7,	Out[1]);
-	  HAL_GPIO_WritePin(GPIOA, GPIO_Pin_4, 	Out[2]);
-	  HAL_GPIO_WritePin(GPIOB, GPIO_Pin_7, 	Out[3]);
+	  HAL_GPIO_WritePin(GPIOB, GPIO_Pin_14, !Out[0]);
+	  HAL_GPIO_WritePin(GPIOA, GPIO_Pin_7,	!Out[1]);
+	  HAL_GPIO_WritePin(GPIOA, GPIO_Pin_4, 	!Out[2]);
+	  HAL_GPIO_WritePin(GPIOB, GPIO_Pin_7, 	!Out[3]);
 
-	  __HAL_TIM_SET_COMPARE(&htim1,TIMCH_1,0xff - Out[4]);
-	  __HAL_TIM_SET_COMPARE(&htim1,TIMCH_2,0xff - Out[5]);
-	  __HAL_TIM_SET_COMPARE(&htim2,TIMCH_2,0xff - Out[6]);
-	  __HAL_TIM_SET_COMPARE(&htim2,TIMCH_1,0xff - Out[7]);
-	  printf("左上 %d %2X 右上 %d %2X 左下 %d %2X 右下 %d %2X\r\n",!Out[0],0xff - Out[4],Out[1],Out[5],!Out[2],0xff - Out[6],Out[3],Out[7]);
+	  __HAL_TIM_SET_COMPARE(&htim1,TIMCH_1,Out[4]);
+	  __HAL_TIM_SET_COMPARE(&htim1,TIMCH_2,Out[5]);
+	  __HAL_TIM_SET_COMPARE(&htim2,TIMCH_2,Out[6]);
+	  __HAL_TIM_SET_COMPARE(&htim2,TIMCH_1,Out[7]);
+	  printf("左上 %d %2X 右上 %d %2X 左下 %d %2X 右下 %d %2X\r\n",Out[0],Out[4],Out[1],Out[5],Out[2],Out[6],Out[3],Out[7]);
   }
   /* USER CODE END 3 */
 }
