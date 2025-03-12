@@ -9519,3 +9519,266 @@ Finished building: default.size.stdout
  
 Finished building: 20250311_meka7.list
  
+08:57:46 **** ビルド of configuration Debug for project 20250312_meka8 ****
+make -j16 all 
+arm-none-eabi-gcc -o "20250312_meka8.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250312_meka8\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250312_meka8.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250312_meka8.elf
+ 
+arm-none-eabi-size  20250312_meka8.elf 
+arm-none-eabi-objdump -h -S 20250312_meka8.elf  > "20250312_meka8.list"
+   text	   data	    bss	    dec	    hex	filename
+  41876	    468	   2244	  44588	   ae2c	20250312_meka8.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250312_meka8.list
+ 
+09:03:37 **** インクリメンタル・ビルド of configuration Debug for project 20250312_meka8 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+arm-none-eabi-gcc -o "20250312_meka8.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250312_meka8\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250312_meka8.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250312_meka8.elf
+ 
+arm-none-eabi-size  20250312_meka8.elf 
+arm-none-eabi-objdump -h -S 20250312_meka8.elf  > "20250312_meka8.list"
+   text	   data	    bss	    dec	    hex	filename
+  41908	    468	   2244	  44620	   ae4c	20250312_meka8.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250312_meka8.list
+ 
+09:07:14 **** インクリメンタル・ビルド of configuration Debug for project 20250312_meka8 ****
+make -j16 all 
+arm-none-eabi-size  20250312_meka8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  41908	    468	   2244	  44620	   ae4c	20250312_meka8.elf
+Finished building: default.size.stdout
+ 
+09:15:14 **** インクリメンタル・ビルド of configuration Debug for project 20250312_meka8 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:139:134: error: 'theta' undeclared (first use in this function)
+  139 |           printf("左上 %d %2X 右上 %d %2X 左下 %d %2X 右下 %d %2X %f %f\r\n",Out[0],Out[4],Out[1],Out[5],Out[2],Out[6],Out[3],Out[7],theta,theta_plus);
+      |                                                                                                                                      ^~~~~
+../Core/Src/main.c:139:134: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:139:140: error: 'theta_plus' undeclared (first use in this function)
+  139 |           printf("左上 %d %2X 右上 %d %2X 左下 %d %2X 右下 %d %2X %f %f\r\n",Out[0],Out[4],Out[1],Out[5],Out[2],Out[6],Out[3],Out[7],theta,theta_plus);
+      |                                                                                                                                            ^~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+09:16:14 **** インクリメンタル・ビルド of configuration Debug for project 20250312_meka8 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:139:68: warning: format '%f' expects a matching 'double' argument [-Wformat=]
+  139 |           printf("左上 %d %2X 右上 %d %2X 左下 %d %2X 右下 %d %2X %f %f\r\n",Out[0],Out[4],Out[1],Out[5],Out[2],Out[6],Out[3],Out[7]);
+      |                                                                   ~^
+      |                                                                    |
+      |                                                                    double
+../Core/Src/main.c:139:71: warning: format '%f' expects a matching 'double' argument [-Wformat=]
+  139 |           printf("左上 %d %2X 右上 %d %2X 左下 %d %2X 右下 %d %2X %f %f\r\n",Out[0],Out[4],Out[1],Out[5],Out[2],Out[6],Out[3],Out[7]);
+      |                                                                      ~^
+      |                                                                       |
+      |                                                                       double
+arm-none-eabi-gcc -o "20250312_meka8.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250312_meka8\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250312_meka8.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250312_meka8.elf
+ 
+arm-none-eabi-size  20250312_meka8.elf 
+arm-none-eabi-objdump -h -S 20250312_meka8.elf  > "20250312_meka8.list"
+   text	   data	    bss	    dec	    hex	filename
+  41908	    468	   2244	  44620	   ae4c	20250312_meka8.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250312_meka8.list
+ 
+09:17:41 **** インクリメンタル・ビルド of configuration Debug for project 20250312_meka8 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+arm-none-eabi-gcc -o "20250312_meka8.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250312_meka8\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250312_meka8.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250312_meka8.elf
+ 
+arm-none-eabi-size  20250312_meka8.elf 
+arm-none-eabi-objdump -h -S 20250312_meka8.elf  > "20250312_meka8.list"
+   text	   data	    bss	    dec	    hex	filename
+  42012	    468	   2244	  44724	   aeb4	20250312_meka8.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250312_meka8.list
+ 
+09:18:27 **** インクリメンタル・ビルド of configuration Debug for project 20250312_meka8 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250312_meka8.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250312_meka8\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250312_meka8.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250312_meka8.elf
+ 
+arm-none-eabi-size  20250312_meka8.elf 
+arm-none-eabi-objdump -h -S 20250312_meka8.elf  > "20250312_meka8.list"
+   text	   data	    bss	    dec	    hex	filename
+  42012	    468	   2244	  44724	   aeb4	20250312_meka8.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250312_meka8.list
+ 
+09:21:08 **** インクリメンタル・ビルド of configuration Debug for project 20250312_meka8 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+arm-none-eabi-gcc -o "20250312_meka8.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250312_meka8\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250312_meka8.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250312_meka8.elf
+ 
+arm-none-eabi-size  20250312_meka8.elf 
+arm-none-eabi-objdump -h -S 20250312_meka8.elf  > "20250312_meka8.list"
+   text	   data	    bss	    dec	    hex	filename
+  42116	    468	   2244	  44828	   af1c	20250312_meka8.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250312_meka8.list
+ 
+09:25:03 **** インクリメンタル・ビルド of configuration Debug for project 20250312_meka8 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+arm-none-eabi-gcc -o "20250312_meka8.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250312_meka8\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250312_meka8.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250312_meka8.elf
+ 
+arm-none-eabi-size  20250312_meka8.elf 
+arm-none-eabi-objdump -h -S 20250312_meka8.elf  > "20250312_meka8.list"
+   text	   data	    bss	    dec	    hex	filename
+  42092	    468	   2244	  44804	   af04	20250312_meka8.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250312_meka8.list
+ 
+09:28:18 **** インクリメンタル・ビルド of configuration Debug for project 20250312_meka8 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+arm-none-eabi-gcc -o "20250312_meka8.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250312_meka8\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250312_meka8.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250312_meka8.elf
+ 
+arm-none-eabi-size  20250312_meka8.elf 
+arm-none-eabi-objdump -h -S 20250312_meka8.elf  > "20250312_meka8.list"
+   text	   data	    bss	    dec	    hex	filename
+  42076	    468	   2244	  44788	   aef4	20250312_meka8.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250312_meka8.list
+ 
+09:29:43 **** インクリメンタル・ビルド of configuration Debug for project 20250312_meka8 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+arm-none-eabi-gcc -o "20250312_meka8.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250312_meka8\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250312_meka8.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250312_meka8.elf
+ 
+arm-none-eabi-size  20250312_meka8.elf 
+arm-none-eabi-objdump -h -S 20250312_meka8.elf  > "20250312_meka8.list"
+   text	   data	    bss	    dec	    hex	filename
+  42076	    468	   2244	  44788	   aef4	20250312_meka8.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250312_meka8.list
+ 
+09:33:16 **** インクリメンタル・ビルド of configuration Debug for project 20250312_meka8 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+arm-none-eabi-gcc -o "20250312_meka8.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250312_meka8\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250312_meka8.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250312_meka8.elf
+ 
+arm-none-eabi-size  20250312_meka8.elf 
+arm-none-eabi-objdump -h -S 20250312_meka8.elf  > "20250312_meka8.list"
+   text	   data	    bss	    dec	    hex	filename
+  42092	    468	   2244	  44804	   af04	20250312_meka8.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250312_meka8.list
+ 
+09:41:23 **** インクリメンタル・ビルド of configuration Debug for project 20250312_meka8 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'MoveST':
+../Core/Src/mekanamu.c:73:16: warning: variable 'Vroll' set but not used [-Wunused-but-set-variable]
+   73 |         double Vroll;
+      |                ^~~~~
+arm-none-eabi-gcc -o "20250312_meka8.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250312_meka8\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250312_meka8.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250312_meka8.elf
+ 
+arm-none-eabi-size  20250312_meka8.elf 
+arm-none-eabi-objdump -h -S 20250312_meka8.elf  > "20250312_meka8.list"
+   text	   data	    bss	    dec	    hex	filename
+  41964	    468	   2244	  44676	   ae84	20250312_meka8.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250312_meka8.list
+ 
+09:42:39 **** インクリメンタル・ビルド of configuration Debug for project 20250312_meka8 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+../Core/Src/mekanamu.c: In function 'MoveST':
+../Core/Src/mekanamu.c:73:16: warning: variable 'Vroll' set but not used [-Wunused-but-set-variable]
+   73 |         double Vroll;
+      |                ^~~~~
+arm-none-eabi-gcc -o "20250312_meka8.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250312_meka8\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250312_meka8.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250312_meka8.elf
+ 
+arm-none-eabi-size  20250312_meka8.elf 
+arm-none-eabi-objdump -h -S 20250312_meka8.elf  > "20250312_meka8.list"
+   text	   data	    bss	    dec	    hex	filename
+  42044	    468	   2244	  44756	   aed4	20250312_meka8.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250312_meka8.list
+ 
+09:44:44 **** インクリメンタル・ビルド of configuration Debug for project 20250312_meka8 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+arm-none-eabi-gcc -o "20250312_meka8.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250312_meka8\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250312_meka8.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250312_meka8.elf
+ 
+arm-none-eabi-size  20250312_meka8.elf 
+arm-none-eabi-objdump -h -S 20250312_meka8.elf  > "20250312_meka8.list"
+   text	   data	    bss	    dec	    hex	filename
+  42076	    468	   2244	  44788	   aef4	20250312_meka8.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250312_meka8.list
+ 
+09:50:12 **** インクリメンタル・ビルド of configuration Debug for project 20250312_meka8 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+arm-none-eabi-gcc -o "20250312_meka8.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250312_meka8\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250312_meka8.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250312_meka8.elf
+ 
+arm-none-eabi-size  20250312_meka8.elf 
+arm-none-eabi-objdump -h -S 20250312_meka8.elf  > "20250312_meka8.list"
+   text	   data	    bss	    dec	    hex	filename
+  42092	    468	   2244	  44804	   af04	20250312_meka8.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250312_meka8.list
+ 
+09:52:01 **** インクリメンタル・ビルド of configuration Debug for project 20250312_meka8 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+arm-none-eabi-gcc -o "20250312_meka8.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250312_meka8\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250312_meka8.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250312_meka8.elf
+ 
+arm-none-eabi-size  20250312_meka8.elf 
+arm-none-eabi-objdump -h -S 20250312_meka8.elf  > "20250312_meka8.list"
+   text	   data	    bss	    dec	    hex	filename
+  42092	    468	   2244	  44804	   af04	20250312_meka8.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250312_meka8.list
+ 
+09:53:37 **** インクリメンタル・ビルド of configuration Debug for project 20250312_meka8 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+arm-none-eabi-gcc -o "20250312_meka8.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250312_meka8\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250312_meka8.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250312_meka8.elf
+ 
+arm-none-eabi-size  20250312_meka8.elf 
+arm-none-eabi-objdump -h -S 20250312_meka8.elf  > "20250312_meka8.list"
+   text	   data	    bss	    dec	    hex	filename
+  42076	    468	   2244	  44788	   aef4	20250312_meka8.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250312_meka8.list
+ 
