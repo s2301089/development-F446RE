@@ -1,0 +1,107 @@
+/*
+ * mekanamu.c
+ *
+ *  Created on: Mar 10, 2025
+ *      Author: Mitsu
+ */
+
+#include <mekanamu.h>
+#include <stdio.h>
+
+
+signed char halfX(uint8_t X){
+	if(X > 0x7f - TOLE_VALUE && X < 0x7f + TOLE_VALUE){
+		return 0;
+	}else {
+		if(X - 0x7f < -0x7f){
+			return -0x7f;
+		}else if(X - 0x7f > 0x7f){
+			return 0x7f;
+		}else {
+			return X - 0x7f;
+		}
+	}
+}
+
+signed char halfY(uint8_t Y){
+	if(Y > 0x7f - TOLE_VALUE && Y < 0x7f + TOLE_VALUE){
+		return 0;
+	}else {
+		if(0x7f - Y < -0x7f){
+			return -0x7f;
+		}else if(0x7f - Y > 0x7f){
+			return 0x7f;
+		}else {
+			return 0x7f - Y;
+		}
+	}
+}
+
+void MoveST(uint8_t *Udata,uint8_t stX,uint8_t stY,uint8_t stV){ // Udata[0] 左上 Udata[1] 右上 Udata[2] 左下 Udata[3] 右下
+#define PLUS 45
+	double PosX;
+	double PosY;
+	double Vroll;
+	double Z;
+	double COS;
+	double SIN;
+	double theta;
+	double theta_plus;
+	double Adata[8];
+	PosX = halfX(stX);
+	PosY = halfY(stY);
+	Vroll = halfY(stV) * RAITO;
+	Z = sqrt(pow(PosX,2) + pow(PosY,2));
+	theta = atan2(PosY,PosX);
+	theta_plus = rad(PLUS);
+
+	COS = (Z * cos(theta)) / 2;
+	SIN = (Z * sin(theta)) / (2 * sin(theta_plus) * cos(theta_plus));
+//	for(int i = 0;i < 4;i++){
+//		SIN[i] = (Z * sin(theta)) / (2 * sin(theta_plus + (360 / 4) * i) * cos(theta_plus + (360 / 4) * i));
+//	}
+
+	Adata[LUP] = - COS - SIN - Vroll;
+	Adata[RUP] =   COS + SIN - Vroll;
+	Adata[LDP] =   COS - SIN - Vroll;
+	Adata[RDP] = - COS + SIN - Vroll;
+#ifdef DEBUG
+	printf("SIN %f COS %f ",SIN,COS);
+#endif
+
+	for(int i = 0;i < 4;i++){
+		if(Adata[i + 4] < 0){
+			if(Adata[i + 4] < -0x7f){
+				Adata[i + 4] = -0x7f;
+			}
+			Udata[i] = 1;
+			Udata[i + 4] = (uint8_t)(0x7f + Adata[i + 4]) * 2;
+#ifdef DEBUG
+			printf("nega ");
+#endif
+		}else{
+			if(Adata[i + 4] > 0x7f){
+				Adata[i + 4] = 0x7f;
+			}
+			Udata[i] = 0;
+			Udata[i + 4] = (uint8_t)(Adata[i + 4]) * 2;
+#ifdef DEBUG
+			printf("posi ");
+#endif
+		}
+	}
+
+//	Udata[LUP] = 0xff - Udata[LUP];
+//	Udata[LUD] = !Udata[LUD];
+//	Udata[LDP] = 0xff - Udata[LDP];
+//	Udata[LDD] = !Udata[LDD];
+}
+
+
+double deg(double rad){
+	return (rad * 180) / M_PI;
+}
+
+double rad(double deg){
+	return (deg * M_PI) / 180;
+}

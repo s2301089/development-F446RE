@@ -1,0 +1,6 @@
+../Core/Src/mekanamu.c:11:13:halfX	4
+../Core/Src/mekanamu.c:25:13:halfY	4
+../Core/Src/mekanamu.c:39:6:MoveST	5
+../Core/Src/mekanamu.c:88:6:MoveBT	7
+../Core/Src/mekanamu.c:145:8:deg	1
+../Core/Src/mekanamu.c:149:8:rad	1

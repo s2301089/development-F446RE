@@ -1,0 +1,6 @@
+../Core/Src/mekanamu.c:11:13:halfX	16	static
+../Core/Src/mekanamu.c:25:13:halfY	16	static
+../Core/Src/mekanamu.c:39:6:MoveST	176	static
+../Core/Src/mekanamu.c:88:6:MoveBT	184	static
+../Core/Src/mekanamu.c:145:8:deg	16	static
+../Core/Src/mekanamu.c:149:8:rad	16	static
