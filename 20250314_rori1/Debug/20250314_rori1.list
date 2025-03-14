@@ -1286,7 +1286,7 @@ int _write(int file,char *ptr,int len){
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-int over = 0;
+int over;
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim){
  8000f6c:	b480      	push	{r7}

@@ -113,7 +113,7 @@ int main(void)
   HAL_TIM_Encoder_Start(&htim3, TIMCH_ALL);
   HAL_TIM_Base_Start_IT(&htim3);
   int count;
-  float deg;
+//  float deg;
   over = 0;
 //  char scount[100];
   /* USER CODE END 2 */
@@ -124,29 +124,29 @@ int main(void)
   {
 //	  count = TIM3 -> CNT;
 	  count = (long)(over * 8192) + (long)TIM3 -> CNT;
-	  deg = ((float)count / 8192) * 360;
-	  while(deg > 360){
-		  deg = deg - 360;
-	  }
-	  while(deg < 0){
-		  deg = deg + 360;
-	  }
-//	  printf("%d\r\n",count);
-	  printf("%f\r\n",deg);
+//	  deg = ((float)count / 8192) * 360;
+//	  while(deg > 360){
+//		  deg = deg - 360;
+//	  }
+//	  while(deg < 0){
+//		  deg = deg + 360;
+//	  }
+	  printf("%d\r\n",count);
+//	  printf("%f\r\n",deg);
 	  HAL_Delay(100);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
 //	  printf("SNCT\r\n");
 //	  HAL_Delay(500);
-	  if(HAL_GPIO_ReadPin(GPIOxD, GPIO_Pin_2) == 0){
-//		  count = 0;
+//	  if(HAL_GPIO_ReadPin(GPIOxD, GPIO_Pin_2) == 0){
+////		  count = 0;
+////		  over = 0;
+////		  deg = 0;
+//		  TIM3 -> CNT = 0;
 //		  over = 0;
-//		  deg = 0;
-		  TIM3 -> CNT = 0;
-		  over = 0;
-		  printf("reseted!! ");
-	  }
+//		  printf("reseted!! ");
+//	  }
   }
   /* USER CODE END 3 */
 }
