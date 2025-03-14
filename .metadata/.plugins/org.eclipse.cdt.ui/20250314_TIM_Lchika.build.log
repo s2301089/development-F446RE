@@ -1,0 +1,17 @@
+14:48:35 **** インクリメンタル・ビルド of configuration Debug for project 20250314_TIM_Lchika ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250314_TIM_Lchika.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250314_TIM_Lchika\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250314_TIM_Lchika.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250314_TIM_Lchika.elf
+ 
+arm-none-eabi-size  20250314_TIM_Lchika.elf 
+arm-none-eabi-objdump -h -S 20250314_TIM_Lchika.elf  > "20250314_TIM_Lchika.list"
+   text	   data	    bss	    dec	    hex	filename
+   9012	     12	   1644	  10668	   29ac	20250314_TIM_Lchika.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250314_TIM_Lchika.list
+ 
+
+14:48:36 Build Finished. 0 errors, 0 warnings. (経過 1s.139ms)
+
