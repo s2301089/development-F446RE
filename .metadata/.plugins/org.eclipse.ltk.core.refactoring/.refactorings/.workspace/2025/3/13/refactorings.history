@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="リソース &apos;20250325_sagi1/Debug/20250312_mekab1.elf&apos; を削除" deleteContents="false" description="リソース &apos;20250325_sagi1/Debug/20250312_mekab1.elf&apos; を削除" element1="/20250325_sagi1/Debug/20250312_mekab1.elf" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1742872996935"/>
+</session>

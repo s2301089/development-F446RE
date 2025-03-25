@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="リソース名 &apos;20250325_sagi1/20250312_mekab1.ioc&apos; を &apos;20250325_sagi1.ioc&apos; に変更します" description="リソース &apos;20250312_mekab1.ioc&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="20250312_mekab1.ioc" name="20250325_sagi1.ioc" stamp="1742872982430" updateReferences="true"/>&#x0A;<refactoring comment="リソース名 &apos;20250325_sagi1/Debug/20250312_meka9.elf&apos; を &apos;20250325_sagi1.elf&apos; に変更します" description="リソース &apos;20250312_meka9.elf&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Debug/20250312_meka9.elf" name="20250325_sagi1.elf" stamp="1742873012278" updateReferences="true"/>
+</session>

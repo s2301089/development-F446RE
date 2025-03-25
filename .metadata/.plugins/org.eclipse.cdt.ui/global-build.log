@@ -10977,3 +10977,173 @@ Finished building: default.size.stdout
  
 Finished building: 20250314_TIM_Lchika.list
  
+12:38:13 **** ビルド of configuration Debug for project 20250325_sagi1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc -o "20250325_sagi1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250325_sagi1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250325_sagi1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250325_sagi1.elf
+ 
+arm-none-eabi-size  20250325_sagi1.elf 
+arm-none-eabi-objdump -h -S 20250325_sagi1.elf  > "20250325_sagi1.list"
+   text	   data	    bss	    dec	    hex	filename
+  42820	    468	   2244	  45532	   b1dc	20250325_sagi1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250325_sagi1.list
+ 
+12:41:45 **** インクリメンタル・ビルド of configuration Debug for project 20250325_sagi1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250325_sagi1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250325_sagi1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250325_sagi1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250325_sagi1.elf
+ 
+arm-none-eabi-size  20250325_sagi1.elf 
+arm-none-eabi-objdump -h -S 20250325_sagi1.elf  > "20250325_sagi1.list"
+   text	   data	    bss	    dec	    hex	filename
+  42820	    468	   2244	  45532	   b1dc	20250325_sagi1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250325_sagi1.list
+ 
+12:42:53 **** インクリメンタル・ビルド of configuration Debug for project 20250325_sagi1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250325_sagi1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250325_sagi1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250325_sagi1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250325_sagi1.elf
+ 
+arm-none-eabi-size  20250325_sagi1.elf 
+arm-none-eabi-objdump -h -S 20250325_sagi1.elf  > "20250325_sagi1.list"
+   text	   data	    bss	    dec	    hex	filename
+  42820	    468	   2244	  45532	   b1dc	20250325_sagi1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250325_sagi1.list
+ 
+12:44:38 **** インクリメンタル・ビルド of configuration Debug for project 20250325_sagi1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250325_sagi1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250325_sagi1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250325_sagi1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250325_sagi1.elf
+ 
+arm-none-eabi-size  20250325_sagi1.elf 
+arm-none-eabi-objdump -h -S 20250325_sagi1.elf  > "20250325_sagi1.list"
+   text	   data	    bss	    dec	    hex	filename
+  43636	    468	   2244	  46348	   b50c	20250325_sagi1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250325_sagi1.list
+ 
+12:45:15 **** インクリメンタル・ビルド of configuration Debug for project 20250325_sagi1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250325_sagi1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250325_sagi1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250325_sagi1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250325_sagi1.elf
+ 
+arm-none-eabi-size  20250325_sagi1.elf 
+arm-none-eabi-objdump -h -S 20250325_sagi1.elf  > "20250325_sagi1.list"
+   text	   data	    bss	    dec	    hex	filename
+  43348	    468	   2244	  46060	   b3ec	20250325_sagi1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250325_sagi1.list
+ 
+12:47:27 **** インクリメンタル・ビルド of configuration Debug for project 20250325_sagi1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/mekanamu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mekanamu.d" -MT"Core/Src/mekanamu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mekanamu.o"
+arm-none-eabi-gcc -o "20250325_sagi1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250325_sagi1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250325_sagi1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250325_sagi1.elf
+ 
+arm-none-eabi-size  20250325_sagi1.elf 
+arm-none-eabi-objdump -h -S 20250325_sagi1.elf  > "20250325_sagi1.list"
+   text	   data	    bss	    dec	    hex	filename
+  43276	    468	   2244	  45988	   b3a4	20250325_sagi1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250325_sagi1.list
+ 
+12:48:22 **** インクリメンタル・ビルド of configuration Debug for project 20250325_sagi1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250325_sagi1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250325_sagi1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250325_sagi1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250325_sagi1.elf
+ 
+arm-none-eabi-size  20250325_sagi1.elf 
+arm-none-eabi-objdump -h -S 20250325_sagi1.elf  > "20250325_sagi1.list"
+   text	   data	    bss	    dec	    hex	filename
+  43276	    468	   2244	  45988	   b3a4	20250325_sagi1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250325_sagi1.list
+ 
+12:51:45 **** インクリメンタル・ビルド of configuration Debug for project 20250325_sagi1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250325_sagi1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250325_sagi1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250325_sagi1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250325_sagi1.elf
+ 
+arm-none-eabi-size  20250325_sagi1.elf 
+arm-none-eabi-objdump -h -S 20250325_sagi1.elf  > "20250325_sagi1.list"
+   text	   data	    bss	    dec	    hex	filename
+  43268	    468	   2244	  45980	   b39c	20250325_sagi1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250325_sagi1.list
+ 
+12:54:39 **** インクリメンタル・ビルド of configuration Debug for project 20250325_sagi1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250325_sagi1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250325_sagi1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250325_sagi1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250325_sagi1.elf
+ 
+arm-none-eabi-size  20250325_sagi1.elf 
+arm-none-eabi-objdump -h -S 20250325_sagi1.elf  > "20250325_sagi1.list"
+   text	   data	    bss	    dec	    hex	filename
+  42892	    468	   2244	  45604	   b224	20250325_sagi1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250325_sagi1.list
+ 
+12:55:45 **** インクリメンタル・ビルド of configuration Debug for project 20250325_sagi1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250325_sagi1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250325_sagi1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250325_sagi1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250325_sagi1.elf
+ 
+arm-none-eabi-size  20250325_sagi1.elf 
+arm-none-eabi-objdump -h -S 20250325_sagi1.elf  > "20250325_sagi1.list"
+   text	   data	    bss	    dec	    hex	filename
+  42908	    468	   2244	  45620	   b234	20250325_sagi1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250325_sagi1.list
+ 
+12:56:34 **** インクリメンタル・ビルド of configuration Debug for project 20250325_sagi1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250325_sagi1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250325_sagi1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250325_sagi1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250325_sagi1.elf
+ 
+arm-none-eabi-size  20250325_sagi1.elf 
+arm-none-eabi-objdump -h -S 20250325_sagi1.elf  > "20250325_sagi1.list"
+   text	   data	    bss	    dec	    hex	filename
+  42908	    468	   2244	  45620	   b234	20250325_sagi1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250325_sagi1.list
+ 
+12:58:03 **** インクリメンタル・ビルド of configuration Debug for project 20250325_sagi1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250325_sagi1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250325_sagi1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250325_sagi1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250325_sagi1.elf
+ 
+arm-none-eabi-size  20250325_sagi1.elf 
+arm-none-eabi-objdump -h -S 20250325_sagi1.elf  > "20250325_sagi1.list"
+   text	   data	    bss	    dec	    hex	filename
+  42908	    468	   2244	  45620	   b234	20250325_sagi1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250325_sagi1.list
+ 
