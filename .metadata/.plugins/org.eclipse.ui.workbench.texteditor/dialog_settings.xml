@@ -3,6 +3,9 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="false"/>
 	<list key="searchhistory">
+		<item value="Callback"/>
+		<item value="HAL_UART_RxHalf"/>
+		<item value="HAL_"/>
 		<item value="FAF"/>
 	</list>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
