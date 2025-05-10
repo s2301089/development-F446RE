@@ -113,11 +113,11 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  getDataIT(&huart1);
-//	  AllShow(data);
-	  printf("%d %d \r\n",FAF,FAFcount);
+	  AllShowP(data);
+//	  printf("%d %d \r\n",FAF,FAFcount);
 	  if(FAF == 1){
 		  FAFcount = 0;
-		  AllShow(data);
+//		  AllShowP(data);
 		  __HAL_TIM_SET_COMPARE(&htim3,TIMCH_3,data.LY);
 		  HAL_GPIO_WritePin(GPIOxA, GPIO_Pin_0, 0);
 	  }else{
@@ -132,6 +132,7 @@ int main(void)
 			  HAL_Delay(500);
 		  }
 	  }
+
 
 //	  HAL_Delay(50);
 //	  if(AFF == 1){

@@ -11255,3 +11255,80 @@ Finished building: default.size.stdout
  
 Finished building: 20250502_trans1_to_arduino.list
  
+14:59:18 **** ビルド of configuration Debug for project 20250306_struct_it7_ps4 ****
+make -j16 all 
+arm-none-eabi-size  20250306_struct_it7_ps4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20696	    104	   2176	  22976	   59c0	20250306_struct_it7_ps4.elf
+Finished building: default.size.stdout
+ 
+15:02:50 **** インクリメンタル・ビルド of configuration Debug for project 20250306_struct_it7_ps4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250306_struct_it7_ps4.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250306_struct_it7_ps4\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250306_struct_it7_ps4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250306_struct_it7_ps4.elf
+ 
+arm-none-eabi-size  20250306_struct_it7_ps4.elf 
+arm-none-eabi-objdump -h -S 20250306_struct_it7_ps4.elf  > "20250306_struct_it7_ps4.list"
+   text	   data	    bss	    dec	    hex	filename
+  20992	    104	   2176	  23272	   5ae8	20250306_struct_it7_ps4.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250306_struct_it7_ps4.list
+ 
+15:03:28 **** インクリメンタル・ビルド of configuration Debug for project 20250306_struct_it7_ps4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250306_struct_it7_ps4.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250306_struct_it7_ps4\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250306_struct_it7_ps4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250306_struct_it7_ps4.elf
+ 
+arm-none-eabi-size  20250306_struct_it7_ps4.elf 
+arm-none-eabi-objdump -h -S 20250306_struct_it7_ps4.elf  > "20250306_struct_it7_ps4.list"
+   text	   data	    bss	    dec	    hex	filename
+  20964	    104	   2176	  23244	   5acc	20250306_struct_it7_ps4.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250306_struct_it7_ps4.list
+ 
+15:04:16 **** インクリメンタル・ビルド of configuration Debug for project 20250306_struct_it7_ps4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250306_struct_it7_ps4.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250306_struct_it7_ps4\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250306_struct_it7_ps4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250306_struct_it7_ps4.elf
+ 
+arm-none-eabi-size  20250306_struct_it7_ps4.elf 
+arm-none-eabi-objdump -h -S 20250306_struct_it7_ps4.elf  > "20250306_struct_it7_ps4.list"
+   text	   data	    bss	    dec	    hex	filename
+  20964	    104	   2176	  23244	   5acc	20250306_struct_it7_ps4.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250306_struct_it7_ps4.list
+ 
+15:05:11 **** インクリメンタル・ビルド of configuration Debug for project 20250306_struct_it7_ps4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250306_struct_it7_ps4.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250306_struct_it7_ps4\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250306_struct_it7_ps4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250306_struct_it7_ps4.elf
+ 
+arm-none-eabi-size  20250306_struct_it7_ps4.elf 
+arm-none-eabi-objdump -h -S 20250306_struct_it7_ps4.elf  > "20250306_struct_it7_ps4.list"
+   text	   data	    bss	    dec	    hex	filename
+  20968	    104	   2176	  23248	   5ad0	20250306_struct_it7_ps4.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250306_struct_it7_ps4.list
+ 
+15:05:59 **** インクリメンタル・ビルド of configuration Debug for project 20250306_struct_it7_ps4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "20250306_struct_it7_ps4.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\OneDrive - 独立行政法人 国立高等専門学校機構\github\development-F446RE\20250306_struct_it7_ps4\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20250306_struct_it7_ps4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20250306_struct_it7_ps4.elf
+ 
+arm-none-eabi-size  20250306_struct_it7_ps4.elf 
+arm-none-eabi-objdump -h -S 20250306_struct_it7_ps4.elf  > "20250306_struct_it7_ps4.list"
+   text	   data	    bss	    dec	    hex	filename
+  20964	    104	   2176	  23244	   5acc	20250306_struct_it7_ps4.elf
+Finished building: default.size.stdout
+ 
+Finished building: 20250306_struct_it7_ps4.list
+ 

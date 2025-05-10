@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="リソース名 &apos;20250306_struct_it7_ps4/20250305_struct_it5.ioc&apos; を &apos;20250306_struct_it7_ps4.ioc&apos; に変更します" description="リソース &apos;20250305_struct_it5.ioc&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="20250305_struct_it5.ioc" name="20250306_struct_it7_ps4.ioc" stamp="1746856802797" updateReferences="true"/>
+</session>
